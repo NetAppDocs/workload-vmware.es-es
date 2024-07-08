@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: capture-vm-configurations.html 
+keywords: vm workloads, capture vm details 
+summary: Puede utilizar el script recopilador de máquinas virtuales del Asesor de Migración o RVTools para capturar las configuraciones actuales de las máquinas virtuales. Le recomendamos que utilice el script recopilador de VM del Asesor de Migración porque recopila tanto la configuración de VM como los datos de rendimiento para el plan más preciso. 
+---
+= Capture las configuraciones actuales de sus máquinas virtuales
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede utilizar el script recopilador de máquinas virtuales del Asesor de Migración o RVTools para capturar las configuraciones actuales de las máquinas virtuales. Le recomendamos que utilice el script recopilador de VM del Asesor de Migración porque recopila tanto la configuración de VM como los datos de rendimiento para el plan más preciso.
+
+Si tiene previsto implementar un nuevo sistema basado en un plan de despliegue existente que guardó previamente localmente, puede omitir este paso y seleccionar el plan de despliegue existente. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["Aprenda a usar un plan existente para crear un nuevo plan"].
+
+[role="tabbed-block"]
+====
+.Utilice el script recopilador de VM del asesor de migración
+--
+El script recopilador de VM del asesor de migración de NetApp recopila información de configuración de VM desde vCenter de forma similar a la que recopila RVTools; sin embargo, captura datos de rendimiento de VM actuales para proporcionar estadísticas de rendimiento e IOPS de lectura y escritura reales.
+
+Debe iniciar el asesor de migración para copiar el script del recopilador de VM del asesor de migración desde la ventana CodeBox.
+
+.Antes de empezar
+El sistema en el que ejecutará el script del recopilador debe cumplir los siguientes requisitos:
+
+* Se debe instalar Microsoft PowerShell 7,0 o superior. Consulte https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4["Documentación de Microsoft PowerShell"^] si necesita instalar PowerShell.
+* Se debe instalar VMware PowerCLI. Consulte https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html["Documentación de VMware PowerCLI"^] si necesita instalar PowerCLI.
+* La comprobación de certificados SSL debe estar desactivada.
+* PowerShell debe permitir la ejecución de scripts sin firmar.
+
+
+Tenga en cuenta que si planea capturar estadísticas a largo plazo de sus máquinas virtuales (estadísticas diarias), debe haber activado estadísticas de nivel 3 o superior en la consola de gestión de vSphere (entorno de gestión de VMware).
+
+.Pasos
+. Inicie sesión en Workload Factory.
+. En el mosaico de VMware, seleccione *Planificar e implementar*.
++
+image:screenshot-choose-method.png["Una captura de pantalla de los diferentes métodos que puede utilizar para recopilar la información de configuración de la VM actual."]
+
+. Seleccione *Crear un nuevo plan de implementación*, seleccione la opción *Usar el asesor de migración VMware data collector* y seleccione *Siguiente*.
++
+Se muestra la página *Prepare for VMware Cloud on AWS migration*.
+
+. En la ventana CodeBox, seleccione para guardar el script del recopilador de VM del asesor de migración (denominado «list-vms.ps1») en el sistema de destino o bien image:button-download-codebox.png["el botón de descarga"] image:button-copy-codebox.png["el botón copiar"] para copiar el script y pegarlo en el sistema adecuado.
+. Siga estos pasos para capturar las configuraciones de sus equipos virtuales actuales:
++
+.. Inicie sesión en el sistema donde ha descargado el recopilador de datos, en el que están instalados PowerShell y PowerCLI.
+.. Conéctese al servidor de VMware vCenter ejecutando el siguiente comando:
++
+ Connect-VIServer -server <server_IP>
++
+Reemplace <server_IP> por la dirección IP o el nombre de host del servidor VMware.
+
+.. Ejecute el script de recopilador de datos que descargó y especifique la opción de recopilación de datos para las estadísticas de máquinas virtuales «diarias» o «por hora».
++
+ .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
++
+donde:
+
++
+*** *True* recopila IOPS y datos de rendimiento durante las últimas 24 horas con intervalos de 5 minutos
+*** *False* recopila IOPS y datos de rendimiento durante las últimas 1 horas con intervalos de 20 segundos.
+
+
+
+
+
+
+.Resultado
+El script genera un archivo CSV denominado `list-vms-yyyy-MM-dd-HH-mm-ss.csv` en el directorio de trabajo actual. El archivo CSV contiene una lista de todas las máquinas virtuales y sus propiedades, junto con sus datos de IOPS y rendimiento.
+
+--
+.Utilice el software RVTools
+--
+RVTools es una aplicación de Windows que interactúa con vCenter y un servidor ESX (de 5.x a 8,0) para capturar información acerca de sus entornos virtuales de VMware. Recopila información sobre máquinas virtuales, CPU, memoria, discos, clústeres, hosts ESX, almacenes de datos, etc. Puede exportar esta información a un archivo xlsx para utilizarla con el asesor de migración.
+
+https://www.robware.net/home["Obtenga más información sobre RVTools"^]
+
+.Pasos
+. Descargue e instale RVTools 4.4.2 o superior desde https://www.robware.net/download["Sitio web de RVTools"^]
+. Inicie RVTools e inicie sesión en la instancia de vCenter Server de destino.
++
+Esto capturará información sobre esa instancia de vCenter Server.
+
+. Exporte la información de VMware a un archivo xlsx o xls.
++
+Consulte el capítulo sobre “Parámetros de línea de comandos” en la https://resources.robware.net/resources/prod/RVTools.pdf["Documentación de RVTools"^] para obtener más detalles.
+
+
+
+.Resultado
+El archivo xlsx o xls que contiene los resultados se guarda en el directorio de trabajo.
+
+--
+====
+.El futuro
+link:launch-onboarding-advisor.html["Cree un plan de despliegue con el asesor de migración"].

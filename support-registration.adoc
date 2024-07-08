@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: support-registration.html 
+keywords: support registration, register for support, support, nss account, add nss account, 
+summary: Para poder abrir un caso de soporte con el soporte técnico de NetApp, debe añadir una cuenta del sitio de soporte de NetApp a Workload Factory y, a continuación, registrarse para recibir soporte. 
+---
+= Regístrese para recibir soporte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se requiere el registro de soporte para recibir soporte técnico específico para Workload Factory y sus soluciones y servicios de almacenamiento. Tienes que registrarte para recibir soporte de la consola BlueXP, que es una consola web independiente de Workload Factory.
+
+Al registrarse para recibir soporte, no se habilita el soporte de NetApp para un servicio de archivos de proveedor de cloud. Para obtener soporte técnico relacionado con un servicio de archivos de un proveedor de cloud, su infraestructura o cualquier solución que utilice el servicio, consulte «Obtener ayuda» en la documentación de Workload Factory para ese producto.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX para ONTAP"^]
+
+
+
+== Información general del registro de soporte
+
+Registrar la suscripción de soporte de tu ID de cuenta (tu número de serie 960xxxxxxxxx de 20 dígitos, ubicado en la página de recursos de soporte de BlueXP) sirve como tu ID de suscripción de soporte único. Debe registrarse cada suscripción de asistencia técnica a nivel de cuenta de BlueXP.
+
+El registro permite funcionalidades como la apertura de tickets de soporte y la generación automática de casos. Para completar el registro, añade cuentas del sitio de soporte de NetApp (NSS) a BlueXP, como se describe a continuación.
+
+
+
+== Registre su cuenta de soporte de NetApp
+
+Para registrarte para obtener soporte y activar el soporte, un usuario en tu cuenta debe asociar una cuenta en el sitio de soporte de NetApp a su inicio de sesión en BlueXP. La forma de registrarse para recibir soporte de NetApp depende de si ya tiene una cuenta del sitio de soporte de NetApp (NSS).
+
+
+
+=== Cliente existente con una cuenta de NSS
+
+Si es cliente de NetApp con una cuenta de NSS, solo tiene que registrarse para recibir soporte a través de BlueXP.
+
+.Pasos
+. En la parte superior derecha de la consola Workload Factory, selecciona *Ayuda > Soporte*.
++
+Al seleccionar esta opción, se abre la consola de BlueXP una nueva pestaña del navegador y se carga la consola de soporte.
+
+. En la parte superior derecha de la consola de BlueXP, seleccione el icono Configuración y seleccione *credenciales*.
+. Seleccione *Credenciales de usuario*.
+. Seleccione *Agregar credenciales NSS* y siga el aviso de autenticación del sitio de soporte de NetApp (NSS).
+. Para confirmar que el proceso de registro se ha realizado correctamente, seleccione el icono Ayuda y seleccione *Soporte*.
++
+La página *Recursos* debe mostrar que su cuenta está registrada para soporte.
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-support-registration.png["Una captura de pantalla que muestra un número de serie de cuenta y una casilla de verificación verde y el texto registrado para soporte."]
+
++
+Tenga en cuenta que los otros usuarios de BlueXP no verán este mismo estado de registro de soporte si no han asociado una cuenta del sitio de soporte de NetApp con su inicio de sesión de BlueXP. Sin embargo, eso no significa que tu cuenta de BlueXP no esté registrada para el soporte técnico. Siempre y cuando un usuario de la cuenta haya seguido estos pasos, su cuenta se ha registrado.
+
+
+
+
+
+=== Cliente existente pero no cuenta NSS
+
+Si eres un cliente existente de NetApp con licencias y números de serie existentes, pero _no_ NSS, deberás crear una cuenta NSS y asociarla al inicio de sesión de BlueXP.
+
+.Pasos
+. Cree una cuenta del sitio de soporte de NetApp completando el https://mysupport.netapp.com/site/user/registration["Formulario de registro de usuarios del sitio de soporte de NetApp"^]
++
+.. Asegúrese de seleccionar el nivel de usuario adecuado, que normalmente es *Cliente/Usuario final de NetApp*.
+.. Asegúrese de copiar el número de serie de la cuenta BlueXP (960xxxx) utilizado anteriormente para el campo de número de serie. Esto agilizará el procesamiento de la cuenta.
+
+
+. Asocia tu nueva cuenta de NSS con tu inicio de sesión de BlueXP completando los pasos que se indican en <<Cliente existente con una cuenta de NSS>>.
+
+
+
+
+=== Totalmente nuevo en NetApp
+
+Si es totalmente nuevo en NetApp y no tiene una cuenta de NSS, siga cada paso que se indica a continuación.
+
+.Pasos
+. En la parte superior derecha de la consola Workload Factory, selecciona *Ayuda > Soporte*.
++
+Al seleccionar esta opción, se abre la consola de BlueXP una nueva pestaña del navegador y se carga la consola de soporte.
+
+. Busque el número de serie de su ID de cuenta en la página Recursos de soporte.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-serial-number.png["Una captura de pantalla del menú Ayuda en el que Soporte es la primera opción de la lista"]
+
+. Navegue https://register.netapp.com["Sitio de registro de soporte de NetApp"^] y seleccione *No soy un Cliente de NetApp Registrado*.
+. Rellene los campos obligatorios (aquellos con asteriscos rojos).
+. En el campo *línea de productos*, seleccione *Cloud Manager* y, a continuación, seleccione el proveedor de facturación correspondiente.
+. Copie el número de serie de su cuenta desde el paso 2 anterior, complete la comprobación de seguridad y confirme que ha leído la Política de privacidad de datos global de NetApp.
++
+Se envía inmediatamente un correo electrónico al buzón de correo para finalizar esta transacción segura. Asegúrese de comprobar sus carpetas de spam si el correo electrónico de validación no llega en pocos minutos.
+
+. Confirme la acción desde el correo electrónico.
++
+Confirmar envía su solicitud a NetApp y recomienda que cree una cuenta en la página de soporte de NetApp.
+
+. Cree una cuenta del sitio de soporte de NetApp completando el https://mysupport.netapp.com/site/user/registration["Formulario de registro de usuarios del sitio de soporte de NetApp"^]
++
+.. Asegúrese de seleccionar el nivel de usuario adecuado, que normalmente es *Cliente/Usuario final de NetApp*.
+.. Asegúrese de copiar el número de serie de la cuenta (960xxxx) utilizado anteriormente para el campo de número de serie. Esto agilizará el procesamiento de la cuenta.
+
+
+
+
+.Después de terminar
+NetApp debería ponerse en contacto con usted durante este proceso. Este es un ejercicio de incorporación puntual para nuevos usuarios.
+
+Una vez que tengas tu cuenta en el sitio de soporte de NetApp, asocia la cuenta con el inicio de sesión de BlueXP completando los pasos que se muestran en <<Cliente existente con una cuenta de NSS>>.

@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: Descubre las novedades del componente asesor de migración de VMware de Workload Factory. 
+---
+= Lo nuevo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Descubre las novedades del componente asesor de migración de VMware Cloud de Workload Factory.
+
+
+
+== 7 de julio de 2024
+
+
+
+=== Lanzamiento inicial de Workload Factory para VMware
+
+La versión inicial incluye la capacidad de utilizar el asesor de migración de VMware para analizar tus configuraciones actuales de máquinas virtuales en entornos vSphere on-premises y generar un plan para implementar diseños de máquinas virtuales recomendados en VMware Cloud on AWS y utilizar los sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.

@@ -1,0 +1,165 @@
+---
+sidebar: sidebar 
+permalink: get-help.html 
+keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
+summary: 'NetApp ofrece compatibilidad con Workload Factory de varias formas. Hay disponibles amplias opciones de auto soporte gratuito las 24 horas del día, los 7 días de la semana, como artículos de la base de conocimiento (KB) y un foro de la comunidad. Su registro de soporte incluye soporte técnico remoto a través de tickets web.' 
+---
+= Obtenga ayuda
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp ofrece compatibilidad con Workload Factory y sus servicios de cloud de diversas maneras. Hay disponibles amplias opciones de auto soporte gratuito las 24 horas del día, los 7 días de la semana, como artículos de la base de conocimiento (KB) y un foro de la comunidad. Su registro de soporte incluye soporte técnico remoto a través de tickets web.
+
+
+
+== Obtenga soporte para FSx for ONTAP
+
+Para obtener soporte técnico relacionado con FSx para ONTAP, su infraestructura o cualquier solución que utilice el servicio, consulte la sección «Obtener ayuda» en la documentación de Workload Factory para ese producto.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX para ONTAP"^]
+
+Para recibir soporte técnico específico para Workload Factory y sus soluciones y servicios de almacenamiento, utilice las opciones de soporte descritas a continuación.
+
+
+
+== Utilice opciones de soporte automático
+
+Estas opciones están disponibles de forma gratuita, las 24 horas del día, los 7 días de la semana:
+
+* Documentación
++
+La documentación de Workload Factory que está viendo en ese momento.
+
+* https://kb.netapp.com["Base de conocimientos"^]
++
+Busque en la base de conocimientos de Workload Factory para encontrar artículos útiles para solucionar problemas.
+
+* http://community.netapp.com/["Comunidades"^]
++
+Únase a la comunidad de Workload Factory para seguir las discusiones en curso o crear otras nuevas.
+
+
+
+
+
+== Cree un caso con el soporte de NetApp
+
+Además de las opciones de autosoporte anteriores, puede trabajar con un especialista de soporte de NetApp para resolver cualquier problema después de activar el soporte de.
+
+.Antes de empezar
+Para utilizar la capacidad de *Crear un caso*, primero debe registrarse para recibir soporte. Asocie sus credenciales del sitio de soporte de NetApp a su inicio de sesión de fábrica de cargas de trabajo. link:support-registration.html["Aprenda a registrarse para obtener soporte"].
+
+.Pasos
+. En la parte superior derecha de la consola Workload Factory, selecciona *Ayuda > Soporte*.
++
+Al seleccionar esta opción, se abre la consola de BlueXP una nueva pestaña del navegador y se carga la consola de soporte.
+
+. En la página *Recursos*, elija una de las opciones disponibles en Soporte técnico:
++
+.. Selecciona *Llámanos* si quieres hablar con alguien por teléfono. Se le dirigirá a una página de netapp.com que enumera los números de teléfono a los que puede llamar.
+.. Selecciona *Crear un caso* para abrir un ticket con un especialista en Soporte NetApp:
++
+*** *Servicio*: Selecciona *Fábrica de carga de trabajo*.
+*** *Prioridad de caso*: Elija la prioridad para el caso, que puede ser Baja, Media, Alta o crítica.
++
+Para obtener más información sobre estas prioridades, pase el ratón sobre el icono de información situado junto al nombre del campo.
+
+*** *Descripción del problema*: Proporcione una descripción detallada del problema, incluidos los mensajes de error aplicables o los pasos de solución de problemas que haya realizado.
+*** *Direcciones de correo electrónico adicionales*: Introduzca direcciones de correo electrónico adicionales si desea que alguien más conozca este problema.
+*** *Accesorio (opcional)*: Cargue hasta cinco archivos adjuntos, uno a la vez.
++
+Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.
+
+
+
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-create-case.png["Captura de pantalla del formulario Crear un caso que le permite crear un caso con el soporte de NetApp."]
+
+
+
+.Después de terminar
+Aparecerá una ventana emergente con el número de caso de soporte. Un especialista de soporte de NetApp revisará su caso y le pondrá en contacto con usted próximamente.
+
+Para obtener un historial de sus casos de soporte, puede seleccionar *Ajustes > Línea de tiempo* y buscar acciones denominadas “Crear caso de soporte”. Un botón situado en el extremo derecho le permite ampliar la acción para ver los detalles.
+
+Es posible que se encuentre el siguiente mensaje de error al intentar crear un caso:
+
+"No está autorizado a crear un caso en el servicio seleccionado"
+
+Este error podría significar que la cuenta NSS y la compañía de registro con la que está asociada no es la misma compañía de registro para el número de serie de la cuenta de BlueXP (es decir, 960xxxx) o el número de serie del entorno de trabajo. Puede solicitar ayuda utilizando una de las siguientes opciones:
+
+* Usar el chat en el producto
+* Envíe un caso no técnico a https://mysupport.netapp.com/site/help[]
+
+
+
+
+== Gestione sus casos de soporte (vista previa)
+
+Puede ver y gestionar los casos de soporte activos y resueltos directamente desde BlueXP. Es posible gestionar los casos asociados con su cuenta de NSS y con su empresa.
+
+La gestión de casos está disponible como vista previa. Tenemos pensado perfeccionar esta experiencia y añadir mejoras en próximos lanzamientos. Envíenos sus comentarios mediante el chat en el producto.
+
+Tenga en cuenta lo siguiente:
+
+* La consola de gestión de casos en la parte superior de la página ofrece dos vistas:
++
+** La vista de la izquierda muestra el total de casos abiertos en los últimos 3 meses por la cuenta de usuario NSS que ha proporcionado.
+** La vista de la derecha muestra el total de casos abiertos en los últimos 3 meses a nivel de su compañía en función de su cuenta NSS de usuario.
+
+
++
+Los resultados de la tabla reflejan los casos relacionados con la vista seleccionada.
+
+* Puede agregar o quitar columnas de interés y filtrar el contenido de columnas como prioridad y estado. Otras columnas proporcionan funciones de clasificación.
++
+Consulte los pasos a continuación para obtener más información.
+
+* En el nivel por caso, ofrecemos la posibilidad de actualizar las notas de un caso o cerrar un caso que no esté ya en estado cerrado o pendiente de cierre.
+
+
+.Pasos
+. En la parte superior derecha de la consola Workload Factory, selecciona *Ayuda > Soporte*.
++
+Al seleccionar esta opción, se abre la consola de BlueXP una nueva pestaña del navegador y se carga la consola de soporte.
+
+. Selecciona *Gestión de casos* y, si se te solicita, agrega tu cuenta de NSS a BlueXP.
++
+La página *Administración de casos* muestra casos abiertos relacionados con la cuenta NSS asociada con su cuenta de usuario de BlueXP. Esta es la misma cuenta NSS que aparece en la parte superior de la página *NSS Management*.
+
+. Si lo desea, puede modificar la información que se muestra en la tabla:
++
+** En *Casos de la organización*, selecciona *Ver* para ver todos los casos asociados a tu empresa.
+** Modifique el rango de fechas eligiendo un rango de fechas exacto o eligiendo un marco de tiempo diferente.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-date-range.png["Captura de pantalla de la opción situada encima de la tabla en la página de gestión de casos que permite elegir un intervalo de fechas exacto o los últimos 7 días, 30 días o 3 meses."]
+
+** Filtre el contenido de las columnas.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-filter.png["Captura de pantalla de la opción de filtro de la columna Estado que permite filtrar casos que coinciden con un estado específico, como activo o cerrado."]
+
+** Para cambiar las columnas que aparecen en la tabla, seleccione image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-columns.png["El icono más que se muestra en la tabla"] y, a continuación, elija las columnas que desea mostrar.
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-columns.png["Captura de pantalla que muestra las columnas que puede mostrar en la tabla."]
+
+
+
+. Para gestionar un caso existente, image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-action.png["Icono con tres puntos que aparece en la última columna de la tabla"] seleccione y seleccione una de las opciones disponibles:
++
+** *Ver caso*: Ver todos los detalles sobre un caso específico.
+** *Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema o seleccione *cargar archivos* para adjuntar hasta un máximo de cinco archivos.
++
+Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.
+
+** *Cerrar caso*: Proporciona detalles sobre por qué estás cerrando el caso y selecciona *Cerrar caso*.
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-actions.png["Captura de pantalla que muestra las acciones que puede realizar después de seleccionar el menú de la última columna de la tabla."]
+
+
