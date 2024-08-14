@@ -33,7 +33,7 @@ Puedes migrar tus configuraciones actuales de máquinas virtuales en entornos de
 
 
 .Pasos
-. En el mosaico de cargas de trabajo de VMware, seleccione *Planificar e implementar* y se mostrará la página principal del asesor de migración de VMware.
+. En el mosaico de cargas de trabajo de VMware, seleccione *Acceso y plan* y, a continuación, seleccione *Migración a VMware Cloud en AWS*. Se mostrará la página principal del asesor de migración de VMware.
 +
 image:screenshot-choose-method-create.png["Una captura de pantalla de los diferentes métodos que puede utilizar para cargar la información de configuración actual de la VM."]
 
