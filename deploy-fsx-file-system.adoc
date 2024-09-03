@@ -15,10 +15,14 @@ Después de verificar que el sistema de archivos FSx recomendado para ONTAP (o v
 
 Dependiendo de la política y los permisos que haya agregado a su cuenta de Fábrica de carga de trabajo, puede implementar el sistema de archivos de FSx para ONTAP completamente utilizando Fábrica de carga de trabajo (utilizando el modo Automatizar). Si tienes menos permisos (modo de lectura) o no tienes permisos (modo básico), necesitarás usar la información de CloudFormation del CodeBox e implementar el sistema de archivos FSx para ONTAP tú mismo en AWS.
 
-.Requisitos
+.Requisitos para implementaciones en VMware Cloud on AWS
 * Debe utilizar VMware Cloud en AWS versión 1,20 o superior del centro de datos definido por software (SDDC) para implementar sistemas de archivos FSx for ONTAP.
 * No se debe implementar el sistema de archivos de FSx para ONTAP en el mismo VPC que se usó durante la puesta en marcha de SDDC. En su lugar, debes ponerla en marcha en una nueva Amazon VPC de la que ya tengas para permitir la integración de VMware Cloud on AWS con Amazon FSx for NetApp ONTAP.
 * Debes poner en marcha el sistema de archivos FSx para ONTAP dentro de la misma región de AWS que el SDDC.
+
+
+.Requisitos para implementaciones en Amazon EC2
+* El volumen raíz del sistema de archivos FSx para ONTAP se debe crear como un volumen EBS.
 
 
 .Pasos
@@ -36,7 +40,7 @@ Puede utilizar la opción Creación rápida o Creación avanzada. Advanced Creat
 +
 .. *Región y VPC*: Seleccione la región y la VPC donde se implementará el sistema de archivos FSX for ONTAP.
 +
-Debe ponerse en marcha en una VPC que sea distinta a la de la VPC en la que se pone en marcha VMware Cloud en AWS.
+Si va a implementar en VMware Cloud en AWS, asegúrese de implementarlo en una VPC que sea diferente a la VPC donde se implementa VMware Cloud en AWS.
 
 .. *Grupo de seguridad*: Al usar la opción *Creación avanzada*, puedes seleccionar el grupo de seguridad predeterminado para la VPC FSX para ONTAP para que todo el tráfico pueda acceder al sistema de archivos FSX para ONTAP.
 +

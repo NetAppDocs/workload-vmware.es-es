@@ -11,9 +11,9 @@ summary: Workload Factory para VMware proporciona herramientas para mover los da
 
 
 [role="lead"]
-Workload Factory para VMware proporciona herramientas para mover los datos desde sistemas en las instalaciones a VMware Cloud on AWS (VMC). El asesor de migración de VMware le permite analizar sus configuraciones actuales de máquinas virtuales en entornos de vSphere locales y generar un plan para implementar diseños de máquinas virtuales recomendados en clústeres de VMware Cloud on AWS vSphere y utilizar sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.
+Workload Factory para VMware proporciona herramientas para mover los datos desde sistemas en las instalaciones a VMware Cloud en AWS (VMC) o Amazon EC2. El asesor de migración de VMware le permite analizar sus configuraciones actuales de máquinas virtuales en entornos de vSphere locales y generar un plan para implementar diseños de máquinas virtuales recomendados en clústeres de Amazon EC2 o VMware Cloud on AWS vSphere y utilizar sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.
 
-Amazon FSx para NetApp ONTAP es un almacén de datos NFS externo basado en el sistema de archivos ONTAP de NetApp que se puede conectar con los clústeres de VMware Cloud en AWS vSphere. No es necesario añadir más hosts para aumentar el almacenamiento disponible; en su lugar, solo tiene que utilizar FSx para volúmenes de ONTAP como almacenes de datos externos para complementar los almacenes de datos vSAN. Esto le proporciona una infraestructura de almacenamiento virtualizado, flexible y de alto rendimiento que se puede escalar independientemente de los recursos informáticos.
+Amazon FSx para NetApp ONTAP es un almacén de datos NFS externo basado en el sistema de archivos ONTAP de NetApp que se puede conectar a instancias de Amazon EC2 o a clústeres de VMware Cloud en AWS vSphere. No es necesario añadir más hosts para aumentar el almacenamiento disponible; en su lugar, solo tiene que utilizar FSx para volúmenes de ONTAP como almacenes de datos externos para complementar los almacenes de datos vSAN. Esto le proporciona una infraestructura de almacenamiento virtualizado, flexible y de alto rendimiento que se puede escalar independientemente de los recursos informáticos.
 
 image:diagram-vmware-fsx-overview.png["Un diagrama que muestra la arquitectura."]
 
@@ -21,7 +21,7 @@ image:diagram-vmware-fsx-overview.png["Un diagrama que muestra la arquitectura."
 
 == Funcionamiento del asesor de migración de VMware
 
-El asesor de migración puede ayudarte a trasladar máquinas virtuales (VM) y sus datos en las instalaciones que se ejecutan en cualquier almacén de datos compatible con VMware a almacenes de datos VMware Cloud, que incluye almacenes de datos NFS complementarios en un sistema de archivos FSx para ONTAP.
+El asesor de migración puede ayudarte a mover máquinas virtuales (VM) y sus datos en las instalaciones que se ejecutan en cualquier almacén de datos compatible con VMware, a almacenes de datos de Amazon EC2 o VMware Cloud, que incluye almacenes de datos NFS complementarios en un sistema de archivos FSx para ONTAP.
 
 image:diagram-vmware-fsx-old-new.png["Un diagrama que muestra un ejemplo de arquitectura antigua y nueva arquitectura después de la migración."]
 
@@ -34,19 +34,19 @@ Ten en cuenta que puedes conectar hasta cuatro (4) FSx para volúmenes de ONTAP 
 El asesor de migración proporciona las siguientes funciones:
 
 * Analice las configuraciones actuales de máquinas virtuales en las instalaciones
-* Determina qué máquinas virtuales migrar a VMware Cloud on AWS
+* Determine qué máquinas virtuales migrar a Amazon EC2 o VMware Cloud en AWS
 * Identifica el espacio necesario en FSx para volúmenes de ONTAP que se usará como almacenes de datos externos de VM
 * Revise el informe resultante para comprender los pasos de despliegue
 * Realizar el despliegue real
 
 
-El asesor de migración admite la planificación de configuración para un solo clúster de VMware Cloud en AWS conectado a un único sistema de archivos FSx para ONTAP.
+El asesor de migración admite la planificación de configuración de una única instancia de Amazon EC2 o VMware Cloud en AWS conectado a un único sistema de archivos FSx para ONTAP.
 
 
 
 == Ventajas del uso del asesor de migración
 
-Pasar partes de tu infraestructura actual a VMware Cloud on AWS mediante Amazon FSx para ONTAP como almacenes de datos NFS externos ofrece las siguientes ventajas:
+Pasar partes de tu infraestructura actual a Amazon EC2 o VMware Cloud on AWS mediante Amazon FSx para ONTAP como almacenes de datos NFS externos ofrece las siguientes ventajas:
 
 * Optimización de costes gracias a la desvinculación de hosts y almacenamiento y a la eficiencia de datos avanzada
 * Capacidad para aumentar la capacidad de almacenamiento según sea necesario sin necesidad de adquirir instancias de host adicionales

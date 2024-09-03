@@ -13,7 +13,7 @@ summary: Utiliza una herramienta como la extensión de nube híbrida de VMware p
 [role="lead"]
 Utiliza una herramienta como la Extensión de nube híbrida de VMware (HCX) para mover los datos de tu antiguo almacenamiento de máquina virtual a FSx para volúmenes NetApp ONTAP conectados a tus nuevas máquinas virtuales. La funcionalidad principal de VMware HCX le permite migrar cargas de trabajo desde su centro de datos local a su centro de datos definido por software (SDDC) de forma transparente.
 
-https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-E8671FC6-F64B-4D41-8F01-B6120B0E3675.html["Consulte la documentación de VMware HCX para obtener más información"^]
+https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-E8671FC6-F64B-4D41-8F01-B6120B0E3675.html["Consulte la documentación de VMware HCX"^] para obtener más detalles.
 
 .El futuro
 Ahora que has migrado tus datos a VMware Cloud on AWS y los almacenes de datos externos de Amazon FSx para NetApp ONTAP, puedes realizar backups y proteger los datos importantes en tu sistema de archivos FSx para ONTAP para asegurarte de que tus datos estén siempre disponibles.

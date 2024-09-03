@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: Inicie sesión en la fábrica de cargas de trabajo de NetApp para acceder al asesor de migración de VMware. Seguirá los pasos del asistente para crear un plan de implementación o de migración personalizado según sus necesidades. 
 ---
-= Cree un plan de despliegue con el asesor de migración
+= Crea un plan de puesta en marcha para VMware Cloud en AWS mediante el asesor de migración
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -13,9 +13,9 @@ summary: Inicie sesión en la fábrica de cargas de trabajo de NetApp para acced
 [role="lead"]
 Inicie sesión en la fábrica de cargas de trabajo de NetApp para acceder al asesor de migración de VMware. Seguirá los pasos del asistente para crear un plan de implementación o de migración personalizado según sus necesidades.
 
-El asesor de migración se puede utilizar para crear un plan de despliegue para las siguientes situaciones:
+Al realizar la migración a VMware Cloud, puede utilizar el asesor de migración para crear un plan de puesta en marcha para las siguientes situaciones:
 
-* <<Cree un plan de puesta en marcha basado en un entorno vSphere local,Para migrar tu entorno actual de vSphere on-premises a la nube.>>
+* <<Cree un plan de puesta en marcha basado en un entorno vSphere local,Para migrar tu entorno actual de vSphere on-premises a la nube de VMware.>>
 * <<Cree un plan de despliegue basado en un plan existente,Implementar un sistema en la nube basado en un plan de implementación existente que tenga requisitos similares.>>
 
 
@@ -33,9 +33,9 @@ Puedes migrar tus configuraciones actuales de máquinas virtuales en entornos de
 
 
 .Pasos
-. En el mosaico de cargas de trabajo de VMware, seleccione *Acceso y plan* y, a continuación, seleccione *Migración a VMware Cloud en AWS*. Se mostrará la página principal del asesor de migración de VMware.
+. En el mosaico de cargas de trabajo de VMware, seleccione *Acceso y plan* y, a continuación, seleccione *Migración a VMware Cloud en AWS*.
 +
-image:screenshot-choose-method-create.png["Una captura de pantalla de los diferentes métodos que puede utilizar para cargar la información de configuración actual de la VM."]
+Se mostrará la página principal del asesor de migración de VMware.
 
 . Seleccione *Crear un nuevo plan de implementación*.
 . Seleccione el tipo de archivo de inventario que utilizará para rellenar Workload Factory con la configuración actual de su VM y seleccione *Siguiente*.
@@ -83,7 +83,7 @@ Para obtener un rendimiento y una rentabilidad óptimos, esta suele ser la misma
 
 . En la sección _VM storage capacity considerations_, seleccione una de unas pocas opciones de almacenamiento.
 +
-.. *Relación media de reducción de datos*: Elija entre los tres valores comunes de selección de reducción de datos. Seleccione “1:1 - Sin reducción”, “1:1,25 - 20% de reducción” o “1:1,5 - 33% de reducción”.
+.. *Relación media de reducción de datos*: Elija entre los tres valores comunes de selección de reducción de datos. Seleccione «1:1 - Sin reducción», «1:1,25 - 20% de reducción» o «1:1,5 - 33% de reducción».
 .. *Porcentaje de margen adicional*: Introduzca el porcentaje de crecimiento de la capacidad que se agrega a la capacidad de sus sistemas de archivos FSX for ONTAP.
 +
 Tenga en cuenta que si selecciona una cantidad inferior al 20%, no se podrán crear snapshots de volúmenes para la protección y los backups a largo plazo.
@@ -134,7 +134,7 @@ La parte inferior de la página muestra la máquina virtual de origen (o varias)
 
 . En la página *Revisar plan de implementación*, revise el costo mensual estimado para todas las VM que planea migrar.
 +
-La parte superior de la página describe el coste mensual para todas las máquinas virtuales implementadas y los sistemas de archivos de FSx para ONTAP. Puedes expandir cada sección para ver detalles sobre la «configuración recomendada del sistema de archivos de Amazon FSx para ONTAP», «desglose de costes estimado», «configuración de volúmenes», «suposiciones de ajuste del tamaño» y las «renuncias de responsabilidad técnicas».
+La parte superior de la página describe el coste mensual para todas las máquinas virtuales implementadas y los sistemas de archivos de FSx para ONTAP. Puedes ampliar cada sección para ver detalles sobre la «configuración recomendada del sistema de archivos de Amazon FSx para ONTAP», «desglose de costes estimado», «configuración de volúmenes», «suposiciones de dimensionamiento» y «renuncias de responsabilidad técnicas».
 
 . Cuando esté satisfecho con el plan de migración, tiene algunas opciones:
 +
@@ -157,10 +157,7 @@ Debe tener acceso al archivo .json para el plan de despliegue existente desde el
 
 .Pasos
 . Inicie sesión en Workload Factory.
-. En el mosaico de cargas de trabajo de VMware, seleccione *Planificar e implementar* y se mostrará la página principal del asesor de migración de VMware.
-+
-image:screenshot-choose-method-import.png["Una captura de pantalla de los diferentes métodos que puede utilizar para cargar la información de configuración actual de la VM."]
-
+. En el mosaico de cargas de trabajo de VMware, seleccione *Acceso y plan* y, a continuación, seleccione *Migración a VMware Cloud en AWS*. Se mostrará la página principal del asesor de migración de VMware.
 . Seleccione *Importar un plan de implementación existente*.
 . image:button-upload-file.png["botón de carga"]Seleccione y seleccione el archivo de plan existente que desea importar en el asesor de migración.
 . Seleccione *Siguiente* y aparecerá la página Revisar plan.
