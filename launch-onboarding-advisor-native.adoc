@@ -92,11 +92,8 @@ Tenga en cuenta que si selecciona una cantidad inferior al 20%, no podrá crear 
 La parte superior de la página describe el coste mensual para todas las máquinas virtuales implementadas y los sistemas de archivos de FSx para ONTAP. Puedes ampliar cada sección para ver detalles sobre la «configuración recomendada del sistema de archivos de Amazon FSx para ONTAP», «desglose de costes estimado», «configuración de volúmenes», «suposiciones de dimensionamiento» y «renuncias de responsabilidad técnicas».
 
 . Cuando esté satisfecho con el plan de migración, tiene algunas opciones:
-+
-** Seleccione *Desplegar* para implementar los sistemas de archivos FSX for ONTAP para respaldar sus VM. link:deploy-fsx-file-system.html["Descubra cómo implementar un sistema de archivos FSx para ONTAP"].
-** Selecciona *Descargar plan > Implementación de VM* para descargar el plan de migración en formato .csv y así poder usarlo para crear tu nueva infraestructura de datos inteligente basada en la nube.
-** Seleccione *Descargar plan > Informe del plan* para descargar el plan de migración en formato .pdf y así poder distribuir el plan para su revisión.
-** Seleccione *Exportar plan* para guardar el plan de migración como plantilla en formato .json. Puede importar el plan más adelante para utilizarlo como plantilla al desplegar sistemas con requisitos similares.
 
 
+* Seleccione *Descargar plan > Implementación de almacenamiento de instancias* para descargar el plan de implementación de almacén de datos externo en formato .csv para que pueda usarlo para crear su nueva infraestructura de datos inteligente basada en la nube.
+* Seleccione *Descargar plan > Informe de plan* para descargar el plan de implementación en formato .pdf y así poder distribuir el plan para su revisión.
 

@@ -472,4 +472,6 @@
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">Inicio rápido para migrar a VMware Cloud en AWS</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Inicio rápido para migrar a Amazon EC2</block>
   <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">En el mosaico de cargas de trabajo de VMware, selecciona *Acceso y plan* y luego selecciona *Migración a la computación nativa de AWS*. Se mostrará la página principal del asesor de migración de VMware.</block>
+  <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">Seleccione *Descargar plan &gt; Implementación de almacenamiento de instancias* para descargar el plan de implementación de almacén de datos externo en formato .csv para que pueda usarlo para crear su nueva infraestructura de datos inteligente basada en la nube.</block>
+  <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">Seleccione *Descargar plan &gt; Informe de plan* para descargar el plan de implementación en formato .pdf y así poder distribuir el plan para su revisión.</block>
 </blocks>
