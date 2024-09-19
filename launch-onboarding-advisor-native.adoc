@@ -27,7 +27,11 @@ Puede migrar sus configuraciones actuales de máquinas virtuales en entornos de 
 
 
 .Pasos
-. En el mosaico de cargas de trabajo de VMware, selecciona *Acceso y plan* y luego selecciona *Migración a la computación nativa de AWS*. Se mostrará la página principal del asesor de migración de VMware.
+. En el mosaico de cargas de trabajo de VMware, selecciona *Acceso y plan* y luego selecciona *Migración a la computación nativa de AWS*. Aparece la pantalla de presentación del asesor de migración de VMware.
++
+Consulte la información para obtener más información sobre las ventajas del asesor de migración.
+
+. Cuando esté listo, seleccione *Vamos a empezar*.
 . Seleccione *Crear un nuevo plan de implementación*.
 . Seleccione el tipo de archivo de inventario que utilizará para rellenar Workload Factory con la configuración actual de su VM y seleccione *Siguiente*.
 +
@@ -82,18 +86,39 @@ Tenga en cuenta que si selecciona una cantidad inferior al 20%, no podrá crear 
 
 
 . Seleccione *Siguiente*.
-
-
-. En la página *Revisar volúmenes EC2*, revise la información de la VM, las reglas de clasificación de volúmenes, las asignaciones de volúmenes y la lista de volúmenes que se migrarán como parte de la implementación.
+. En la página *Revisar asignación de volumen EC2*, revise la información de la VM, las reglas de clasificación de volúmenes, las asignaciones de volúmenes y la lista de volúmenes que se migrarán como parte de la implementación.
 . Seleccione *Siguiente*.
-. En la página *Revisar almacenamiento de instancias*, revisa las instancias EC2 y los volúmenes asignados a diferentes clústeres de FSX para ONTAP.
-. En la página *Revisar plan de implementación*, revise el costo mensual estimado para todas las VM que planea migrar.
+. En la página *Revisar asignación de almacenamiento de instancias*, revise las instancias EC2 y los volúmenes asignados a diferentes clústeres de FSX para ONTAP.
+. En la página *Revise su plan de migración*, revise el costo mensual estimado para todas las VM que planea migrar.
 +
-La parte superior de la página describe el coste mensual para todas las máquinas virtuales implementadas y los sistemas de archivos de FSx para ONTAP. Puedes ampliar cada sección para ver detalles sobre la «configuración recomendada del sistema de archivos de Amazon FSx para ONTAP», «desglose de costes estimado», «configuración de volúmenes», «suposiciones de dimensionamiento» y «renuncias de responsabilidad técnicas».
+La parte superior de la página calcula el ahorro mensual necesario para los sistemas de archivos de FSx para ONTAP y los volúmenes de EBS. Puede expandir cada sección para ver los detalles de la configuración del sistema de archivos sugerida, el desglose de ahorros estimados, las suposiciones y las renuncias técnicas.
 
 . Cuando esté satisfecho con el plan de migración, tiene algunas opciones:
 
 
 * Seleccione *Descargar plan > Implementación de almacenamiento de instancias* para descargar el plan de implementación de almacén de datos externo en formato .csv para que pueda usarlo para crear su nueva infraestructura de datos inteligente basada en la nube.
 * Seleccione *Descargar plan > Informe de plan* para descargar el plan de implementación en formato .pdf y así poder distribuir el plan para su revisión.
+* Seleccione *Exportar plan* para guardar el plan de migración como plantilla en formato .json. Puede importar el plan más adelante para utilizarlo como plantilla al desplegar sistemas con requisitos similares.
+
+
+
+
+== Cree un plan de despliegue basado en un plan existente
+
+Si está planificando un nuevo despliegue similar a un plan de despliegue existente que ha utilizado en el pasado, puede importar ese plan, realizar cambios y, a continuación, guardarlo como un nuevo plan de despliegue.
+
+.Requisitos
+Debe tener acceso al archivo .json para el plan de despliegue existente desde el sistema en el que está iniciando sesión en Workload Factory.
+
+.Pasos
+. Inicie sesión en Workload Factory.
+. En el mosaico de cargas de trabajo de VMware, selecciona *Acceso y plan* y luego selecciona *Migración a la computación nativa de AWS*.
+. Seleccione *Importar un plan de implementación existente*.
+. image:button-upload-file.png["botón de carga"]Seleccione y seleccione el archivo de plan .json existente que desea importar en el asesor de migración.
+. Seleccione *Siguiente*.
++
+Aparece la página Revisar plan.
+
+. Puede seleccionar *Anterior* para acceder a páginas anteriores y modificar la configuración del plan como se describe en la sección anterior.
+. Una vez que haya personalizado el plan según sus necesidades, puede guardar el plan o descargar el informe del plan como un archivo PDF.
 
