@@ -10,7 +10,7 @@ settings:
   rss_page: whats-new.html
   release_notes_autogen:
     release_notes_repo: workload-relnotes
-  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr,it-it
+  langs: es-es,us-en,de-de,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
   - title: Documentos para cargas de trabajo de VMware
