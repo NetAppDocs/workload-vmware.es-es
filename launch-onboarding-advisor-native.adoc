@@ -78,6 +78,9 @@ Para obtener un rendimiento y una rentabilidad óptimos, esta suele ser la misma
 . En la sección _Target Capacity and Protection considerations_, seleccione entre unas pocas opciones de almacenamiento.
 +
 .. *Promedio de reducción de datos*: Elija entre los tres ratios comunes de reducción de datos. Seleccione «1:1 - Sin reducción», «1:1,25 - 20% de reducción» o «1:1,5 - 33% de reducción».
++
+Selecciona *Ayudarme a decidir* si no estás seguro de qué relación elegir. Aparece el cuadro de diálogo _Asistente de relación de reducción de datos_. Selecciona las sentencias que se apliquen al inventario y al estado de almacenamiento de tu equipo virtual. El asistente recomendará una tasa de reducción de datos adecuada. Selecciona *Aplicar* para usar la relación recomendada.
+
 .. *Porcentaje de margen adicional*: Introduzca el porcentaje de crecimiento de la capacidad que se agrega a la capacidad de sus sistemas de archivos FSX for ONTAP.
 +
 Tenga en cuenta que si selecciona una cantidad inferior al 20%, no podrá crear snapshots de volúmenes para protección y backups a largo plazo.

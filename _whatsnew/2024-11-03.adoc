@@ -1,0 +1,11 @@
+= Ayuda de la relación de reducción de datos del asesor de migración de VMware
+:allow-uri-read: 
+
+
+
+
+=== Ayuda de la relación de reducción de datos del asesor de migración de VMware
+
+Esta versión de Workload Factory para VMware cuenta con un asistente de reducción de la tasa de datos. El asistente de la relación de reducción de datos te ayuda a decidir qué relación es la mejor para tu inventario de VMware y el estado de almacenamiento cuando se prepara para la incorporación de cloud AWS.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]
