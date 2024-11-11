@@ -2,20 +2,28 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Workload Factory para VMware proporciona herramientas para mover los datos desde sistemas en las instalaciones a VMware Cloud on AWS. El asesor de migración de VMware le permite analizar sus configuraciones actuales de máquinas virtuales en entornos de vSphere locales y generar un plan para implementar diseños de máquinas virtuales recomendados en clústeres de VMware Cloud on AWS vSphere y utilizar sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos. 
+summary: 'La fábrica de cargas de trabajo para VMware proporciona herramientas para mover los datos desde los sistemas en las instalaciones a la fábrica de cargas de trabajo para VMware proporciona herramientas para mover los datos desde los sistemas en las instalaciones a VMware Cloud en AWS (VMC) o Amazon EC2.' 
 ---
-= Obtenga más información sobre Workload Factory para VMware
+= Obtenga más información sobre la fábrica de cargas de trabajo para VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory para VMware proporciona herramientas para mover los datos desde sistemas en las instalaciones a VMware Cloud en AWS (VMC) o Amazon EC2. El asesor de migración de VMware le permite analizar sus configuraciones actuales de máquinas virtuales en entornos de vSphere locales y generar un plan para implementar diseños de máquinas virtuales recomendados en clústeres de Amazon EC2 o VMware Cloud on AWS vSphere y utilizar sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.
+Centro de cargas de trabajo para VMware proporciona herramientas para mover los datos desde sistemas en las instalaciones a VMware Cloud on AWS (VMC) o Amazon EC2.
+
+
+
+== ¿Qué es la fábrica de cargas de trabajo para VMware?
+
+El centro de cargas de trabajo para VMware proporciona un asesor de migración que permite analizar las configuraciones actuales de las máquinas virtuales en entornos vSphere en las instalaciones. A continuación, el asesor de migración genera un plan para poner en marcha diseños de máquinas virtuales recomendados en clústeres de Amazon EC2 o VMware Cloud on AWS vSphere y utilizar sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.
 
 Amazon FSx para NetApp ONTAP es un almacén de datos NFS externo basado en el sistema de archivos ONTAP de NetApp que se puede conectar a instancias de Amazon EC2 o a clústeres de VMware Cloud en AWS vSphere. No es necesario añadir más hosts para aumentar el almacenamiento disponible; en su lugar, solo tiene que utilizar FSx para volúmenes de ONTAP como almacenes de datos externos para complementar los almacenes de datos vSAN. Esto le proporciona una infraestructura de almacenamiento virtualizado, flexible y de alto rendimiento que se puede escalar independientemente de los recursos informáticos.
 
 image:diagram-vmware-fsx-overview.png["Un diagrama que muestra la arquitectura."]
+
+Para obtener más información sobre la fábrica de cargas de trabajo, consulte la https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["información general de la fábrica de cargas de trabajo"^].
 
 
 
@@ -55,6 +63,19 @@ Pasar partes de tu infraestructura actual a Amazon EC2 o VMware Cloud on AWS med
 * Capacidad para cambiar el rendimiento de los datos, las operaciones de IOPS y el tamaño del sistema de archivos además de aumentar o reducir el tamaño de los volúmenes
 * Alta disponibilidad compatible con múltiples puestas en marcha en zonas de disponibilidad (AZ)
 * Reducción del coste y de la latencia de las configuraciones de un solo AZ que utilizan pares de VPC sin necesidad de una puerta de enlace de tránsito
+
+
+
+
+== Herramientas para utilizar la fábrica de cargas de trabajo
+
+Puede utilizar la fábrica de cargas de trabajo de BlueXP  con las siguientes herramientas:
+
+* *Consola de fábrica de carga de trabajo*: La consola de fábrica de carga de trabajo proporciona una interfaz visual que le brinda una visión integral de sus aplicaciones y proyectos.
+* *Consola BlueXP *: La consola BlueXP  proporciona una experiencia de interfaz híbrida para que pueda usar la fábrica de cargas de trabajo BlueXP  junto con otros servicios BlueXP .
+* *API REST*: Las API REST DE la fábrica de cargas de trabajo le permiten implementar y administrar sus sistemas de archivos FSx para ONTAP y otros recursos de AWS
+* *CloudFormation*: El código CloudFormation de AWS le permite realizar las acciones que definió en la consola de la fábrica de cargas de trabajo para modelar, aprovisionar y administrar recursos de AWS y de terceros desde la pila CloudFormation en su cuenta de AWS.
+* * Proveedor de fábrica de cargas de trabajo Terraform BlueXP *: Terraform le permite construir y administrar flujos de trabajo de infraestructura generados en la consola de la fábrica de cargas de trabajo.
 
 
 

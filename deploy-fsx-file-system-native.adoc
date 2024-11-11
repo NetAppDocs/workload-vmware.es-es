@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: deploy-fsx-file-system.html 
+permalink: deploy-fsx-file-system-native.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
 summary: Después de verificar que el sistema de archivos FSx para ONTAP recomendado o sistemas de archivos en algunos casos cumple exactamente con sus requisitos, puede utilizar la fábrica de cargas de trabajo para poner en marcha el sistema en su entorno AWS. 
 ---
@@ -15,10 +15,8 @@ Después de verificar que el sistema de archivos recomendado FSx para ONTAP (o v
 
 Dependiendo de la política y los permisos que haya agregado a su cuenta de fábrica de carga de trabajo, puede implementar el sistema de archivos FSx para ONTAP completamente utilizando la fábrica de cargas de trabajo (mediante el modo de automatización). Si tienes menos permisos (modo de lectura) o no tienes permisos (modo básico), necesitarás usar la información de CloudFormation del CodeBox e implementar el sistema de archivos FSx para ONTAP tú mismo en AWS.
 
-.Requisitos para implementaciones en VMware Cloud on AWS
-* Debe utilizar VMware Cloud en AWS versión 1,20 o superior del centro de datos definido por software (SDDC) para implementar sistemas de archivos FSx for ONTAP.
-* No se debe implementar el sistema de archivos de FSx para ONTAP en el mismo VPC que se usó durante la puesta en marcha de SDDC. En su lugar, debes ponerla en marcha en una nueva Amazon VPC de la que ya tengas para permitir la integración de VMware Cloud on AWS con Amazon FSx for NetApp ONTAP.
-* Debes poner en marcha el sistema de archivos FSx para ONTAP dentro de la misma región de AWS que el SDDC.
+.Requisitos para implementaciones en Amazon EC2
+* El volumen raíz del sistema de archivos FSx para ONTAP se debe crear como un volumen EBS.
 
 
 .Pasos

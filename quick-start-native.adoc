@@ -13,18 +13,17 @@ summary: Empieza con el asesor de migración de VMware para trasladar tu infraes
 [role="lead"]
 Empieza con el asesor de migración de VMware para trasladar tu infraestructura actual a Amazon EC2 utilizando Amazon FSx para ONTAP como almacenes de datos NFS externos.
 
-Antes de empezar, debería comprender https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modos de funcionamiento"^]
+Antes de comenzar, usted debe tener una comprensión de https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modos de funcionamiento"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Una"] Regístrate y crea una cuenta para Workload Factory
-[role="quick-margin-para"]
-Vaya a https://console.workloads.netapp.com["Consola de Workload Factory"^] y regístrese. https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Más información sobre la creación de cuentas"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Una"] Inicie sesión en la fábrica de cargas de trabajo
+Deberá https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configure una cuenta con fábrica de cargas de trabajo"^] iniciar sesión con uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Agregue las credenciales y permisos de AWS a su cuenta
 [role="quick-margin-para"]
-Puede usar Workload Factory en el modo _Basic_ sin agregar credenciales para acceder a su cuenta de AWS. Al agregar las credenciales de AWS a Workload Factory en el modo _Read_ o _Automate_, tu cuenta de Workload Factory proporciona los permisos necesarios para crear y administrar sistemas de archivos FSx para ONTAP y para implementar y gestionar cargas de trabajo en Amazon EC2.
+Puede utilizar la fábrica de cargas de trabajo en el modo _Basic_ sin agregar credenciales para acceder a su cuenta de AWS. Al agregar las credenciales de AWS a la fábrica de cargas de trabajo en el modo _Read_ o _Automate_, la cuenta de fábrica de cargas de trabajo proporciona a la cuenta de fábrica de cargas de trabajo los permisos necesarios para crear y gestionar sistemas de archivos FSx para ONTAP y para implementar y gestionar cargas de trabajo en Amazon EC2.
 
 [role="quick-margin-para"]
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Aprenda a agregar credenciales y permisos"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Aprenda a agregar credenciales y permisos"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Capture las configuraciones actuales de sus máquinas virtuales en su entorno vSphere
 [role="quick-margin-para"]
@@ -45,18 +44,4 @@ link:launch-onboarding-advisor-native.html["Descubre cómo utilizar el asesor de
 Pon en marcha el nuevo sistema de archivos FSx para ONTAP que proporcionará los almacenes de datos para tus máquinas virtuales en tu infraestructura de Amazon EC2.
 
 [role="quick-margin-para"]
-link:deploy-fsx-file-system.html["Descubre cómo implementar tu nuevo sistema de archivos FSx for ONTAP"].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["Seis"] Conecta tus sistemas de archivos FSx para ONTAP a VMware Cloud en AWS
-[role="quick-margin-para"]
-Su centro de datos definido por software (SDDC) ofrece opciones de red para conectarse al sistema de archivos FSx para ONTAP mediante la funcionalidad de paridad de VPC para ampliar la conectividad de red a los volúmenes de almacenamiento NFS externo.
-
-[role="quick-margin-para"]
-link:connect-sddc-to-fsx.html["Obtén más información sobre la migración de tus datos"].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["Siete"] Migra los datos desde tus sistemas antiguos a tus nuevos sistemas de archivos FSx para ONTAP
-[role="quick-margin-para"]
-Utiliza una herramienta externa, como HCX (Extensión de nube híbrida) de VMware, para mover tus datos de tu antiguo almacenamiento de máquina virtual a FSx para volúmenes NetApp ONTAP conectados a tus nuevas máquinas virtuales.
-
-[role="quick-margin-para"]
-link:migrate-data.html["Obtén más información sobre la migración de tus datos"].
+link:deploy-fsx-file-system-native.html["Descubre cómo implementar tu nuevo sistema de archivos FSx for ONTAP"].

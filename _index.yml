@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Documentación de Workload Factory para VMware
+  title: Fábrica de cargas de trabajo para documentación de VMware
   summary: Optimiza las migraciones desde entornos de vSphere on-premises a VMware
     Cloud on AWS e implementa sistemas de archivos personalizados FSx para ONTAP como
     almacenes de datos externos.
@@ -11,7 +11,7 @@ indexpage:
   tiles:
   - title: Manos a la obra
     links:
-    - title: Obtenga más información sobre Workload Factory para VMware
+    - title: Obtenga más información sobre la fábrica de cargas de trabajo para VMware
       url: learn-about-vmware-workloads.html
     - title: 'Inicio rápido: Migre a VMware Cloud en AWS'
       url: quick-start.html

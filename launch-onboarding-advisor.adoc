@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: launch-onboarding-advisor.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Inicie sesión en la fábrica de cargas de trabajo de NetApp para acceder al asesor de migración de VMware. Seguirá los pasos del asistente para crear un plan de implementación o de migración personalizado según sus necesidades. 
+summary: Inicie sesión en el fábrica de cargas de trabajo de NetApp para acceder al asesor de migración de VMware. Seguirá los pasos del asistente para crear un plan de implementación o de migración personalizado según sus necesidades. 
 ---
 = Crea un plan de puesta en marcha para VMware Cloud en AWS mediante el asesor de migración
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Inicie sesión en la fábrica de cargas de trabajo de NetApp para acced
 
 
 [role="lead"]
-Inicie sesión en la fábrica de cargas de trabajo de NetApp para acceder al asesor de migración de VMware. Seguirá los pasos del asistente para crear un plan de implementación o de migración personalizado según sus necesidades.
+Inicie sesión en el fábrica de cargas de trabajo de NetApp para acceder al asesor de migración de VMware. Seguirá los pasos del asistente para crear un plan de implementación o de migración personalizado según sus necesidades.
 
 Al realizar la migración a VMware Cloud, puede utilizar el asesor de migración para crear un plan de puesta en marcha para las siguientes situaciones:
 
@@ -19,7 +19,7 @@ Al realizar la migración a VMware Cloud, puede utilizar el asesor de migración
 * <<Cree un plan de despliegue basado en un plan existente,Implementar un sistema en la nube basado en un plan de implementación existente que tenga requisitos similares.>>
 
 
-Tenga en cuenta que debe tener un nombre de usuario y una contraseña para acceder a Workload Factory. Si no tiene acceso, cree una cuenta ahora. Consulte las instrucciones https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aquí"].
+Tenga en cuenta que debe tener un nombre de usuario y una contraseña para acceder a la fábrica de cargas de trabajo. Si no tiene acceso, cree una cuenta ahora. Consulte las instrucciones https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aquí"].
 
 
 
@@ -29,16 +29,17 @@ Puedes migrar tus configuraciones actuales de máquinas virtuales en entornos de
 
 .Requisitos
 * Debe haber creado el archivo de inventario a partir de los sistemas existentes mediante el recopilador de máquina virtual del asesor de migración (archivo .csv) o mediante el uso de RVTools (archivo .xlsx).
-* Debe tener acceso al archivo de inventario desde el sistema en el que inicia sesión en Workload Factory.
+* Debe tener acceso al archivo de inventario desde el sistema en el que inicia sesión en la fábrica de cargas de trabajo.
 
 
 .Pasos
+. Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
 . En el mosaico de cargas de trabajo de VMware, seleccione *Acceso y plan* y, a continuación, seleccione *Migración a VMware Cloud en AWS*.
 +
 Se mostrará la página principal del asesor de migración de VMware.
 
 . Seleccione *Crear un nuevo plan de implementación*.
-. Seleccione el tipo de archivo de inventario que utilizará para rellenar Workload Factory con la configuración actual de su VM y seleccione *Siguiente*.
+. Seleccione el tipo de archivo de inventario que utilizará para rellenar la fábrica de carga de trabajo con la configuración actual de la VM y seleccione *Siguiente*.
 +
 ** Seleccione *Use the migration advisor VMware data collector* para usar el archivo .csv que creó con el recopilador de datos de VMware.
 ** Seleccione *Usar RVTools* para usar el archivo .xlsx que creó con RVTools.
@@ -153,10 +154,10 @@ La parte superior de la página describe el coste mensual para todas las máquin
 Si está planificando un nuevo despliegue similar a un plan de despliegue existente que ha utilizado en el pasado, puede importar ese plan, realizar ediciones y, a continuación, guardarlo como un nuevo plan de despliegue.
 
 .Requisitos
-Debe tener acceso al archivo .json para el plan de despliegue existente desde el sistema en el que está iniciando sesión en Workload Factory.
+Debe tener acceso al archivo .json para el plan de implementación existente desde el sistema en el que inicia sesión en la fábrica de cargas de trabajo.
 
 .Pasos
-. Inicie sesión en Workload Factory.
+. Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
 . En el mosaico de cargas de trabajo de VMware, seleccione *Acceso y plan* y, a continuación, seleccione *Migración a VMware Cloud en AWS*. Se mostrará la página principal del asesor de migración de VMware.
 . Seleccione *Importar un plan de implementación existente*.
 . image:button-upload-file.png["botón de carga"]Seleccione y seleccione el archivo de plan existente que desea importar en el asesor de migración.
