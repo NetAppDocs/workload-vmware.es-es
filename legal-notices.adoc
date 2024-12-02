@@ -7,7 +7,7 @@ summary:
 = Avisos legales
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -47,8 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.
 
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["Fábrica de carga de trabajo"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-databases-notice.pdf["Workloads Factory para bases de datos"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-genai-notice.pdf["Workload Factory para GenAI"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-vmware-notice.pdf["Workload Factory para VMware"^]
-
+https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["Fábrica de cargas de trabajo BlueXP"^]

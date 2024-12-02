@@ -34,12 +34,16 @@ Tenga en cuenta que si planea capturar estadísticas a largo plazo de sus máqui
 
 .Pasos
 . Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
-. En el mosaico de VMware, seleccione *Acceso y plan*.
-. Seleccione *Crear un nuevo plan de implementación*, seleccione la opción *Usar el asesor de migración VMware data collector* y seleccione *Siguiente*.
+. En el mosaico de cargas de trabajo de VMware, selecciona *Acceso y plan* y luego selecciona *Migración a la computación nativa de AWS*. Aparece la pantalla de presentación del asesor de migración de VMware.
 +
-Se muestra la página *Prepare for VMware Cloud on AWS migration*.
+Consulte la información para obtener más información sobre las ventajas del asesor de migración.
 
-. En la ventana CodeBox, seleccione para guardar el script del recopilador de VM del asesor de migración (denominado «list-vms.ps1») en el sistema de destino o bien image:button-download-codebox.png["el botón de descarga"] image:button-copy-codebox.png["el botón copiar"] para copiar el script y pegarlo en el sistema adecuado.
+. Cuando esté listo, seleccione *Vamos a empezar*.
+. Seleccione el mosaico *Planificación detallada* y seleccione *Siguiente*.
++
+La ventana CodeBox aparece en el lado derecho de la página.
+
+. En la ventana CodeBox, seleccione para guardar el script del recopilador de datos del asesor de migración (denominado «list-vms.ps1») en el sistema de destino o image:button-copy-codebox.png["el botón copiar"]bien image:button-download-codebox.png["el botón de descarga"]para copiar el script y pegarlo en el sistema adecuado.
 . Siga estos pasos para capturar las configuraciones de sus equipos virtuales actuales:
 +
 .. Inicie sesión en el sistema donde ha descargado el recopilador de datos, en el que están instalados PowerShell y PowerCLI.

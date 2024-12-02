@@ -7,7 +7,7 @@ summary: Antes de poder abrir un caso de soporte con el soporte técnico de NetA
 = Regístrese para recibir soporte
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

@@ -1,0 +1,16 @@
+= Mejoras en el asesor de migración de Amazon EC2
+:allow-uri-read: 
+
+
+
+
+=== Mejoras en el asesor de migración de Amazon EC2
+
+Esta versión del centro de cargas de trabajo de BlueXP  para VMware incluye varias mejoras en la experiencia del asesor de migración:
+
+* *Recopilación de datos*: La fábrica de cargas de trabajo de BlueXP  para VMware admite la capacidad de recopilar datos durante un período de tiempo específico cuando se utiliza el asesor de migración.
+* * Selección de VM*: La fábrica de cargas de trabajo de BlueXP  para VMware ahora admite la selección de VM que desea incluir en su implementación de migración.
+* *Experiencia rápida frente a avanzada*: Cuando utiliza el asesor de migración, ahora puede elegir una experiencia de migración rápida, utilizando RVtools, o la experiencia avanzada, que utiliza el recopilador de datos del asesor de migración.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]
