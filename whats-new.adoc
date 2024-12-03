@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: Descubra las novedades del componente Asesor de migración de VMware del fábrica de cargas de trabajo. 
 ---
-= Lo nuevo
+= Novedades del centro de cargas de trabajo de BlueXP  para VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

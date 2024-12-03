@@ -4,7 +4,7 @@ permalink: capture-vm-configurations.html
 keywords: vm workloads, capture vm details 
 summary: Puede utilizar el script recopilador de máquinas virtuales del Asesor de Migración o RVTools para capturar las configuraciones actuales de las máquinas virtuales. Le recomendamos que utilice el script recopilador de VM del Asesor de Migración porque recopila tanto la configuración de VM como los datos de rendimiento para el plan más preciso. 
 ---
-= Captura tus configuraciones de VM actuales antes de migrar a VMware Cloud
+= Capture las configuraciones de máquinas virtuales antes de migrar a VMware Cloud con cargas de trabajo de VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
