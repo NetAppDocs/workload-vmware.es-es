@@ -11,13 +11,13 @@ summary: 'NetApp es compatible con la fábrica de cargas de trabajo de diversas 
 
 
 [role="lead"]
-NetApp ofrece compatibilidad con Workload Factory y sus servicios de cloud de diversas maneras. Hay disponibles amplias opciones de auto soporte gratuito las 24 horas del día, los 7 días de la semana, como artículos de la base de conocimiento (KB) y un foro de la comunidad. Su registro de soporte incluye soporte técnico remoto a través de tickets web.
+NetApp admite la fábrica de cargas de trabajo de BlueXP  y sus servicios en el cloud de diversas formas. Hay disponibles amplias opciones de auto soporte gratuito las 24 horas del día, los 7 días de la semana, como artículos de la base de conocimiento (KB) y un foro de la comunidad. Su registro de soporte incluye soporte técnico remoto a través de tickets web.
 
 
 
 == Obtenga soporte para FSx for ONTAP
 
-Para obtener soporte técnico relacionado con FSx para ONTAP, su infraestructura o cualquier solución que utilice el servicio, consulte la sección «Obtener ayuda» en la documentación de Workload Factory para ese producto.
+Para obtener soporte técnico relacionado con FSx para ONTAP, su infraestructura o cualquier solución que utilice el servicio, consulte «Obtener ayuda» en la documentación de fábrica de cargas de trabajo para ese producto.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX para ONTAP"^]
 
@@ -31,15 +31,15 @@ Estas opciones están disponibles de forma gratuita, las 24 horas del día, los 
 
 * Documentación
 +
-La documentación de Workload Factory que está viendo en ese momento.
+La documentación de fábrica de cargas de trabajo que se está viendo en ese momento.
 
 * https://kb.netapp.com["Base de conocimientos"^]
 +
-Busque en la base de conocimientos de Workload Factory para encontrar artículos útiles para solucionar problemas.
+Busque en la base de conocimientos de la fábrica de cargas de trabajo para encontrar artículos útiles para solucionar problemas.
 
 * http://community.netapp.com/["Comunidades"^]
 +
-Únase a la comunidad de Workload Factory para seguir las discusiones en curso o crear otras nuevas.
+Únase a la comunidad de la fábrica de cargas de trabajo para seguir las discusiones en curso o crear otras nuevas.
 
 
 
@@ -50,10 +50,10 @@ Busque en la base de conocimientos de Workload Factory para encontrar artículos
 Además de las opciones de autosoporte anteriores, puede trabajar con un especialista de soporte de NetApp para resolver cualquier problema después de activar el soporte de.
 
 .Antes de empezar
-Para utilizar la capacidad de *Crear un caso*, primero debe registrarse para recibir soporte. Asocie sus credenciales del sitio de soporte de NetApp a su inicio de sesión de fábrica de cargas de trabajo. link:support-registration.html["Aprenda a registrarse para obtener soporte"].
+Para utilizar la función *Crear un caso*, primero debe registrarse para obtener asistencia técnica. Asocie las credenciales del sitio de soporte de NetApp con el inicio de sesión de la fábrica de cargas de trabajo. link:support-registration.html["Aprenda a registrarse para obtener soporte"].
 
 .Pasos
-. En la parte superior derecha de la consola Workload Factory, selecciona *Ayuda > Soporte*.
+. En la parte superior derecha de la consola de fábrica de carga de trabajo, seleccione *Ayuda > Soporte*.
 +
 Al seleccionar esta opción, se abre la consola de BlueXP una nueva pestaña del navegador y se carga la consola de soporte.
 
@@ -124,7 +124,7 @@ Consulte los pasos a continuación para obtener más información.
 
 
 .Pasos
-. En la parte superior derecha de la consola Workload Factory, selecciona *Ayuda > Soporte*.
+. En la parte superior derecha de la consola de fábrica de carga de trabajo, seleccione *Ayuda > Soporte*.
 +
 Al seleccionar esta opción, se abre la consola de BlueXP una nueva pestaña del navegador y se carga la consola de soporte.
 

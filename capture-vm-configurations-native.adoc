@@ -17,7 +17,7 @@ Puede utilizar el script recopilador de máquinas virtuales del Asesor de Migrac
 ====
 .Utilice el script recopilador de VM del asesor de migración
 --
-El script recopilador de VM del asesor de migración de NetApp recopila información de configuración de VM desde vCenter de forma similar a la que recopila RVTools; sin embargo, captura datos de rendimiento de VM actuales para proporcionar estadísticas de rendimiento e IOPS de lectura y escritura reales.
+El script recopilador de VM del asesor de migración de NetApp recopila información de configuración de VM desde vCenter de forma similar a la que recopila RVTools; sin embargo, captura datos de rendimiento de VM actuales para proporcionar estadísticas de rendimiento e IOPS de lectura y escritura reales. Puede utilizar el script en uno de dos modos: * Recopilación de datos a corto plazo * Recopilación de datos a largo plazo
 
 Debe iniciar el asesor de migración para copiar el script del recopilador de VM del asesor de migración desde la ventana CodeBox.
 
@@ -60,7 +60,7 @@ Reemplace <server_IP> por la dirección IP o el nombre de host del servidor VMwa
 donde:
 
 +
-*** *True* recopila IOPS y datos de rendimiento durante las últimas 24 horas con intervalos de 5 minutos
+*** *True* recopila IOPS y datos de rendimiento durante un período de tiempo personalizado en intervalos de 1 horas.
 *** *False* recopila IOPS y datos de rendimiento durante las últimas 1 horas con intervalos de 20 segundos.
 
 
