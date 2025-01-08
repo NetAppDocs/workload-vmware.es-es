@@ -34,7 +34,7 @@ Puedes migrar tus configuraciones actuales de máquinas virtuales en entornos de
 
 .Pasos
 . Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
-. En el mosaico de cargas de trabajo de VMware, seleccione *Acceso y plan* y, a continuación, seleccione *Migración a VMware Cloud en AWS*.
+. En el mosaico VMware Workloads, seleccione *Evaluar y planificar* y, a continuación, seleccione *Migración a VMware Cloud en AWS*.
 +
 Se mostrará la página principal del asesor de migración de VMware.
 
@@ -158,7 +158,7 @@ Debe tener acceso al archivo .json para el plan de implementación existente des
 
 .Pasos
 . Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
-. En el mosaico de cargas de trabajo de VMware, seleccione *Acceso y plan* y, a continuación, seleccione *Migración a VMware Cloud en AWS*. Se mostrará la página principal del asesor de migración de VMware.
+. En el mosaico VMware Workloads, seleccione *Evaluar y planificar* y, a continuación, seleccione *Migración a VMware Cloud en AWS*. Se mostrará la página principal del asesor de migración de VMware.
 . Seleccione *Importar un plan de implementación existente*.
 . image:button-upload-file.png["botón de carga"]Seleccione y seleccione el archivo de plan existente que desea importar en el asesor de migración.
 . Seleccione *Siguiente* y aparecerá la página Revisar plan.

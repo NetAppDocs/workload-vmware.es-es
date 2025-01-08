@@ -28,7 +28,7 @@ Puede migrar sus configuraciones actuales de máquinas virtuales en entornos de 
 
 .Pasos
 . Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
-. En el mosaico de cargas de trabajo de VMware, selecciona *Acceso y plan* y luego selecciona *Migración a la computación nativa de AWS*. Aparece la pantalla de presentación del asesor de migración de VMware.
+. En el mosaico de cargas de trabajo de VMware, seleccione *Evaluar y planificar* y, a continuación, seleccione *Migración a la computación nativa de AWS*. Aparece la pantalla de presentación del asesor de migración de VMware.
 +
 Consulte la información para obtener más información sobre las ventajas del asesor de migración.
 
@@ -148,7 +148,7 @@ La parte superior de la página calcula el ahorro mensual necesario para los sis
 ====
 Cuando esté satisfecho con el plan de migración, tiene algunas opciones:
 
-* Selecciona *Administrar plan > Guardar un plan* para guardar los datos del plan de implementación en tu cuenta, lo que te permite importar el plan más adelante para usarlo como plantilla al implementar sistemas con requisitos similares. Puede asignar un nombre al plan antes de guardarlo.
+* Selecciona *Administrar plan > Guardar un plan* para guardar los datos del plan de implementación en tu cuenta, lo que te permite importar el plan más adelante para usarlo como plantilla al implementar sistemas con requisitos similares. Puede asignar un nombre al plan antes de guardarlo (el nombre de usuario y la marca de tiempo se agregan al nombre proporcionado).
 * Selecciona *Administrar plan > Exportar un plan* para guardar el plan de migración como una plantilla en formato .json en tu computadora. Puede importar el plan más adelante para utilizarlo como plantilla al desplegar sistemas con requisitos similares.
 * Selecciona *Administrar plan > Descargar un informe* para descargar el plan de implementación en formato .pdf para poder distribuir el plan para su revisión.
 * Selecciona *Administrar plan > Descargar implementación de almacenamiento de instancia* para descargar el plan de implementación de almacén de datos externo en formato .csv para que puedas usarlo para crear tu nueva infraestructura de datos inteligente basada en la nube.
@@ -167,7 +167,7 @@ Debe tener acceso al archivo .json para el plan de implementación existente des
 
 .Pasos
 . Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
-. En el mosaico de cargas de trabajo de VMware, selecciona *Acceso y plan* y luego selecciona *Migración a la computación nativa de AWS*.
+. En el mosaico de cargas de trabajo de VMware, seleccione *Evaluar y planificar* y, a continuación, seleccione *Migración a la computación nativa de AWS*.
 . Seleccione *Importar plan*.
 . Debe realizar una de las siguientes acciones:
 +
@@ -180,10 +180,13 @@ Debe tener acceso al archivo .json para el plan de implementación existente des
 ** Seleccione *desde mi computadora*.
 +
 ... Seleccione el archivo de plan .json existente que desea importar en el asesor de migración y, a continuación, seleccione *Abrir*.
++
+Se muestra la página *Revisar plan*.
 
 
 
 
 
+. Puede seleccionar *Anterior* para acceder a páginas anteriores y modificar la configuración del plan como se describe en la sección anterior.
+. Una vez que haya personalizado el plan según sus necesidades, puede guardar el plan o descargar el informe del plan como un archivo PDF.
 
-Se muestra la página *Revisar plan*. . Puede seleccionar *Anterior* para acceder a páginas anteriores y modificar la configuración del plan como se describe en la sección anterior. . Una vez que haya personalizado el plan según sus necesidades, puede guardar el plan o descargar el informe del plan como un archivo PDF.

@@ -34,7 +34,7 @@ Tenga en cuenta que si planea capturar estadísticas a largo plazo de sus máqui
 
 .Pasos
 . Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
-. En el mosaico de cargas de trabajo de VMware, selecciona *Acceso y plan* y luego selecciona *Migración a la computación nativa de AWS*. Aparece la pantalla de presentación del asesor de migración de VMware.
+. En el mosaico de cargas de trabajo de VMware, seleccione *Evaluar y planificar* y, a continuación, seleccione *Migración a la computación nativa de AWS*. Aparece la pantalla de presentación del asesor de migración de VMware.
 +
 Consulte la información para obtener más información sobre las ventajas del asesor de migración.
 

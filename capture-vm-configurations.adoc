@@ -36,7 +36,7 @@ Tenga en cuenta que si planea capturar estadísticas a largo plazo de sus máqui
 
 .Pasos
 . Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
-. En el mosaico de cargas de trabajo de VMware, seleccione *Acceso y plan* y, a continuación, seleccione *Migración a VMware Cloud en AWS*.
+. En el mosaico VMware Workloads, seleccione *Evaluar y planificar* y, a continuación, seleccione *Migración a VMware Cloud en AWS*.
 +
 Se mostrará la página principal del asesor de migración de VMware.
 
