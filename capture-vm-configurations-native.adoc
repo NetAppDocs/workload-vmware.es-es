@@ -49,22 +49,31 @@ La ventana CodeBox aparece en el lado derecho de la página.
 .. Inicie sesión en el sistema donde ha descargado el recopilador de datos, en el que están instalados PowerShell y PowerCLI.
 .. Conéctese al servidor de VMware vCenter ejecutando el siguiente comando:
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 Reemplace <server_IP> por la dirección IP o el nombre de host del servidor VMware.
 
-.. Ejecute el script de recopilación de datos que descargó y especifique la opción de recopilación de datos para las estadísticas de equipos virtuales «diarias» o «cada hora».
+.. Ejecute el script de recopilación de datos que descargó y especifique la opción de recopilación de datos para las estadísticas de equipos virtuales «cada hora» o «diarias».
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -PerformanceStatisticsTimePeriod <LastHour | LastDay>
+----
 +
 donde:
 
 +
-*** *True* recopila IOPS y datos de rendimiento durante un período de tiempo personalizado en intervalos de 1 horas.
-*** *False* recopila IOPS y datos de rendimiento durante las últimas 1 horas con intervalos de 20 segundos.
+*** *LastHour* recopila IOPS y datos de rendimiento durante las últimas 1 horas con intervalos de 20 segundos.
+*** *LastDay* recopila IOPS y datos de rendimiento de las últimas 24 horas con intervalos de 5 minutos.
 
 
 
+
++
+Opcionalmente, puede ejecutar el script del recopilador de datos sin especificar ninguna opción; esto le permite seleccionar el período de recopilación de datos en el menú interactivo.
 
 
 
