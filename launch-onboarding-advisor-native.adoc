@@ -88,8 +88,15 @@ Tenga en cuenta que si selecciona una cantidad inferior al 20%, no podrá crear 
 
 . Seleccione *Siguiente*.
 . En la página *Scope*, seleccione las máquinas virtuales de la lista que desea incluir en la migración de AWS. Puede filtrar la lista por estado de alimentación de cada máquina virtual y en qué centro de datos y clúster reside la máquina virtual.
++
+En la lista de VM, puede seleccionar los tipos de información de la máquina virtual que se mostrarán como columnas. Por ejemplo, al seleccionar _Estimated instance type_, se muestra una columna con el tipo de instancia de Amazon EC2 estimado para cada VM, según los requisitos de recursos de la VM.
+
 . Seleccione *Siguiente*.
 . En la página *Classify*, revise la información de la VM, las reglas de clasificación de volúmenes, las asignaciones de volúmenes y la lista de volúmenes que se migrarán como parte de la implementación y, a continuación, seleccione *Next*.
++
+
+NOTE: Si un volumen tiene requisitos de capacidad o rendimiento que superan las funcionalidades de un sistema de archivos de Amazon FSx for NetApp ONTAP en una región específica, el asesor de migración recomienda que el volumen se ponga en marcha en un sistema de archivos de Amazon EBS.
+
 . En la página *Paquete*, revisa las instancias de EC2 y los volúmenes asignados a diferentes clústeres de FSX para ONTAP, y luego selecciona *Siguiente*.
 . En la página *Revisar plan*, revisa los ahorros mensuales estimados y las estimaciones de costos para todas las VM que planeas migrar.
 +
@@ -133,10 +140,14 @@ Tenga en cuenta que si selecciona una cantidad inferior al 20%, no podrá crear 
 . Seleccione *Siguiente*.
 . En la página *Scope*, seleccione las máquinas virtuales de la lista que desea incluir en la migración de AWS. Puede filtrar la lista por estado de alimentación de cada máquina virtual y en qué centro de datos y clúster reside la máquina virtual.
 +
-En la lista de VM, puede seleccionar los tipos de información de la máquina virtual que se mostrarán como columnas.
+En la lista de VM, puede seleccionar los tipos de información de la máquina virtual que se mostrarán como columnas. Por ejemplo, al seleccionar _Estimated instance type_, se muestra una columna con el tipo de instancia de Amazon EC2 estimado para cada VM, según los requisitos de recursos de la VM.
 
 . Seleccione *Siguiente*.
 . En la página *Classify*, revise la información de la VM, las reglas de clasificación de volúmenes, las asignaciones de volúmenes y la lista de volúmenes que se migrarán como parte de la implementación y, a continuación, seleccione *Next*.
++
+
+NOTE: Si un volumen tiene requisitos de capacidad o rendimiento que superan las funcionalidades de un sistema de archivos de Amazon FSx for NetApp ONTAP en una región específica, el asesor de migración recomienda que el volumen se ponga en marcha en un sistema de archivos de Amazon EBS.
+
 . En la página *Paquete*, revisa las instancias de EC2 y los volúmenes asignados a diferentes clústeres de FSX para ONTAP, y luego selecciona *Siguiente*.
 . En la página *Revisar plan*, revisa los ahorros mensuales estimados y las estimaciones de costos para todas las VM que planeas migrar.
 +

@@ -1,0 +1,16 @@
+= Mejoras en el asesor de migración de Amazon EC2
+:allow-uri-read: 
+
+
+
+
+=== Mejoras en el asesor de migración de Amazon EC2
+
+Esta versión de fábrica de cargas de trabajo de BlueXP  para VMware incluye varias mejoras en la experiencia del asesor de migración de Amazon EC2:
+
+* *Tipo de instancia estimado*: El asesor de migración ahora puede examinar los requisitos de su entorno y proporcionar un tipo de instancia estimado de Amazon EC2 para cada VM. Puede optar por incluir el tipo de instancia estimado para cada máquina virtual durante el paso de alcance del asesor de migración.
+* *Posibilidad de recomendar volúmenes de Amazon EBS*: El asesor de migración ahora puede recomendar migrar volúmenes de datos a Amazon Elastic Block Store (EBS) en lugar de Amazon FSx para NetApp ONTAP debido a las necesidades específicas de capacidad o rendimiento de una determinada región.
+* *Asignación automática del sistema de archivos mejorada*: La asignación del sistema de archivos de Amazon FSx para NetApp ONTAP se ha mejorado para optimizar mejor el costo y minimizar el rendimiento.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]
