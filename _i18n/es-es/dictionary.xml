@@ -541,4 +541,8 @@
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2 de marzo de 2025</block>
   <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 3 de noviembre de 2024</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 de septiembre de 2024</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs y comunidad</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
+  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blogs de BlueXP</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
 </blocks>
