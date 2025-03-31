@@ -1,0 +1,15 @@
+= Mejoras en el asesor de migración de Amazon EC2
+:allow-uri-read: 
+
+
+
+
+=== Mejoras en el asesor de migración de Amazon EC2
+
+Esta versión de fábrica de cargas de trabajo de BlueXP  para VMware incluye varias mejoras en la experiencia del asesor de migración de Amazon EC2:
+
+* *Guía mejorada para la asignación de volúmenes*: La información de asignación de volúmenes en los pasos “Clasificar” y “Paquete” del asesor de migración EC2 ofrece una mayor legibilidad y usabilidad. Se muestra información más útil sobre cada volumen, lo que permite identificar mejor los volúmenes y determinar cómo asignarlos.
+* * Mejoras de la eficiencia de los scripts de recopilación de datos*: El script recopilador de datos del asesor de migración EC2 optimiza el uso de la CPU al recopilar datos para implementaciones de máquinas virtuales más pequeñas.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]

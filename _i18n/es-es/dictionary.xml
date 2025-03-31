@@ -478,7 +478,6 @@
   <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">La fábrica de cargas de trabajo de BlueXP  para VMware ofrece un asesor de migración que le permite analizar sus configuraciones actuales de máquinas virtuales en entornos vSphere en las instalaciones. A continuación, el asesor de migración genera un plan para poner en marcha diseños de máquinas virtuales recomendados en clústeres de Amazon EC2 o VMware Cloud on AWS vSphere y utilizar sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">Fábrica de cargas de trabajo BlueXP</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
-  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">1 de diciembre de 2024</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">Capture las configuraciones de sus máquinas virtuales antes de migrar a Amazon EC2 con cargas de trabajo de VMware</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">Capture las configuraciones de máquinas virtuales antes de migrar a VMware Cloud con cargas de trabajo de VMware</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">Pon en marcha el sistema de archivos FSx para ONTAP recomendado para las cargas de trabajo de VMware</block>
@@ -539,10 +538,14 @@
   <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">En la lista de VM, puede seleccionar los tipos de información de la máquina virtual que se mostrarán como columnas. Por ejemplo, al seleccionar _Estimated instance type_, se muestra una columna con el tipo de instancia de Amazon EC2 estimado para cada VM, según los requisitos de recursos de la VM.</block>
   <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">Si un volumen tiene requisitos de capacidad o rendimiento que superan las funcionalidades de un sistema de archivos de Amazon FSx for NetApp ONTAP en una región específica, el asesor de migración recomienda que el volumen se ponga en marcha en un sistema de archivos de Amazon EBS.</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2 de marzo de 2025</block>
-  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 3 de noviembre de 2024</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 de septiembre de 2024</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs y comunidad</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blogs de BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
+  <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">*Guía mejorada para la asignación de volúmenes*: La información de asignación de volúmenes en los pasos “Clasificar” y “Paquete” del asesor de migración EC2 ofrece una mayor legibilidad y usabilidad. Se muestra información más útil sobre cada volumen, lo que permite identificar mejor los volúmenes y determinar cómo asignarlos.</block>
+  <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">* Mejoras de la eficiencia de los scripts de recopilación de datos*: El script recopilador de datos del asesor de migración EC2 optimiza el uso de la CPU al recopilar datos para implementaciones de máquinas virtuales más pequeñas.</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 de marzo de 2025</block>
+  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 1 de diciembre de 2024</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 de noviembre de 2024</block>
 </blocks>

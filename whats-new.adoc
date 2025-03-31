@@ -15,6 +15,22 @@ Descubra las novedades del componente Asesor de migración de VMware del fábric
 
 
 
+== 30 de marzo de 2025
+
+
+
+=== Mejoras en el asesor de migración de Amazon EC2
+
+Esta versión de fábrica de cargas de trabajo de BlueXP  para VMware incluye varias mejoras en la experiencia del asesor de migración de Amazon EC2:
+
+* *Guía mejorada para la asignación de volúmenes*: La información de asignación de volúmenes en los pasos “Clasificar” y “Paquete” del asesor de migración EC2 ofrece una mayor legibilidad y usabilidad. Se muestra información más útil sobre cada volumen, lo que permite identificar mejor los volúmenes y determinar cómo asignarlos.
+* * Mejoras de la eficiencia de los scripts de recopilación de datos*: El script recopilador de datos del asesor de migración EC2 optimiza el uso de la CPU al recopilar datos para implementaciones de máquinas virtuales más pequeñas.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]
+
+
+
 == 2 de marzo de 2025
 
 
@@ -44,11 +60,7 @@ Esta versión del centro de cargas de trabajo de BlueXP  para VMware incluye va
 * * Selección mejorada de VM*: La fábrica de cargas de trabajo de BlueXP  para VMware ahora admite el filtrado y la búsqueda en la lista de VM que desea incluir en su implementación de migración.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]
-
-
-
-== 1 de diciembre de 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"] == 1 de diciembre de 2024
 
 
 
@@ -61,7 +73,11 @@ Esta versión del centro de cargas de trabajo de BlueXP  para VMware incluye va
 * *Experiencia rápida frente a avanzada*: Cuando utiliza el asesor de migración, ahora puede elegir una experiencia de migración rápida, utilizando RVtools, o la experiencia avanzada, que utiliza el recopilador de datos del asesor de migración.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"] == 3 de noviembre de 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]
+
+
+
+== 3 de noviembre de 2024
 
 
 
