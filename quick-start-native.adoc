@@ -28,7 +28,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Aprenda
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Capture las configuraciones actuales de sus máquinas virtuales en su entorno vSphere
 [role="quick-margin-para"]
-Puede utilizar el script recopilador de máquinas virtuales del Asesor de Migración o RVTools para capturar las configuraciones de máquinas virtuales actuales con el fin de crear un plan de despliegue. También puede importar un plan de despliegue existente como plantilla y, a continuación, modificar los atributos necesarios.
+Puede utilizar el script recopilador de máquinas virtuales del Asesor de Migración, RVTools o Información de la infraestructura de datos de NetApp para capturar las configuraciones actuales de las máquinas virtuales antes de crear un plan de implementación. También puede importar un plan de despliegue existente como plantilla y, a continuación, modificar los atributos necesarios.
 
 [role="quick-margin-para"]
 link:capture-vm-configurations-native.html["Aprenda a capturar las configuraciones actuales de su máquina virtual"].

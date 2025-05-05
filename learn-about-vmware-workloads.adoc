@@ -65,18 +65,7 @@ Pasar partes de tu infraestructura actual a Amazon EC2 o VMware Cloud on AWS med
 * Reducción del coste y de la latencia de las configuraciones de un solo AZ que utilizan pares de VPC sin necesidad de una puerta de enlace de tránsito
 
 
-
-
-== Herramientas para utilizar la fábrica de cargas de trabajo
-
-Puede utilizar la fábrica de cargas de trabajo de BlueXP  con las siguientes herramientas:
-
-* *Consola de fábrica de carga de trabajo*: La consola de fábrica de carga de trabajo proporciona una interfaz visual que le brinda una visión integral de sus aplicaciones y proyectos.
-* *Consola BlueXP *: La consola BlueXP  proporciona una experiencia de interfaz híbrida para que pueda usar la fábrica de cargas de trabajo BlueXP  junto con otros servicios BlueXP .
-* *API REST*: Las API REST DE la fábrica de cargas de trabajo le permiten implementar y administrar sus sistemas de archivos FSx para ONTAP y otros recursos de AWS
-* *CloudFormation*: El código CloudFormation de AWS le permite realizar las acciones que definió en la consola de la fábrica de cargas de trabajo para modelar, aprovisionar y administrar recursos de AWS y de terceros desde la pila CloudFormation en su cuenta de AWS.
-* * Proveedor de fábrica de cargas de trabajo Terraform BlueXP *: Terraform le permite construir y administrar flujos de trabajo de infraestructura generados en la consola de la fábrica de cargas de trabajo.
-
+https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
 
 
 
