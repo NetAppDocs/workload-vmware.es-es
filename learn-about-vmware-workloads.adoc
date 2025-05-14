@@ -65,7 +65,20 @@ Pasar partes de tu infraestructura actual a Amazon EC2 o VMware Cloud on AWS med
 * Reducción del coste y de la latencia de las configuraciones de un solo AZ que utilizan pares de VPC sin necesidad de una puerta de enlace de tránsito
 
 
-https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
+
+
+== Herramientas para utilizar la fábrica de cargas de trabajo
+
+Puede utilizar la fábrica de cargas de trabajo de BlueXP  con las siguientes herramientas:
+
+* *Consola de fábrica de carga de trabajo*: La consola de fábrica de carga de trabajo proporciona una visión visual y holística de sus aplicaciones y proyectos.
+* *Consola BlueXP *: La consola BlueXP  proporciona una experiencia de interfaz híbrida para que pueda usar la fábrica de cargas de trabajo BlueXP  junto con otros servicios BlueXP .
+* *Pregúntame*: Usa el asistente de Ask Me AI para hacer preguntas y aprender más sobre la fábrica de cargas de trabajo sin salir de la interfaz de usuario web de la fábrica de cargas de trabajo. Acceda a Preguntarme desde el menú de ayuda de fábrica de cargas de trabajo.
+* *CLI de CloudShell*: La fábrica de cargas de trabajo incluye una CLI de CloudShell para administrar y operar entornos de AWS y NetApp a través de cuentas desde una única CLI basada en navegador. Acceda a CloudShell desde la barra superior de la consola de fábrica de cargas de trabajo.
+* *API REST*: Usa las API REST DE fábrica de cargas de trabajo para implementar y administrar tus sistemas de archivos FSx para ONTAP y otros recursos de AWS.
+* *CloudFormation*: Utilice el código CloudFormation de AWS para realizar las acciones que definió en la consola de la fábrica de cargas de trabajo para modelar, aprovisionar y administrar recursos de AWS y de terceros desde la pila CloudFormation en su cuenta de AWS.
+* * Proveedor de fábrica de cargas de trabajo Terraform BlueXP *: Utilice Terraform para crear y administrar flujos de trabajo de infraestructura generados en la consola de la fábrica de cargas de trabajo.
+
 
 
 
