@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: quick-start-evs.html 
+keywords: quick start 
+summary: Comience a utilizar el asesor de migración de VMware para trasladar su infraestructura actual a Amazon EVS utilizando Amazon FSx para ONTAP como almacenes de datos NFS externos. 
+---
+= Inicio rápido para migrar a Amazon EVS mediante el asesor de migración de cargas de trabajo de VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Comience a utilizar el asesor de migración de VMware para trasladar su infraestructura actual a Amazon EVS utilizando Amazon FSx para ONTAP como almacenes de datos NFS externos.
+
+Antes de comenzar, usted debe tener una comprensión de https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modos de funcionamiento"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Una"] Inicie sesión en la fábrica de cargas de trabajo
+[role="quick-margin-para"]
+Deberá https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configure una cuenta con fábrica de cargas de trabajo"^] iniciar sesión con uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Agregue las credenciales y permisos de AWS a su cuenta
+[role="quick-margin-para"]
+Puede utilizar la fábrica de cargas de trabajo en el modo _Basic_ sin agregar credenciales para acceder a su cuenta de AWS. Agregar credenciales de AWS a la fábrica de carga de trabajo en modo _solo lectura_ o _lectura/escritura_ le otorga a su cuenta de fábrica de carga de trabajo los permisos necesarios para crear y administrar sistemas de archivos FSx para ONTAP, y para implementar y administrar cargas de trabajo dentro de Amazon EC2.
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Aprenda a agregar credenciales y permisos"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Crear un plan de puesta en marcha utilizando el asesor de migración de VMware
+[role="quick-margin-para"]
+Inicie el asesor de migración de VMware y configure manualmente el entorno de VM que desea crear en la infraestructura de Amazon Elastic VMWare Service utilizando un sistema de archivos Amazon FSx para ONTAP como almacenes de datos NFS externos.
+
+[role="quick-margin-para"]
+link:launch-migration-advisor-evs-manual.html["Descubre cómo utilizar el asesor de migración de VMware para crear un plan de puesta en marcha"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Implementa el sistema de archivos FSx para ONTAP recomendado
+[role="quick-margin-para"]
+Pon en marcha el nuevo sistema de archivos FSx para ONTAP que proporcionará los almacenes de datos para tus máquinas virtuales en tu infraestructura de Amazon EC2.
+
+[role="quick-margin-para"]
+link:deploy-fsx-file-system-evs.html["Descubre cómo implementar tu nuevo sistema de archivos FSx for ONTAP"].

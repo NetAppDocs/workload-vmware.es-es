@@ -1,0 +1,11 @@
+= Presentamos el soporte del asesor de migración para Amazon Elastic VMWare Service
+:allow-uri-read: 
+
+
+
+
+=== Presentamos el soporte del asesor de migración para Amazon Elastic VMWare Service
+
+La fábrica de cargas de trabajo de BlueXP para VMware ahora es compatible con Amazon Elastic VMware Service. Puede migrar rápidamente sus cargas de trabajo locales de VMware a Amazon Elastic VMware Service con el asesor de migración, optimizando así los costos y brindando un mayor control sobre su entorno VMware sin necesidad de refactorizar ni reestructurar sus aplicaciones.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Cree un plan de implementación para Amazon EVS utilizando el asesor de migración"]

@@ -15,6 +15,18 @@ Descubra las novedades del componente Asesor de migración de VMware del fábric
 
 
 
+== 29 de junio de 2025
+
+
+
+=== Presentamos el soporte del asesor de migración para Amazon Elastic VMWare Service
+
+La fábrica de cargas de trabajo de BlueXP para VMware ahora es compatible con Amazon Elastic VMware Service. Puede migrar rápidamente sus cargas de trabajo locales de VMware a Amazon Elastic VMware Service con el asesor de migración, optimizando así los costos y brindando un mayor control sobre su entorno VMware sin necesidad de refactorizar ni reestructurar sus aplicaciones.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Cree un plan de implementación para Amazon EVS utilizando el asesor de migración"]
+
+
+
 == 4 de mayo de 2025
 
 
@@ -47,11 +59,7 @@ Esta versión de fábrica de cargas de trabajo de BlueXP  para VMware incluye v
 * * Mejoras de la eficiencia de los scripts de recopilación de datos*: El script recopilador de datos del asesor de migración EC2 optimiza el uso de la CPU al recopilar datos para implementaciones de máquinas virtuales más pequeñas.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]
-
-
-
-== 2 de marzo de 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"] == 2 de marzo de 2025
 
 
 
@@ -64,7 +72,11 @@ Esta versión de fábrica de cargas de trabajo de BlueXP  para VMware incluye v
 * *Asignación automática del sistema de archivos mejorada*: La asignación del sistema de archivos de Amazon FSx para NetApp ONTAP se ha mejorado para optimizar mejor el costo y minimizar el rendimiento.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"] == 5 de enero de 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]
+
+
+
+== 5 de enero de 2025
 
 
 
