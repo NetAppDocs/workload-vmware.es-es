@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: calculate-evs-savings.html 
+keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco 
+summary: Calcule cuánto puede ahorrar al utilizar Amazon EVS con FSx para ONTAP. 
+---
+= Explore los ahorros de Amazon Elastic VMware Service con la BlueXP workload factory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Explore los ahorros potenciales al migrar sus cargas de trabajo de VMware a Amazon Elastic VMware Service (EVS).  La calculadora le permite comparar los costos de usar Amazon EVS con y sin Amazon FSx for NetApp ONTAP como almacenamiento.
+
+Si la calculadora de ahorros determina que el almacenamiento más rentable es FSx para ONTAP, puede crear una evaluación detallada, que proporciona un plan de migración que puede revisar antes de usarlo.  Luego puede utilizar Codebox para generar plantillas de infraestructura como código.
+
+
+
+== Explora los ahorros para entornos EVS
+
+Siga estos pasos para explorar posibles ahorros en una migración planificada a un entorno de Amazon EVS.
+
+
+NOTE: Antes de continuar, revise la exención de responsabilidad en la parte inferior de la calculadora de ahorros para comprender más sobre cómo se calculan las estimaciones de precios.
+
+.Pasos
+. Inicie sesión en la fábrica de carga de trabajo mediante una de las opciones https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^].
+. Desde el mosaico de cargas de trabajo de VMware, seleccione *Explorar ahorros* y luego *Amazon Elastic VMware Service (EVS)*.  Se muestra la calculadora de ahorros.
++
+El panel *Preferencias del entorno* proporciona controles deslizantes que puedes ajustar según las necesidades de tu entorno.
+
+. Ajuste los siguientes controles deslizantes según sea necesario para ver cálculos de ahorro en tiempo real para los valores que elija.  Si usa un teclado, puede realizar pequeños ajustes utilizando las teclas de flecha:
++
+.. *CPU física requerida (cantidad)*
+.. *Memoria física requerida (GiB)*
+.. *Almacenamiento de VM requerido (TiB)*
+.. *Plan de facturación EVS*
+
+
+. Debe realizar una de las siguientes acciones:
++
+** Para utilizar el asesor de migración paralink:launch-migration-advisor-evs-manual.html["crear un plan de implementación"] Para un entorno de Amazon EVS, seleccione *Crear una evaluación detallada*.
+** Seleccione *Cerrar* para cerrar la calculadora de TCO.
+
+
+

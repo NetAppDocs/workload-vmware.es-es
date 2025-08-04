@@ -15,6 +15,26 @@ Descubra las novedades del componente Asesor de migración de VMware del fábric
 
 
 
+== 3 de agosto de 2025
+
+
+
+=== Soporte mejorado del asesor de migración para Amazon Elastic VMWare Service
+
+El asesor de migración de Amazon Elastic VMware Service ahora admite la implementación y el montaje automáticos de su sistema de archivos Amazon FSx for NetApp ONTAP .  Esto le permite comenzar a implementar sus máquinas virtuales en FSx para sistemas de archivos ONTAP cuando se complete la migración al entorno de Amazon EVS.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Cree un plan de implementación para Amazon EVS utilizando el asesor de migración"]
+
+
+
+=== Calcule el ahorro de costos al migrar a Amazon Elastic VMware Service
+
+Ahora puede explorar los ahorros potenciales que obtendrá al migrar sus cargas de trabajo de VMware a Amazon Elastic VMware Service (EVS).  La calculadora de ahorros le permite comparar los costos de usar Amazon EVS con y sin Amazon FSx for NetApp ONTAP como almacenamiento subyacente.  La calculadora muestra ahorros potenciales en tiempo real a medida que ajusta las características de su entorno.
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Explore los ahorros de Amazon Elastic VMware Service con la BlueXP workload factory"]
+
+
+
 == 29 de junio de 2025
 
 
@@ -59,7 +79,11 @@ Esta versión de fábrica de cargas de trabajo de BlueXP  para VMware incluye v
 * * Mejoras de la eficiencia de los scripts de recopilación de datos*: El script recopilador de datos del asesor de migración EC2 optimiza el uso de la CPU al recopilar datos para implementaciones de máquinas virtuales más pequeñas.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"] == 2 de marzo de 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]
+
+
+
+== 2 de marzo de 2025
 
 
 
