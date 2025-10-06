@@ -10,8 +10,16 @@ BlueXP ha sido renombrado y rediseñado para reflejar mejor el papel que desempe
 
 
 
-=== Presentación del Centro de planificación de cargas de trabajo de VMware
+=== Presentamos el centro de planificación de cargas de trabajo de VMware
 
 El centro de planificación de cargas de trabajo de VMware le permite ver y administrar su inventario de máquinas virtuales y sus planes de migración desde un solo lugar.  Puede cargar y guardar múltiples inventarios de VM de diferentes entornos y comenzar a planificar una migración al servicio AWS EC2 o Amazon Elastic VMware para cualquiera de ellos.  También puede crear y guardar planes de migración de AWS EC2 o EVS.
 
 https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["Explorar el centro de planificación de cargas de trabajo de VMware"]
+
+
+
+=== Presentamos el soporte del asesor de migración para Amazon Elastic VMWare Service
+
+BlueXP Workload Factory para VMware ahora le permite utilizar el asesor de migración de Amazon Elastic VMware Service para migrar rápidamente sus cargas de trabajo de VMware locales a Amazon Elastic VMware Service.  Después de crear un plan de migración utilizando el asesor de migración, este se guarda automáticamente en la lista de planes de migración en el centro de planificación.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["Cree un plan de implementación para Amazon EVS utilizando el asesor de migración"]

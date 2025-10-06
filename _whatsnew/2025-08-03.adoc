@@ -6,7 +6,7 @@
 
 === Soporte mejorado del asesor de migración para Amazon Elastic VMWare Service
 
-El asesor de migración de Amazon Elastic VMware Service ahora admite la implementación y el montaje automáticos de su sistema de archivos Amazon FSx for NetApp ONTAP .  Esto le permite comenzar a implementar sus máquinas virtuales en FSx para sistemas de archivos ONTAP cuando se complete la migración al entorno de Amazon EVS.
+NetApp Workload Factory ahora admite la implementación y el montaje automáticos de su sistema de archivos Amazon FSx for NetApp ONTAP .  Esto le permite comenzar a implementar sus máquinas virtuales en FSx para sistemas de archivos ONTAP cuando se complete la migración al entorno de Amazon EVS.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Cree un plan de implementación para Amazon EVS utilizando el asesor de migración"]
 

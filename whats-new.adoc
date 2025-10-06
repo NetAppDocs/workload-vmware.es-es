@@ -25,11 +25,19 @@ BlueXP ha sido renombrado y rediseñado para reflejar mejor el papel que desempe
 
 
 
-=== Presentación del Centro de planificación de cargas de trabajo de VMware
+=== Presentamos el centro de planificación de cargas de trabajo de VMware
 
 El centro de planificación de cargas de trabajo de VMware le permite ver y administrar su inventario de máquinas virtuales y sus planes de migración desde un solo lugar.  Puede cargar y guardar múltiples inventarios de VM de diferentes entornos y comenzar a planificar una migración al servicio AWS EC2 o Amazon Elastic VMware para cualquiera de ellos.  También puede crear y guardar planes de migración de AWS EC2 o EVS.
 
 https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["Explorar el centro de planificación de cargas de trabajo de VMware"]
+
+
+
+=== Presentamos el soporte del asesor de migración para Amazon Elastic VMWare Service
+
+BlueXP Workload Factory para VMware ahora le permite utilizar el asesor de migración de Amazon Elastic VMware Service para migrar rápidamente sus cargas de trabajo de VMware locales a Amazon Elastic VMware Service.  Después de crear un plan de migración utilizando el asesor de migración, este se guarda automáticamente en la lista de planes de migración en el centro de planificación.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["Cree un plan de implementación para Amazon EVS utilizando el asesor de migración"]
 
 
 
@@ -39,7 +47,7 @@ https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["Expl
 
 === Soporte mejorado del asesor de migración para Amazon Elastic VMWare Service
 
-El asesor de migración de Amazon Elastic VMware Service ahora admite la implementación y el montaje automáticos de su sistema de archivos Amazon FSx for NetApp ONTAP .  Esto le permite comenzar a implementar sus máquinas virtuales en FSx para sistemas de archivos ONTAP cuando se complete la migración al entorno de Amazon EVS.
+NetApp Workload Factory ahora admite la implementación y el montaje automáticos de su sistema de archivos Amazon FSx for NetApp ONTAP .  Esto le permite comenzar a implementar sus máquinas virtuales en FSx para sistemas de archivos ONTAP cuando se complete la migración al entorno de Amazon EVS.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Cree un plan de implementación para Amazon EVS utilizando el asesor de migración"]
 
@@ -59,7 +67,7 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Explor
 
 === Presentamos el soporte del asesor de migración para Amazon Elastic VMWare Service
 
-BlueXP Workload Factory para VMware ahora es compatible con Amazon Elastic VMware Service.  Puede migrar rápidamente sus cargas de trabajo locales de VMware a Amazon Elastic VMware Service mediante el asesor de migración, lo que optimiza los costos y permite un mayor control sobre su entorno VMware sin necesidad de refactorizar o cambiar la plataforma de sus aplicaciones.
+BlueXP Workload Factory para VMware ahora es compatible con Amazon Elastic VMware Service. Puede migrar manualmente sus cargas de trabajo de VMware locales a Amazon Elastic VMware Service, lo que optimiza los costos y permite un mayor control sobre su entorno VMware sin necesidad de refactorizar o cambiar la plataforma de sus aplicaciones.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Cree un plan de implementación para Amazon EVS utilizando el asesor de migración"]
 
