@@ -6,7 +6,7 @@
 
 === Mejoras en el asesor de migración de Amazon EC2
 
-Esta versión del centro de cargas de trabajo de BlueXP  para VMware presenta la siguiente mejora en la experiencia del asesor de migración de Amazon EC2:
+Esta versión de BlueXP Workload Factory para VMware presenta la siguiente mejora en la experiencia del asesor de migración de Amazon EC2:
 
 * Información sobre la infraestructura de datos de NetApp como fuente de datos *: La fábrica de cargas de trabajo ahora se conecta directamente con la información sobre la infraestructura de datos de NetApp para recopilar información sobre la implementación de VMware cuando utiliza el recopilador de datos del asesor de migración EC2.
 
@@ -16,4 +16,4 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Terminología de permisos actualizada
 
-La interfaz de usuario y la documentación de la fábrica de carga de trabajo ahora usan "solo lectura" para referirse a los permisos de lectura y "lectura/escritura" para referirse a los permisos de automatización.
+La interfaz de usuario y la documentación de Workload Factory ahora usan "solo lectura" para referirse a los permisos de lectura y "lectura/escritura" para referirse a los permisos automatizados.

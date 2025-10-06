@@ -6,10 +6,10 @@
 
 === Mejoras en el asesor de migración de Amazon EC2
 
-Esta versión del centro de cargas de trabajo de BlueXP  para VMware incluye varias mejoras en la experiencia del asesor de migración:
+Esta versión de BlueXP Workload Factory para VMware presenta varias mejoras en la experiencia del asesor de migración:
 
-* *Guardar o descargar un plan de migración*: Ahora puede guardar o descargar un plan de migración y cargar el plan de migración para completar el asesor de migración. Cuando guarda un plan de migración, el plan se guarda con su cuenta de fábrica de carga de trabajo.
-* * Selección mejorada de VM*: La fábrica de cargas de trabajo de BlueXP  para VMware ahora admite el filtrado y la búsqueda en la lista de VM que desea incluir en su implementación de migración.
+* *Guardar o descargar un plan de migración*: ahora puede guardar o descargar un plan de migración y cargarlo para completar el asesor de migración.  Cuando guarda un plan de migración, este se guarda con su cuenta de Workload Factory.
+* *Selección de VM mejorada*: BlueXP Workload Factory para VMware ahora admite el filtrado y la búsqueda en la lista de VM que desea incluir en su implementación de migración.
 
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Cree un plan de implementación para Amazon EC2 con el asesor de migración"]

@@ -1,9 +1,9 @@
-= Lanzamiento inicial de fábrica de cargas de trabajo para VMware
+= Lanzamiento inicial de Workload Factory para VMware
 :allow-uri-read: 
 
 
 
 
-=== Lanzamiento inicial de fábrica de cargas de trabajo para VMware
+=== Lanzamiento inicial de Workload Factory para VMware
 
 La versión inicial incluye la capacidad de utilizar el asesor de migración de VMware para analizar tus configuraciones actuales de máquinas virtuales en entornos vSphere on-premises y generar un plan para implementar diseños de máquinas virtuales recomendados en VMware Cloud on AWS y utilizar los sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.

@@ -1,58 +1,54 @@
 ---
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: 'La fábrica de cargas de trabajo de BlueXP  para VMware proporciona herramientas para mover los datos desde sistemas en las instalaciones a VMware Cloud on AWS (VMC) o Amazon EC2.' 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
+summary: 'NetApp Workload Factory para VMware proporciona herramientas para trasladar sus datos desde sistemas locales a Amazon EVS, VMware Cloud on AWS (VMC) o Amazon EC2.' 
 ---
-= Obtenga más información sobre el centro de cargas de trabajo de BlueXP  para VMware
+= Obtenga más información sobre NetApp Workload Factory para VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-La fábrica de cargas de trabajo de BlueXP  para VMware proporciona herramientas para mover los datos desde sistemas en las instalaciones a VMware Cloud on AWS (VMC) o Amazon EC2.
+NetApp Workload Factory para VMware proporciona herramientas para trasladar sus datos desde sistemas locales a Amazon Elastic VMware Service (EVS), VMware Cloud on AWS (VMC) o Amazon EC2.
 
 
 
-== ¿Qué es la fábrica de cargas de trabajo de BlueXP  para VMware?
+== ¿Qué es NetApp Workload Factory para VMware?
 
-La fábrica de cargas de trabajo de BlueXP  para VMware ofrece un asesor de migración que le permite analizar sus configuraciones actuales de máquinas virtuales en entornos vSphere en las instalaciones. A continuación, el asesor de migración genera un plan para poner en marcha diseños de máquinas virtuales recomendados en clústeres de Amazon EC2 o VMware Cloud on AWS vSphere y utilizar sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.
+NetApp Workload Factory para VMware ofrece un centro de planificación y asesores de migración que le permiten analizar las configuraciones actuales de sus máquinas virtuales en entornos vSphere locales.  Luego, los asesores de migración generan un plan para implementar diseños de VM recomendados en clústeres Amazon EVS, Amazon EC2 o VMware Cloud on AWS vSphere y utilizan sistemas de archivos Amazon FSx for NetApp ONTAP personalizados como almacenes de datos externos.  El centro de planificación, que actúa como el panel de Workload Factory para VMware, le permite administrar conjuntos de datos de inventario de VM guardados y planes de migración guardados, y aprovisionar cualquiera de los planes de migración que haya guardado.
 
-Amazon FSx para NetApp ONTAP es un almacén de datos NFS externo basado en el sistema de archivos ONTAP de NetApp que se puede conectar a instancias de Amazon EC2 o a clústeres de VMware Cloud en AWS vSphere. No es necesario añadir más hosts para aumentar el almacenamiento disponible; en su lugar, solo tiene que utilizar FSx para volúmenes de ONTAP como almacenes de datos externos para complementar los almacenes de datos vSAN. Esto le proporciona una infraestructura de almacenamiento virtualizado, flexible y de alto rendimiento que se puede escalar independientemente de los recursos informáticos.
+Amazon FSx for NetApp ONTAP es un almacén de datos NFS externo creado en el sistema de archivos ONTAP de NetApp que se puede conectar a instancias de Amazon EVS o Amazon EC2 o a clústeres de VMware Cloud on AWS vSphere.  No es necesario agregar más hosts para aumentar el almacenamiento disponible; en su lugar, simplemente use FSx para volúmenes ONTAP como almacenes de datos externos para complementar los almacenes de datos de vSAN.  Esto le proporciona una infraestructura de almacenamiento virtualizada, flexible y de alto rendimiento que escala independientemente de los recursos informáticos.
 
-image:diagram-vmware-fsx-overview.png["Un diagrama que muestra la arquitectura."]
-
-Para obtener más información sobre la fábrica de cargas de trabajo, consulte la https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["información general de la fábrica de cargas de trabajo"^].
+Para obtener más información sobre Workload Factory, consulte https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["Descripción general de Workload Factory"^] .
 
 
 
-== Funcionamiento del asesor de migración de VMware
+== Cómo funcionan los asesores de migración de VMware
 
-El asesor de migración puede ayudarte a mover máquinas virtuales (VM) y sus datos en las instalaciones que se ejecutan en cualquier almacén de datos compatible con VMware, a almacenes de datos de Amazon EC2 o VMware Cloud, que incluye almacenes de datos NFS complementarios en un sistema de archivos FSx para ONTAP.
-
-image:diagram-vmware-fsx-old-new.png["Un diagrama que muestra un ejemplo de arquitectura antigua y nueva arquitectura después de la migración."]
+Los asesores de migración pueden ayudarlo a trasladar máquinas virtuales (VM) locales y sus datos, que se ejecutan en cualquier almacén de datos compatible con VMware, a almacenes de datos de Amazon EVS, Amazon EC2 o VMware Cloud, que incluyen almacenes de datos NFS complementarios en un sistema de archivos FSx para ONTAP .
 
 Ten en cuenta que puedes conectar hasta cuatro (4) FSx para volúmenes de ONTAP a un único clúster de vSphere en VMware Cloud on AWS.
 
 
 
-== Todo lo que puede hacer con el asesor de migración
+== Qué puedes hacer con los asesores migratorios
 
-El asesor de migración proporciona las siguientes funciones:
+Los asesores de migración proporcionan la siguiente funcionalidad:
 
 * Analice las configuraciones actuales de máquinas virtuales en las instalaciones
-* Determine qué máquinas virtuales migrar a Amazon EC2 o VMware Cloud en AWS
+* Determinar qué máquinas virtuales migrar a Amazon EC2, Amazon EVS o VMware Cloud en AWS
 * Identifica el espacio necesario en FSx para volúmenes de ONTAP que se usará como almacenes de datos externos de VM
 * Revise el informe resultante para comprender los pasos de despliegue
 * Realizar el despliegue real
 
 
-El asesor de migración admite la planificación de configuración de una única instancia de Amazon EC2 o VMware Cloud en AWS conectado a un único sistema de archivos FSx para ONTAP.
+El asesor de migración admite la planificación de la configuración para una sola instancia de Amazon EVS o Amazon EC2 o un clúster de VMware Cloud on AWS conectado a un único sistema de archivos FSx para ONTAP .
 
 
 
-== Ventajas del uso del asesor de migración
+== Beneficios de utilizar los asesores de migración
 
 Pasar partes de tu infraestructura actual a Amazon EC2 o VMware Cloud on AWS mediante Amazon FSx para ONTAP como almacenes de datos NFS externos ofrece las siguientes ventajas:
 
@@ -67,29 +63,43 @@ Pasar partes de tu infraestructura actual a Amazon EC2 o VMware Cloud on AWS med
 
 
 
-== Herramientas para utilizar la fábrica de cargas de trabajo
+== Herramientas para utilizar NetApp Workload Factory
 
-Puede utilizar la fábrica de cargas de trabajo de BlueXP  con las siguientes herramientas:
+Puede utilizar NetApp Workload Factory con las siguientes herramientas:
 
-* *Consola de fábrica de carga de trabajo*: La consola de fábrica de carga de trabajo proporciona una visión visual y holística de sus aplicaciones y proyectos.
-* *Consola BlueXP *: La consola BlueXP  proporciona una experiencia de interfaz híbrida para que pueda usar la fábrica de cargas de trabajo BlueXP  junto con otros servicios BlueXP .
-* *Pregúntame*: Usa el asistente de Ask Me AI para hacer preguntas y aprender más sobre la fábrica de cargas de trabajo sin salir de la interfaz de usuario web de la fábrica de cargas de trabajo. Acceda a Preguntarme desde el menú de ayuda de fábrica de cargas de trabajo.
-* *CLI de CloudShell*: La fábrica de cargas de trabajo incluye una CLI de CloudShell para administrar y operar entornos de AWS y NetApp a través de cuentas desde una única CLI basada en navegador. Acceda a CloudShell desde la barra superior de la consola de fábrica de cargas de trabajo.
-* *API REST*: Usa las API REST DE fábrica de cargas de trabajo para implementar y administrar tus sistemas de archivos FSx para ONTAP y otros recursos de AWS.
-* *CloudFormation*: Utilice el código CloudFormation de AWS para realizar las acciones que definió en la consola de la fábrica de cargas de trabajo para modelar, aprovisionar y administrar recursos de AWS y de terceros desde la pila CloudFormation en su cuenta de AWS.
-* * Proveedor de fábrica de cargas de trabajo Terraform BlueXP *: Utilice Terraform para crear y administrar flujos de trabajo de infraestructura generados en la consola de la fábrica de cargas de trabajo.
+* *Consola Workload Factory*: La consola Workload Factory proporciona una vista visual y holística de sus aplicaciones y proyectos.
+* *Consola NetApp *: La consola NetApp proporciona una experiencia de interfaz híbrida para que pueda utilizar Workload Factory junto con otros servicios de datos de NetApp .
+* *Pregúntame*: utiliza el asistente de IA Pregúntame para hacer preguntas y obtener más información sobre Workload Factory sin salir de la consola de Workload Factory. Accede a Pregúntame desde el menú de ayuda de Workload Factory.
+* *CloudShell CLI*: Workload Factory incluye una CLI de CloudShell para administrar y operar entornos de AWS y NetApp en todas las cuentas desde una única CLI basada en navegador. Acceda a CloudShell desde la barra superior de la consola de Workload Factory.
+* *API REST*: utilice las API REST de Workload Factory para implementar y administrar sus sistemas de archivos FSx para ONTAP y otros recursos de AWS.
+* *CloudFormation*: use el código de AWS CloudFormation para realizar las acciones que definió en la consola de Workload Factory para modelar, aprovisionar y administrar recursos de AWS y de terceros desde la pila de CloudFormation en su cuenta de AWS.
+* *Proveedor de Terraform NetApp Workload Factory*: utilice Terraform para crear y administrar flujos de trabajo de infraestructura generados en la consola de Workload Factory.
 
 
 
 
 == Coste
 
-No hay coste alguno por usar el asesor de migración de VMware.
+El uso de Workload Factory para VMware no tiene ningún costo.
 
-Tendrá que pagar por los recursos de AWS que ponga en marcha en función de las recomendaciones del asesor de migración.
+Deberá pagar por los recursos de AWS que implemente según las recomendaciones de los asesores de migración.
 
 
 
 == Licencia
 
-No se necesitan licencias especiales de NetApp para usar el asesor de migración.
+No se necesitan licencias especiales de NetApp para utilizar Workload Factory para VMware.
+
+
+
+== Regiones
+
+Workload Factory es compatible con todas las regiones comerciales donde se admite FSx para ONTAP . https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["Ver regiones de Amazon compatibles."^]
+
+Las siguientes regiones de AWS no son compatibles:
+
+* regiones de China
+* Regiones de GovCloud (EE. UU.)
+* Nube secreta
+* Nube de alto secreto
+

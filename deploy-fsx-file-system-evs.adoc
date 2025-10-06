@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-evs.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms, evs, elastic vmware service 
-summary: Después de verificar que el sistema de archivos FSx para ONTAP recomendado o sistemas de archivos en algunos casos cumple exactamente con sus requisitos, puede utilizar la fábrica de cargas de trabajo para poner en marcha el sistema en su entorno AWS. 
+summary: Después de verificar que el sistema de archivos FSx recomendado para ONTAP , o los sistemas de archivos en algunos casos, cumplen con sus requisitos exactos, puede usar Workload Factory para implementar el sistema en su entorno de AWS. 
 ---
 = Implementa el sistema de archivos FSx para ONTAP recomendado
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: Después de verificar que el sistema de archivos FSx para ONTAP recomen
 
 
 [role="lead"]
-Después de verificar que el sistema de archivos recomendado FSx para ONTAP (o varios sistemas de archivos en algunos casos) cumple exactamente con sus requisitos, puede utilizar la fábrica de cargas de trabajo para poner en marcha el sistema en su entorno AWS.
+Después de verificar que el sistema de archivos FSx recomendado para ONTAP (o varios sistemas de archivos en algunos casos) cumple con sus requisitos exactos, puede usar Workload Factory para implementar el sistema en su entorno de AWS.
 
-Según la política y los permisos que haya añadido a su cuenta de Workload Factory, puede implementar el sistema de archivos FSx for ONTAP completamente usando Workload Factory (en modo de lectura/escritura). Si tiene menos permisos (modo de solo lectura) o ningún permiso (modo básico), deberá usar la plantilla CloudFormation de Codebox e implementar el sistema de archivos FSx para ONTAP usted mismo en AWS.
+Según la política y los permisos que haya agregado a su cuenta de Workload Factory, puede implementar el sistema de archivos FSx para ONTAP completamente usando Workload Factory (usando el modo de lectura/escritura).  Si tiene menos permisos (modo de solo lectura) o ningún permiso (modo básico), deberá usar la plantilla CloudFormation de Codebox e implementar el sistema de archivos FSx para ONTAP usted mismo en AWS.
 
 .Requisitos para implementaciones en Amazon Elastic VMware Service
 * Debe tener una suscripción a Amazon Elastic VMware Service.
@@ -30,7 +30,7 @@ Puede utilizar la opción Creación rápida o Creación avanzada. Advanced Creat
 
 . En la sección "Configuración general del sistema de archivos", ingrese la siguiente información:
 +
-.. *Credenciales de AWS*: Seleccione o agregue credenciales que le darán a la fábrica de cargas de trabajo los permisos necesarios para crear su sistema de archivos FSx para ONTAP directamente. También puede seleccionar el código CloudFormation de CodeBox e implementar el sistema de archivos FSx for ONTAP usted mismo en AWS.
+.. *Credenciales de AWS*: seleccione o agregue credenciales que le otorgarán a Workload Factory los permisos necesarios para crear su sistema de archivos FSx para ONTAP directamente.  También puede seleccionar el código CloudFormation de Codebox e implementar el sistema de archivos FSx para ONTAP usted mismo en AWS.
 .. *Nombre del sistema de archivos*: Introduzca el nombre que desea utilizar para este sistema de archivos FSX for ONTAP.
 .. *Etiquetas*: Opcionalmente, puede agregar etiquetas para categorizar este sistema de archivos FSx para ONTAP.
 
@@ -40,7 +40,7 @@ Puede utilizar la opción Creación rápida o Creación avanzada. Advanced Creat
 .. *Región y VPC*: seleccione la región y la VPC donde se implementará el sistema de archivos FSx para ONTAP.
 .. *Grupo de seguridad* (Solo creación avanzada): Al usar la opción *Creación avanzada*, puede seleccionar el grupo de seguridad predeterminado para la VPC de FSx for ONTAP para que todo el tráfico pueda acceder al sistema de archivos de FSx for ONTAP. Puede crear un nuevo grupo de seguridad o seleccionar uno existente.
 +
-Si habilita la opción *Ajustar la configuración del grupo de seguridad a los almacenes de datos NFS de EVS*, la fábrica de carga de trabajo configura el grupo de seguridad de acuerdo con las configuraciones para los almacenes de datos NFS de EVS.
+Si habilita la opción *Ajustar la configuración del grupo de seguridad a los almacenes de datos NFS de EVS*, Workload Factory configura el grupo de seguridad de acuerdo con las configuraciones de los almacenes de datos NFS de EVS.
 
 +
 Puede agregar una regla de entrada al grupo de seguridad que restrinja el acceso de otros servicios de AWS al sistema de archivos de FSx for ONTAP. Esto reducirá la cantidad de servicios abiertos. Estos son los puertos y protocolos mínimos:
@@ -81,7 +81,7 @@ Debe seleccionar la misma zona de disponibilidad que donde se instala su SDDC de
 
 . En la sección "Adjunto archivo del clúster EVS", ingrese la siguiente información:
 +
-.. *Opciones de montaje de almacén de datos*: de manera opcional, habilite la opción *Montar almacenes de datos en el clúster EVS* para conectar automáticamente los almacenes de datos al clúster de Amazon EVS.  Esta opción también hace que la fábrica de carga de trabajo configure los ajustes del host VMware ESXi para que coincidan con las recomendaciones de mejores prácticas de ONTAP .  Antes de implementar el sistema de archivos, puede revisar los detalles del plan en la sección *Resumen* para ver las configuraciones que se cambiaron.
+.. *Opciones de montaje de almacén de datos*: de manera opcional, habilite la opción *Montar almacenes de datos en el clúster EVS* para conectar automáticamente los almacenes de datos al clúster de Amazon EVS. Esta opción también hace que Workload Factory configure los ajustes del host VMware ESXi para que coincidan con las recomendaciones de mejores prácticas de ONTAP . Antes de implementar el sistema de archivos, puede revisar los detalles del plan en la sección *Resumen* para ver las configuraciones que se cambiaron.
 .. *Detalles de la consola vSphere del clúster EVS*: ingrese la dirección IP o el FQDN del servidor VMware vCenter que debe conectarse a Amazon EVS.
 .. *ARN secreto de credenciales de administrador de vSphere*: elija el ARN secreto para las credenciales de administrador de vSphere.  Estas credenciales se utilizan para montar almacenes de datos y configurar los ajustes recomendados de VMware.
 +

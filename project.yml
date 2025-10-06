@@ -20,8 +20,7 @@ sidebar:
       url: "/whats-new.html"
   - title: Manos a la obra
     entries:
-    - title: Obtenga más información sobre el centro de cargas de trabajo de BlueXP 
-        para VMware
+    - title: Obtenga más información sobre NetApp Workload Factory para VMware
       url: "/learn-about-vmware-workloads.html"
     - title: Inicio rápido para migrar a Amazon EVS
       url: "/quick-start-evs.html"
@@ -29,28 +28,30 @@ sidebar:
       url: "/quick-start-native.html"
     - title: Inicio rápido para migrar a VMware Cloud en AWS
       url: "/quick-start.html"
-  - title: Utilice el asesor de migración de VMware
+    - title: Explorar el centro de planificación de VMware
+      url: "/explore-planning-center.html"
+  - title: Utilice el centro de planificación de VMware
     entries:
+    - title: Cargar datos de inventario de VM
+      url: "/upload-vm-inventory.html"
     - title: Migrar a Amazon Elastic VMware Service
       entries:
       - title: Explora los ahorros
         url: "/calculate-evs-savings.html"
-      - title: Cree un plan de despliegue con el asesor de migración
+      - title: Crear manualmente un plan de implementación
         url: "/launch-migration-advisor-evs-manual.html"
+      - title: Cree un plan de despliegue con el asesor de migración
+        url: "/launch-migration-advisor-evs.html"
       - title: Implementa el sistema de archivos FSx para ONTAP recomendado
         url: "/deploy-fsx-file-system-evs.html"
     - title: Migrar a Amazon EC2
       entries:
-      - title: Capture las configuraciones actuales de sus máquinas virtuales
-        url: "/capture-vm-configurations-native.html"
       - title: Cree un plan de despliegue con el asesor de migración
         url: "/launch-onboarding-advisor-native.html"
       - title: Implementa el sistema de archivos FSx para ONTAP recomendado
         url: "/deploy-fsx-file-system-native.html"
     - title: Migrar a VMware Cloud en AWS
       entries:
-      - title: Capture las configuraciones actuales de sus máquinas virtuales
-        url: "/capture-vm-configurations.html"
       - title: Cree un plan de despliegue con el asesor de migración
         url: "/launch-onboarding-advisor.html"
       - title: Implementa el sistema de archivos FSx para ONTAP recomendado
@@ -68,5 +69,5 @@ sidebar:
   - title: Avisos legales
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory
+  name: NetApp Workload Factory
   repo: workload-family

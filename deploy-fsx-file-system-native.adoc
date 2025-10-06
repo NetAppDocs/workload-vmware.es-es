@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-native.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
-summary: Después de verificar que el sistema de archivos FSx para ONTAP recomendado o sistemas de archivos en algunos casos cumple exactamente con sus requisitos, puede utilizar la fábrica de cargas de trabajo para poner en marcha el sistema en su entorno AWS. 
+summary: Después de verificar que el sistema de archivos FSx recomendado para ONTAP , o los sistemas de archivos en algunos casos, cumplen con sus requisitos exactos, puede usar Workload Factory para implementar el sistema en su entorno de AWS. 
 ---
 = Implementa el sistema de archivos FSx para ONTAP recomendado
 :allow-uri-read: 
@@ -11,6 +11,6 @@ summary: Después de verificar que el sistema de archivos FSx para ONTAP recomen
 
 
 [role="lead"]
-Después de verificar que el sistema de archivos recomendado FSx para ONTAP (o varios sistemas de archivos en algunos casos) cumple exactamente con sus requisitos, puede utilizar la fábrica de cargas de trabajo para poner en marcha el sistema en su entorno AWS.
+Después de verificar que el sistema de archivos FSx recomendado para ONTAP (o varios sistemas de archivos en algunos casos) cumple con sus requisitos exactos, puede usar Workload Factory para implementar el sistema en su entorno de AWS.
 
-Siga las instrucciones de link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Crea un sistema de archivos FSx para ONTAP en la fábrica de cargas de trabajo de BlueXP"^] para implementar el sistema de archivos FSx para ONTAP de acuerdo con la configuración recomendada por la fábrica de cargas de trabajo. Puede utilizar los pasos *Advanced CREATE* en las instrucciones para personalizar completamente el sistema de archivos.
+Siga las instrucciones enlink:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Cree un sistema de archivos FSx para ONTAP en NetApp Workload Factory"^] implementar el sistema de archivos FSx para ONTAP según la configuración recomendada por Workload Factory.  Puede utilizar los pasos de *Creación avanzada* en las instrucciones para personalizar completamente el sistema de archivos.
