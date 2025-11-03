@@ -13,19 +13,20 @@ summary: Inicie sesión en NetApp Workload Factory para acceder al centro de pla
 [role="lead"]
 Inicie sesión en NetApp Workload Factory para acceder al centro de planificación de VMware.  Desde allí, puede crear manualmente un plan de implementación o un plan de migración para Amazon EVS personalizado según sus necesidades.
 
-Tenga en cuenta que debe tener un nombre de usuario y una contraseña para acceder a Workload Factory.  Si no tiene acceso, cree una cuenta ahora.  Vea las instrucciones https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aquí"] .
-
-
-
-== Cree un plan de implementación especificando manualmente los requisitos del entorno
-
 Puede especificar manualmente sus requisitos para las máquinas virtuales en Amazon Elastic VMware Service y utilizar sistemas de archivos Amazon FSx para NetApp ONTAP personalizados como almacenes de datos externos.
 
-.Requisitos
+
+
+== Requisitos
+
+* Para acceder a Workload Factory, necesita un nombre de usuario y una contraseña.  Si no tienes acceso, crea una cuenta ahora.  Consulte las instrucciones https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aquí"] .
 * Debe tener una suscripción a Amazon Elastic VMware Service.
 
 
-.Pasos
+
+
+== Pasos
+
 . Inicie sesión en Workload Factory utilizando uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^] .
 . De manera opcional, si accedió a Workload Factory desde la consola de Workload Factory, en el mosaico de cargas de trabajo de VMware, seleccione *VMware Planning Center* y luego seleccione *VMware Planning Center*.  Se muestra el centro de planificación de VMware.
 . Seleccione *Crear plan EVS manualmente*.
@@ -46,7 +47,10 @@ Tenga en cuenta los siguientes requisitos y recomendaciones de rendimiento de mi
 +
 De forma predeterminada, Workload Factory guarda el plan de migración en el centro de planificación.  Puede deseleccionar esta opción cerca de la parte superior de la página.
 
-. Opcionalmente, cuando esté satisfecho con el plan de migración, puede descargar los detalles del plan como un documento PDF seleccionando *Exportar plan (PDF)*.
+. Opcionalmente, puede exportar el plan de migración como un archivo PDF o CSV seleccionando *Administrar plan* en la parte superior derecha de la página y luego seleccionando *Descargar un informe (.pdf)* o *Descargar implementación de almacenamiento de VM (.csv)*.
++
+El archivo .csv crea un mapa de todas las máquinas virtuales incluidas en el plan de migración, junto con sus volúmenes de almacenamiento asignados.
+
 . Cuando esté listo para aprovisionar el plan de implementación, seleccione *Aprovisionar*.
 
 

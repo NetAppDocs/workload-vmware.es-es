@@ -61,7 +61,7 @@ Utilice el centro de migración para crear y administrar planes de migración.
 
 === Elaborar un plan de migración
 
-Puede seleccionar un plan de migración y aprovisionarlo para que las máquinas virtuales se migren al entorno de Amazon AWS que elija.
+Puede seleccionar un plan de migración y configurarlo para que las máquinas virtuales se migren al entorno de Amazon AWS de su elección.
 
 .Pasos
 . Inicie sesión en Workload Factory utilizando uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^] .
@@ -93,16 +93,16 @@ Si necesita cambiar los detalles de los comentarios de un plan de migración, ed
 
 
 
-=== Crear un informe en PDF de un plan de migración
+=== Crea un informe en PDF o CSV del plan de migración.
 
-Cree un informe en PDF con los detalles de un plan de migración.
+Crea un informe en formato PDF o CSV con los detalles del plan de migración.
 
 .Pasos
 . Inicie sesión en Workload Factory utilizando uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^] .
 . Desde el mosaico de cargas de trabajo de VMware, seleccione *Centro de planificación de VMware*.  Aparece el centro de planificación.
-. Seleccione los *Planes de migración* .
-. Seleccione el menú Acciones (...) para el plan de migración para el cual desea crear un informe en PDF y seleccione *Crear informe*.
-. Introduzca un nombre para el informe PDF y seleccione *Guardar*.
+. Seleccione *Planes de migración*.
+. Seleccione el menú Acciones (...) para el plan de migración para el cual desea crear un informe en PDF o CSV, y seleccione *Descargar plan (PDF)* o *Descargar informe de VM (CSV)*.
+. Introduzca un nombre para el informe y seleccione *Guardar*.
 
 
 

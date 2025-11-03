@@ -15,24 +15,47 @@ Después de verificar que el sistema de archivos FSx recomendado para ONTAP (o v
 
 Según la política y los permisos que haya agregado a su cuenta de Workload Factory, puede implementar el sistema de archivos FSx para ONTAP completamente usando Workload Factory (usando el modo de lectura/escritura).  Si tiene menos permisos (modo de solo lectura) o ningún permiso (modo básico), deberá usar la plantilla CloudFormation de Codebox e implementar el sistema de archivos FSx para ONTAP usted mismo en AWS.
 
-.Requisitos para implementaciones en Amazon Elastic VMware Service
+
+
+== Requisitos
+
 * Debe tener una suscripción a Amazon Elastic VMware Service.
 * Debe tener los permisos necesarios para crear un sistema de archivos FSx para ONTAP en su cuenta de AWS.
 
 
-.Pasos
+
+
+== Consideraciones
+
+* Puede utilizar la opción Creación rápida o Creación avanzada. Advanced Create ofrece algunos parámetros de almacenamiento adicionales que puede personalizar. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Vea lo que ofrecen estas dos opciones"]
+* En la sección "Preferencias de Amazon Elastic VMware Service", puede elegir el entorno de virtualización de EVS para conectarse a los almacenes de datos externos.  Esto rellena automáticamente algunos campos con las opciones de mejores prácticas para la implementación.  Puede modificar estas opciones según sea necesario.
+
+
+
+
+== Pasos
+
 . En la parte inferior de la página *Revisar plan*, seleccione *Desplegar* y se mostrará la página Crear un sistema de archivos FSX para ONTAP.
 +
 La mayoría de los campos que definen tu sistema de archivos FSx para ONTAP se completan en función de la información que proporcionaste, pero hay algunos campos que debes completar en esta página.
-
-+
-Puede utilizar la opción Creación rápida o Creación avanzada. Advanced Create ofrece algunos parámetros de almacenamiento adicionales que puede personalizar. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Vea lo que ofrecen estas dos opciones"]
 
 . En la sección "Configuración general del sistema de archivos", ingrese la siguiente información:
 +
 .. *Credenciales de AWS*: seleccione o agregue credenciales que le otorgarán a Workload Factory los permisos necesarios para crear su sistema de archivos FSx para ONTAP directamente.  También puede seleccionar el código CloudFormation de Codebox e implementar el sistema de archivos FSx para ONTAP usted mismo en AWS.
 .. *Nombre del sistema de archivos*: Introduzca el nombre que desea utilizar para este sistema de archivos FSX for ONTAP.
 .. *Etiquetas*: Opcionalmente, puede agregar etiquetas para categorizar este sistema de archivos FSx para ONTAP.
+
+
+. En la sección "Preferencias de Amazon Elastic VMware Service", en la lista "ID de entorno", seleccione el entorno EVS donde se conectarán los almacenes de datos.
++
+Esto rellena automáticamente los siguientes campos:
+
++
+** *VPC*
+** *Zona de disponibilidad*
+** *Subred*
+** En la sección *Acceso a almacenes de datos NFS*, si ha seleccionado la opción *Solo administración de host EVS*, el campo *Administración de host EVS (CIDR)* se rellena automáticamente.
+** En la sección *Opciones de montaje de almacenes de datos*, si ha elegido montar los almacenes de datos en el clúster EVS, los campos *Dirección de VMware vCenter del clúster EVS* y *ARN secreto de las credenciales del administrador de vSphere* se rellenan automáticamente.
 
 
 . En la sección «Red y seguridad», introduzca la siguiente información:
@@ -95,9 +118,12 @@ Si Amazon EVS no está disponible en esta región o si su cuenta no tiene permis
 Opcionalmente, en la ventana Codebox puede seleccionar *Redirigir a CloudFormation* para crear el sistema de archivos y la configuración de VM recomendada utilizando una pila de CloudFormation.
 
 +
-En cualquier caso, puede supervisar el progreso de creación en CloudFormation.
+En ambos casos, puede supervisar el progreso de la creación en CloudFormation.
 
 
 
-.Resultado
+
+
+== Resultado
+
 Se pone en marcha el sistema de archivos FSx para ONTAP. Ahora puede usar la plantilla de AWS CloudFormation en Codebox para implementar la configuración de VM recomendada en su entorno de Amazon Elastic VMware Service.

@@ -253,7 +253,6 @@
   <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">modos de funcionamiento</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Una</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Dos</block>
-  <block id="b36a952e38561cb86fdb6a473044fce0" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Agregue las credenciales y permisos de AWS a su cuenta</block>
   <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">Aprenda a agregar credenciales y permisos</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Tres</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Cuatro</block>
@@ -442,7 +441,6 @@
   <block id="1832a7f4d2abf297aa0cee87f4c043e3" category="doc">Presentamos el soporte del asesor de migración para Amazon Elastic VMWare Service</block>
   <block id="e64998710319712d47612cc187a1dc35" category="inline-link">Cree un plan de implementación para Amazon EVS utilizando el asesor de migración</block>
   <block id="e38866fbf1fd8067b38b878041582246" category="paragraph"><block ref="e38866fbf1fd8067b38b878041582246" category="inline-link-rx"></block></block>
-  <block id="802df5af335904750107954ab3a8ed46" category="list-title">Requisitos para implementaciones en Amazon Elastic VMware Service</block>
   <block id="af3e8ed9d9207dad8af46833f2eb0ab7" category="list-text">Debe tener una suscripción a Amazon Elastic VMware Service.</block>
   <block id="ae7ebbe17e3811730276beadb335d6dd" category="list-text">Debe tener los permisos necesarios para crear un sistema de archivos FSx para ONTAP en su cuenta de AWS.</block>
   <block id="24fc36f7e1c73cab9f76bb8ee2f25d79" category="list-text">En la sección "Configuración general del sistema de archivos", ingrese la siguiente información:</block>
@@ -456,7 +454,6 @@
   <block id="7d87cf8c2865afef739dfc772b6aabc3" category="list-text">*Credenciales ONTAP*: Ingrese el nombre de usuario y la contraseña de ONTAP.</block>
   <block id="2240ad2300512b80bcff2fc7b3eadb2e" category="paragraph">Opcionalmente, en la ventana Codebox puede seleccionar *Redirigir a CloudFormation* para crear el sistema de archivos y la configuración de VM recomendada utilizando una pila de CloudFormation.</block>
   <block id="f49f5d0e3a47bf2d077d9b5cb9387559" category="paragraph">Se pone en marcha el sistema de archivos FSx para ONTAP. Ahora puede usar la plantilla de AWS CloudFormation en Codebox para implementar la configuración de VM recomendada en su entorno de Amazon Elastic VMware Service.</block>
-  <block id="afae2006111ac3752aa6ac921a1174d1" category="section-title">Cree un plan de implementación especificando manualmente los requisitos del entorno</block>
   <block id="3693b6808c8591ae14d0989957294e8c" category="paragraph">Puede especificar manualmente sus requisitos para las máquinas virtuales en Amazon Elastic VMware Service y utilizar sistemas de archivos Amazon FSx para NetApp ONTAP personalizados como almacenes de datos externos.</block>
   <block id="1b7c012ca7da212cb6ec387367494316" category="list-text">Introduzca los requisitos para su entorno de VM.</block>
   <block id="330b61387619b0f8b4b8895b1ec8613f" category="paragraph">Tenga en cuenta los siguientes requisitos y recomendaciones de rendimiento de migración de máquinas virtuales:</block>
@@ -551,7 +548,6 @@
   <block id="f80ba210e2b7f5a6a678422254f971c2" category="section-title">Gestionar planes de migración</block>
   <block id="35114aeb2258e143dcf714ece6d9d294" category="paragraph">Utilice el centro de migración para crear y administrar planes de migración.</block>
   <block id="3659e24395e47e249a7cb0babacdce89" category="section-title">Elaborar un plan de migración</block>
-  <block id="79365fd6156503549c858f6fef6f4384" category="paragraph">Puede seleccionar un plan de migración y aprovisionarlo para que las máquinas virtuales se migren al entorno de Amazon AWS que elija.</block>
   <block id="d739eb8fed40a1b32724c4bd454b0f7b" category="list-text">Seleccione el menú *Planes de migración*.</block>
   <block id="956d376b583f5687a7637d9906bf6a8a" category="list-text">Seleccione el menú Acciones (...) para el plan de migración que desea aprovisionar y seleccione *Aprovisionar*.</block>
   <block id="5a71691c5600510f5a4512966f318d3b" category="list-text">Según el plan de migración, consulte las instrucciones para implementar el sistema de archivos:</block>
@@ -566,10 +562,6 @@
   <block id="ed977dfdfe1506958cfaf0814d2d88aa" category="list-text">Seleccione los *Planes de migración* .</block>
   <block id="85ff4660d4c9887c8c3642f5b88f5c0f" category="list-text">Seleccione el menú Acciones (...) para el plan de migración que desea editar y seleccione *Editar comentario*.</block>
   <block id="ffba1532f20138af6f125ed0e7922f0c" category="list-text">Ingrese un comentario y seleccione *Guardar*.</block>
-  <block id="af848be5e478317315a7456f2b750f85" category="section-title">Crear un informe en PDF de un plan de migración</block>
-  <block id="ab8d3711b0c3a5626489fe2bfe17f05f" category="paragraph">Cree un informe en PDF con los detalles de un plan de migración.</block>
-  <block id="90ef9f5b382625493541f79cb73c95bc" category="list-text">Seleccione el menú Acciones (...) para el plan de migración para el cual desea crear un informe en PDF y seleccione *Crear informe*.</block>
-  <block id="95ccbdc12e94d757840a1d49067a3a22" category="list-text">Introduzca un nombre para el informe PDF y seleccione *Guardar*.</block>
   <block id="80150f821562b98f3c468bc4b96f7cfc" category="section-title">Eliminar un plan de migración</block>
   <block id="39f6a04761fcf20bcf673a41a6ab8f37" category="paragraph">Cuando un plan de migración ya no sea necesario, podrás eliminarlo en cualquier momento.</block>
   <block id="dc38ae40a3dd847f4277194b9bdb3492" category="list-text">Seleccione el menú Acciones (...) para el plan de migración que desea eliminar y seleccione *Eliminar*.</block>
@@ -598,7 +590,6 @@
   <block id="3a24ead84cf153dcdbed17a6f2a5453f" category="list-text">Seleccione *Crear plan EVS manualmente*.</block>
   <block id="d81d55a8a22e2c2e3489e48eb0ed356b" category="list-text">Cuando esté listo, seleccione *Revisar plan* para revisar el plan de migración.</block>
   <block id="09092a8424b4b288607f4a8069cab241" category="paragraph">De forma predeterminada, Workload Factory guarda el plan de migración en el centro de planificación.  Puede deseleccionar esta opción cerca de la parte superior de la página.</block>
-  <block id="554a7544eaaf7039cc0b201a4eb1c0a0" category="list-text">Opcionalmente, cuando esté satisfecho con el plan de migración, puede descargar los detalles del plan como un documento PDF seleccionando *Exportar plan (PDF)*.</block>
   <block id="4147fd67220c420eb852e2c99f9ef614" category="list-text">Cuando esté listo para aprovisionar el plan de implementación, seleccione *Aprovisionar*.</block>
   <block id="c3e8b1987aa88fc22cc3f9a3da7214be" category="summary">Desde el centro de planificación de VMware, puede iniciar el asesor de migración de Amazon EVS para ayudar a crear un plan de migración personalizado según sus necesidades.</block>
   <block id="8cf6f9434ff2a0ab859f112105dcf308" category="paragraph">Puede crear un plan de implementación para migrar máquinas virtuales a Amazon Elastic VMware Service y utilizar sistemas de archivos Amazon FSx for NetApp ONTAP personalizados como almacenes de datos externos.  Las opciones en el asesor de migración pueden variar según la herramienta utilizada para recopilar los datos de inventario de la máquina virtual.</block>
@@ -676,13 +667,11 @@
   <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>Iniciar sesión en Workload Factory</block>
   <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link">Configurar una cuenta con Workload Factory</block>
   <block id="8af94ef3a55ab31e78f60c3968ecc4e3" category="paragraph">Necesitarás<block ref="c1e10d5d77d21feb199911d5a4450d55" category="inline-link-rx"></block> e inicie sesión usando uno de los<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block> .</block>
-  <block id="dd4f9edabeb37ece9735b049d7a1c633" category="paragraph">Puede utilizar Workload Factory en modo _Básico_ sin agregar credenciales para acceder a su cuenta de AWS. Agregar credenciales de AWS a Workload Factory en modo _solo lectura_ o _lectura/escritura_ le otorga a su cuenta de Workload Factory los permisos necesarios para crear y administrar sistemas de archivos FSx para ONTAP , y para implementar y administrar cargas de trabajo dentro de Amazon EC2.</block>
   <block id="3f35f21ffef11e779800fd22d15e4ca8" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>Cargar datos de inventario de VM</block>
   <block id="e1705a2c0f8c2dd8d94e67c86291e62a" category="paragraph">Puede utilizar el centro de planificación para cargar detalles de inventario sobre su entorno de VM actual.  Utilice el script del recopilador de datos, RVTools o NetApp Data Infrastructure Insights para capturar la configuración actual de su máquina virtual y cargar los datos en el centro de planificación.</block>
   <block id="10ebd16f18f5f5f9fac69ef4c933c75f" category="inline-link-macro">Aprenda a cargar datos de inventario de máquinas virtuales</block>
   <block id="527322d1ebf3079ca1f474c5e3c8d4dc" category="paragraph"><block ref="3f004e021dfd1da14c955ee4e1d0ba17" category="inline-link-macro-rx"></block> .</block>
   <block id="465e05b02c4091132dffd8661fead178" category="paragraph"><block ref="3aea27ccdadee3f33be0c6643a1fec67" category="inline-link-macro-rx"></block> .</block>
-  <block id="ed3181ef696298ce4f112b70f615add4" category="paragraph">Puede utilizar Workload Factory en modo _Básico_ sin agregar credenciales para acceder a su cuenta de AWS. Agregar credenciales de AWS a Workload Factory en modo _solo lectura_ o _lectura/escritura_ le otorga a su cuenta de Workload Factory los permisos necesarios para crear y administrar sistemas de archivos FSx para ONTAP , y para implementar y administrar cargas de trabajo dentro de VMware Cloud.</block>
   <block id="b334128403ed60ff931947907046e1f0" category="summary">Antes de poder abrir un caso de soporte con el soporte técnico de NetApp , debe agregar una cuenta del sitio de soporte de NetApp a Workload Factory y luego registrarse para recibir soporte.</block>
   <block id="321b853ccb62a088abe07117978e5b31" category="doc">Regístrese para obtener soporte para NetApp Workload Factory para VMware</block>
   <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">Es necesario registrarse para recibir soporte técnico específico para NetApp Workload Factory y sus soluciones y servicios de almacenamiento. Debe registrarse para recibir soporte desde la consola de NetApp , que es una consola web independiente de Workload Factory.</block>
@@ -735,4 +724,41 @@
   <block id="74f9db7fefcf8c24332761c003d46a02" category="section-title">Presentamos el centro de planificación de cargas de trabajo de VMware</block>
   <block id="c1ed477ef5d58aa5d9931821badda717" category="paragraph">BlueXP Workload Factory para VMware ahora le permite utilizar el asesor de migración de Amazon Elastic VMware Service para migrar rápidamente sus cargas de trabajo de VMware locales a Amazon Elastic VMware Service.  Después de crear un plan de migración utilizando el asesor de migración, este se guarda automáticamente en la lista de planes de migración en el centro de planificación.</block>
   <block id="c2ec0e17d82dd73344c2ef80a6de22f1" category="paragraph"><block ref="c2ec0e17d82dd73344c2ef80a6de22f1" category="inline-link-rx"></block></block>
+  <block id="24469e003440641648ff205b984a0ac7" category="doc">Presentamos las preferencias de Amazon Elastic VMware Service en el asistente de implementación del sistema de archivos FSx para ONTAP</block>
+  <block id="0e8989988334c8827a95bf9733f5311e" category="paragraph">Cuando implemente un sistema de archivos FSx para ONTAP para usarlo como almacén de datos NFS externo para Amazon Elastic VMware Service, ahora puede seleccionar el entorno EVS al que se conectarán los almacenes de datos.  Esto rellena automáticamente varios campos en el asistente de implementación para simplificar el proceso de implementación.</block>
+  <block id="876ee64bc6b6627784cd32512c519f60" category="paragraph"><block ref="876ee64bc6b6627784cd32512c519f60" category="inline-link-rx"></block></block>
+  <block id="8bf32647108c4a28e744e9ba5a1683bf" category="section-title">Cambios de permisos para cargas de trabajo de VMware</block>
+  <block id="18a162715dca6df2cf24f0158d03bddd" category="paragraph">Las cargas de trabajo de VMware ofrecen mayor claridad sobre los permisos que requieren para acciones específicas y un mayor nivel de detalle para seleccionar únicamente los permisos necesarios.  Al agregar credenciales, tendrá dos opciones de permisos para elegir en lugar del modelo de permisos anterior que era de _solo lectura_ y _lectura/escritura_. El nuevo modelo de permisos divide las políticas de permisos de la siguiente manera:</block>
+  <block id="0a015f0bd274c5e6c7a774ac18592871" category="list-text">_Visualización, planificación y análisis_: Consulte el inventario de entornos de virtualización de EVS, obtenga un análisis bien diseñado para sus sistemas y explore los ahorros.</block>
+  <block id="56522cb8a8b15eeca3868896cb875225" category="list-text">_Implementación y conectividad del almacenamiento de datos_: Implemente las configuraciones de máquinas virtuales recomendadas en clústeres de Amazon EVS, Amazon EC2 o VMware Cloud on AWS vSphere y utilice sistemas de archivos Amazon FSx for NetApp ONTAP personalizados como almacenes de datos externos.</block>
+  <block id="59371e7e2c46a6e1dae0e4d3224dd7ef" category="paragraph">Al agregar credenciales, puede seleccionar una o más de estas políticas de permisos según el nivel de acceso que desee proporcionar a las cargas de trabajo de VMware.</block>
+  <block id="b20b01e02162a68002ca1747d1bd3c10" category="inline-link-macro">Referencia de permisos de Workload Factory</block>
+  <block id="444b052e3d1349e221d4ceb42e6c1cf7" category="paragraph"><block ref="444b052e3d1349e221d4ceb42e6c1cf7" category="inline-link-macro-rx"></block></block>
+  <block id="62057df0ae6e346379f483246f31203b" category="list-text">*Guardar o descargar un plan de migración*: Ahora puede guardar o descargar un plan de migración como archivo PDF o CSV.  Cuando guardas un plan de migración, este se guarda con tu cuenta de Workload Factory.</block>
+  <block id="ea61e2c2ff507048203824add1eb7c21" category="section-title">Consideraciones</block>
+  <block id="8eea8cbef155daad5f0336e67b106d2f" category="list-text">En la sección "Preferencias de Amazon Elastic VMware Service", puede elegir el entorno de virtualización de EVS para conectarse a los almacenes de datos externos.  Esto rellena automáticamente algunos campos con las opciones de mejores prácticas para la implementación.  Puede modificar estas opciones según sea necesario.</block>
+  <block id="4356903392007c85f8e73efe4347e2ff" category="list-text">En la sección "Preferencias de Amazon Elastic VMware Service", en la lista "ID de entorno", seleccione el entorno EVS donde se conectarán los almacenes de datos.</block>
+  <block id="61f5a1ca1bc96422fa16bce675cee6a1" category="paragraph">Esto rellena automáticamente los siguientes campos:</block>
+  <block id="5a27c4fb594c9f679329c31622b59a04" category="list-text">*VPC*</block>
+  <block id="9fec24e9bf3c3f6b25e4def96d0b31cb" category="list-text">*Zona de disponibilidad*</block>
+  <block id="a5ede60043f381fbec4810d49c62a7e7" category="list-text">*Subred*</block>
+  <block id="864acc0e479b0f497d42b56fec813833" category="list-text">En la sección *Acceso a almacenes de datos NFS*, si ha seleccionado la opción *Solo administración de host EVS*, el campo *Administración de host EVS (CIDR)* se rellena automáticamente.</block>
+  <block id="c2c2f4e306bee7cddb73a93d88e8f835" category="list-text">En la sección *Opciones de montaje de almacenes de datos*, si ha elegido montar los almacenes de datos en el clúster EVS, los campos *Dirección de VMware vCenter del clúster EVS* y *ARN secreto de las credenciales del administrador de vSphere* se rellenan automáticamente.</block>
+  <block id="7af379a5a0b7c9925c9cc49a5fe4102b" category="paragraph">En ambos casos, puede supervisar el progreso de la creación en CloudFormation.</block>
+  <block id="640e753affbc0ed23602125bd47cf1a0" category="paragraph">Puede seleccionar un plan de migración y configurarlo para que las máquinas virtuales se migren al entorno de Amazon AWS de su elección.</block>
+  <block id="0c47e3b364699e732be74fcfcd5fcb76" category="section-title">Crea un informe en PDF o CSV del plan de migración.</block>
+  <block id="feb07457ab16b08e6759f9a102b74915" category="paragraph">Crea un informe en formato PDF o CSV con los detalles del plan de migración.</block>
+  <block id="ce7492243f67024ea27281293ef49ad2" category="list-text">Seleccione *Planes de migración*.</block>
+  <block id="ad4c2b0bf62cfb791914800c139d480c" category="list-text">Seleccione el menú Acciones (...) para el plan de migración para el cual desea crear un informe en PDF o CSV, y seleccione *Descargar plan (PDF)* o *Descargar informe de VM (CSV)*.</block>
+  <block id="fae19c44f57cb307c986fe8aed636a86" category="list-text">Introduzca un nombre para el informe y seleccione *Guardar*.</block>
+  <block id="71d503717b6e0e8fdefc91ea29f61bc2" category="list-text">Para acceder a Workload Factory, necesita un nombre de usuario y una contraseña.  Si no tienes acceso, crea una cuenta ahora.  Consulte las instrucciones<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block> .</block>
+  <block id="6b220aa78c1cc96ebbf1f4b5bb3682d6" category="list-text">Opcionalmente, puede exportar el plan de migración como un archivo PDF o CSV seleccionando *Administrar plan* en la parte superior derecha de la página y luego seleccionando *Descargar un informe (.pdf)* o *Descargar implementación de almacenamiento de VM (.csv)*.</block>
+  <block id="aedb7e102d3632d427ea9e76ff06651a" category="paragraph">El archivo .csv crea un mapa de todas las máquinas virtuales incluidas en el plan de migración, junto con sus volúmenes de almacenamiento asignados.</block>
+  <block id="27c19be9febabd1e2fb82d7a39784f2d" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>Agregar credenciales y permisos</block>
+  <block id="51bf12717b370e03e3310859db67cac6" category="inline-link">políticas de permisos</block>
+  <block id="936d666f131176683c1d6c00130dafc9" category="paragraph">Elige el<block ref="58aaeb1e36f031336cc27639db355451" category="inline-link-rx"></block> para satisfacer sus necesidades.</block>
+  <block id="611dad37557a2cb5ae289c5e019aed4c" category="paragraph">Si decide no otorgar permisos, puede comenzar a usar Workload Factory for Databases para copiar ejemplos de código parcialmente completados.</block>
+  <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link">agregar credenciales a una cuenta manualmente</block>
+  <block id="89de75212fc10daeec1259e132f3752a" category="paragraph">Si decides otorgar permisos, tendrás que<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block> Esto incluye seleccionar las capacidades de carga de trabajo, como bases de datos e IA, y crear las políticas IAM para los permisos necesarios.</block>
+  <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2 de noviembre de 2025</block>
 </blocks>
