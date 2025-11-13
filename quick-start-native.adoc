@@ -13,7 +13,7 @@ summary: Empieza con el asesor de migración de VMware para trasladar tu infraes
 [role="lead"]
 Empieza con el asesor de migración de VMware para trasladar tu infraestructura actual a Amazon EC2 utilizando Amazon FSx para ONTAP como almacenes de datos NFS externos.
 
-Antes de comenzar, usted debe tener una comprensión de https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modos de funcionamiento"^].
+Antes de comenzar, debe comprender los permisos para NetApp Workload Factory: https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Una"]Iniciar sesión en Workload Factory
 [role="quick-margin-para"]
