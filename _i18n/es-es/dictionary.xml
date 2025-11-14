@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="495f22292688acea8c30ad6ad16b09d3" category="summary">Puede utilizar el script recopilador de máquinas virtuales del Asesor de Migración o RVTools para capturar las configuraciones actuales de las máquinas virtuales. Le recomendamos que utilice el script recopilador de VM del Asesor de Migración porque recopila tanto la configuración de VM como los datos de rendimiento para el plan más preciso.</block>
-  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">Aprenda a usar un plan existente para crear un nuevo plan</block>
-  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">Si tiene previsto implementar un nuevo sistema basado en un plan de despliegue existente que guardó previamente localmente, puede omitir este paso y seleccionar el plan de despliegue existente. <block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>.</block>
   <block id="c423127be094663f098066c3efa8a37a" category="open-title">Utilice el script recopilador de VM del asesor de migración</block>
   <block id="e7bc9976408bfbd315fb5cead8d7c4e2" category="paragraph">El script recopilador de VM del asesor de migración de NetApp recopila información de configuración de VM desde vCenter de forma similar a la que recopila RVTools; sin embargo, captura datos de rendimiento de VM actuales para proporcionar estadísticas de rendimiento e IOPS de lectura y escritura reales.</block>
   <block id="008d8f4c73b65286fe403c16e1624b81" category="paragraph">Debe iniciar el asesor de migración para copiar el script del recopilador de VM del asesor de migración desde la ventana CodeBox.</block>
@@ -154,8 +152,6 @@
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Cerrar caso*: Proporciona detalles sobre por qué estás cerrando el caso y selecciona *Cerrar caso*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Captura de pantalla que muestra las acciones que puede realizar después de seleccionar el menú de la última columna de la tabla.</block>
   <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">Implementar un sistema en la nube basado en un plan de implementación existente que tenga requisitos similares.</block>
-  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">aquí</block>
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">Cree un plan de puesta en marcha basado en un entorno vSphere local</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">Puedes migrar tus configuraciones actuales de máquinas virtuales en entornos de vSphere on-premises a máquinas virtuales en VMware Cloud on AWS y utilizar sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.</block>
@@ -327,9 +323,6 @@
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">Tenga en cuenta que si selecciona una cantidad inferior al 20%, no podrá crear snapshots de volúmenes para protección y backups a largo plazo.</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">*Protección de instantáneas de VM*: Habilita esta opción para proteger las VM con instantáneas.</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">La parte superior de la página describe el coste mensual para todas las máquinas virtuales implementadas y los sistemas de archivos de FSx para ONTAP. Puedes ampliar cada sección para ver detalles sobre la «configuración recomendada del sistema de archivos de Amazon FSx para ONTAP», «desglose de costes estimado», «configuración de volúmenes», «suposiciones de dimensionamiento» y «renuncias de responsabilidad técnicas».</block>
-  <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">Al realizar la migración a VMware Cloud, puede utilizar el asesor de migración para crear un plan de puesta en marcha para las siguientes situaciones:</block>
-  <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">Para migrar tu entorno actual de vSphere on-premises a la nube de VMware.</block>
-  <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
   <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">*Relación media de reducción de datos*: Elija entre los tres valores comunes de selección de reducción de datos. Seleccione «1:1 - Sin reducción», «1:1,25 - 20% de reducción» o «1:1,5 - 33% de reducción».</block>
   <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">*Tolerancia a fallas de vSAN*: Seleccione el nivel de tolerancia a fallas que se requiere para las VM. Puede elegir “Auto”, que se recomienda, o entre una variedad de niveles de RAID.</block>
   <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">Pasar partes de tu infraestructura actual a Amazon EC2 o VMware Cloud on AWS mediante Amazon FSx para ONTAP como almacenes de datos NFS externos ofrece las siguientes ventajas:</block>
@@ -767,4 +760,5 @@
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">Descarga e instala RVTools 4.4.2 o superior desde el<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">La documentación de RVTools se encuentra en la sección de Recursos.</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">Consulte el capítulo sobre "parámetros de línea de comandos" en el<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> Para más detalles.</block>
+  <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">Al migrar a VMware Cloud, puede utilizar el asesor de migración para migrar su entorno vSphere local actual a la nube de VMware.</block>
 </blocks>
