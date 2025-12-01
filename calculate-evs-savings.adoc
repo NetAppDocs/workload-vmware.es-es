@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: calculate-evs-savings.html 
-keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco 
+keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco, regions 
 summary: Calcule cuánto puede ahorrar al utilizar Amazon EVS con FSx para ONTAP. 
 ---
 = Explore los ahorros de Amazon Elastic VMware Service con NetApp Workload Factory
@@ -28,19 +28,20 @@ NOTE: Antes de continuar, revise la exención de responsabilidad en la parte inf
 . Inicie sesión en Workload Factory utilizando uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^] .
 . Desde el mosaico de cargas de trabajo de VMware, seleccione *Explorar ahorros* y luego *Amazon Elastic VMware Service (EVS)*.  Se muestra la calculadora de ahorros.
 +
-El panel *Preferencias del entorno* proporciona controles deslizantes que puedes ajustar según las necesidades de tu entorno.
+En el panel *Preferencias del entorno*, puede seleccionar su región de implementación de EVS y ajustar las predicciones de TCO y ahorro en consecuencia.
 
+. En la lista desplegable *Región*, seleccione la región de implementación de EVS para calcular los ahorros.
 . Ajuste los siguientes controles deslizantes según sea necesario para ver cálculos de ahorro en tiempo real para los valores que elija.  Si usa un teclado, puede realizar pequeños ajustes utilizando las teclas de flecha:
 +
-.. *CPU física requerida (cantidad)*
-.. *Memoria física requerida (GiB)*
-.. *Almacenamiento de VM requerido (TiB)*
-.. *Plan de facturación EVS*
+** *CPU física requerida (cantidad)*
+** *Memoria física requerida (GiB)*
+** *Almacenamiento de VM requerido (TiB)*
 
 
+. En *Plan de facturación EVS*, seleccione el plan en el que se encuentra.
 . Debe realizar una de las siguientes acciones:
 +
-** Para utilizar el asesor de migración paralink:launch-migration-advisor-evs-manual.html["crear un plan de implementación"] Para un entorno de Amazon EVS, seleccione *Crear una evaluación detallada*.
+** Para utilizar el asesor de migración para link:launch-migration-advisor-evs-manual.html["crear un plan de implementación"] Para un entorno de Amazon EVS, seleccione *Planificar migración de EVS*.
 ** Seleccione *Cerrar* para cerrar la calculadora de TCO.
 
 

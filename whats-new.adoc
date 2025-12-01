@@ -15,6 +15,20 @@ Conozca las novedades del componente Asesor de migración de VMware de Workload 
 
 
 
+== 27 de noviembre de 2025
+
+
+
+=== Calcule el ahorro de costos al migrar a Amazon Elastic VMware Service para regiones específicas
+
+Ahora puede explorar el valor de diferentes opciones de implementación para su migración a la nube, optimizar los esfuerzos invertidos en la evaluación de soluciones y profundizar en soluciones que tienen el potencial de ofrecer valor y ahorros en la nube.
+
+También puede revisar los ahorros en núcleos de vCPU que se pueden lograr al usar FSx para ONTAP para una implementación de EVS.
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Explore los ahorros de Amazon Elastic VMware Service con NetApp Workload Factory"]
+
+
+
 == 2 de noviembre de 2025
 
 
