@@ -28,7 +28,10 @@ Puede crear un plan de implementación para migrar máquinas virtuales a Amazon 
 == Pasos
 
 . Inicie sesión en Workload Factory utilizando uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^] .
-. De manera opcional, si accedió a Workload Factory desde la consola de Workload Factory, en el mosaico de cargas de trabajo de VMware, seleccione *VMware Planning Center* y luego seleccione *VMware Planning Center*.  Se muestra el centro de planificación de VMware.
+. Seleccione el menú image:workloads-menu-icon.png["El ícono del menú de hamburguesa se utiliza para navegar a cargas de trabajo como almacenamiento, eda, ai, bases de datos, vmware y administración."] y luego seleccione *VMware*.
++
+Se muestra el centro de planificación.
+
 . Seleccione un inventario de VM de la lista que desee utilizar para crear un plan de implementación y seleccione *Iniciar planificación* en esa fila.
 . Seleccione *EVS* en el menú desplegable que aparece.
 +

@@ -60,9 +60,9 @@ Tenga en cuenta que si planea capturar estadísticas a largo plazo de sus máqui
 
 .Pasos
 . Inicie sesión en Workload Factory utilizando uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^] .
-. Desde el mosaico de cargas de trabajo de VMware, seleccione *Centro de planificación de VMware*.
+. Seleccione el menú image:workloads-menu-icon.png["El ícono del menú de hamburguesa se utiliza para navegar a cargas de trabajo como almacenamiento, eda, ai, bases de datos, vmware y administración."] y luego seleccione *VMware*.
 +
-Desde el centro de planificación, puede cargar los datos de inventario de sus máquinas virtuales, ver cargas de datos de inventario anteriores y planificar una migración utilizando cualquiera de los conjuntos de datos de inventario de máquinas virtuales. y luego seleccione *Migración a computación nativa de AWS*.  Se muestra la pantalla de presentación del asesor de migración de VMware.
+Se muestra el centro de planificación. Desde el centro de planificación, puede cargar los datos de inventario de sus máquinas virtuales, ver cargas de datos de inventario anteriores y planificar una migración utilizando cualquiera de los conjuntos de datos de inventario de máquinas virtuales. y luego seleccione *Migración a computación nativa de AWS*. Se muestra la pantalla de presentación del asesor de migración de VMware.
 
 +
 Consulte la información para obtener más información sobre las ventajas del asesor de migración.
