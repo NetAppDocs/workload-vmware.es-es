@@ -1,0 +1,210 @@
+---
+sidebar: sidebar 
+permalink: view-evs-well-architected.html 
+keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+summary: Revisa el estado bien arquitectado de las configuraciones de EVS en Workload Factory y sigue la guía de remediación basada en las mejores prácticas de AWS y NetApp. 
+---
+= Implementa configuraciones de EVS bien diseñadas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Usa el análisis de configuración de Workload Factory para revisar el estado bien diseñado de tus configuraciones de Amazon Elastic VMware Service (EVS) y solucionar problemas que afectan la fiabilidad, la seguridad y el costo.
+
+
+
+== Acerca de esta tarea
+
+Los análisis diarios automáticos de todos los entornos de EVS descubiertos mediante las API de AWS analizan tu configuración de EVS e identifican posibles problemas que podrían afectar la disponibilidad, la resiliencia, la seguridad o la optimización de costos. Los hallazgos se organizan por área de configuración, y cada hallazgo incluye el estado, los niveles de gravedad, los detalles de los recursos afectados y los procedimientos de corrección paso a paso.
+
+Las funciones clave incluyen:
+
+* *Escaneos diarios automáticos*: Todos los entornos EVS descubiertos se escanean automáticamente una vez al día para asegurar que los insights se mantengan actualizados.
+* *Escaneado basado en API de AWS*: los escaneos usan las API de AWS y no requieren credenciales de vSphere ni conectividad a tu vCenter.
+* *Orientación detallada sobre la resolución de problemas*: cada problema identificado incluye una explicación clara, un nivel de gravedad y procedimientos de resolución paso a paso.
+* *Información solo de visualización*: Proporciona conclusiones y recomendaciones detalladas sin opciones automatizadas de resolución de problemas.
+
+
+
+
+=== Entendiendo los insights bien arquitectados
+
+La pestaña Well-architected muestra lo siguiente:
+
+* *Nombre de la configuración*: el área de configuración que se está evaluando.
+* *Etiquetas*: Etiquetas que indican las áreas de impacto (como Disponibilidad, Resiliencia, Seguridad).
+* *Estado*: "Optimizado" (no se han encontrado problemas) o "No optimizado" (se han encontrado problemas).
+* *Gravedad*: el nivel de importancia del hallazgo (por ejemplo, Warning).
+* *Tipo de recurso*: el tipo de recurso de AWS que se está evaluando.
+* *Recuento de recursos afectados*: el número de recursos afectados por el problema.
+
+
+
+
+=== Frecuencia de escaneo
+
+Los escaneos bien diseñados se realizan automáticamente para todas las configuraciones EVS descubiertas. Detalles clave sobre la programación de escaneos:
+
+* Los análisis se realizan una vez al día para cada configuración de EVS.
+* Los análisis de las distintas configuraciones pueden ocurrir en momentos diferentes.
+* Si falla el análisis de una configuración, se seguirán intentando los análisis de otras configuraciones en la misma cuenta.
+* La tarjeta de marca de tiempo en la pestaña de estado Well-architected muestra cuándo se completó el último escaneo para la configuración actual.
+
+
+
+NOTE: Actualmente no se admite la ejecución bajo demanda de análisis bien arquitectados. Todos los análisis se realizan automáticamente según la programación diaria.
+
+
+
+== Antes de empezar
+
+* Debes tener https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["credenciales de AWS añadidas"^] con permisos de _Vista, planificación y análisis_ para cargas de trabajo VMware.
+* Debes tener al menos un entorno descubierto de Amazon Elastic VMware Service en tu cuenta de AWS.
+
+
+
+
+== Accede a la pestaña de estado bien diseñado
+
+.Pasos
+. Inicie sesión en Workload Factory utilizando uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^] .
+. Seleccione el menú image:workloads-menu-icon.png["El ícono del menú de hamburguesa se utiliza para navegar a cargas de trabajo como almacenamiento, eda, ai, bases de datos, vmware y administración."] y luego seleccione *VMware*.
++
+Se muestra el centro de planificación.
+
+. En el menú VMware, selecciona *Inventario*.
+. En la lista *Virtualization environments*, selecciona el entorno EVS descubierto para el que quieres ver información bien diseñada.
+. Selecciona la pestaña *Well-architected status*.
++
+Se muestran los siguientes elementos:
+
++
+** *Marca de tiempo del análisis diario automático*: muestra cuándo se realizó el último escaneo para este entorno.
+** *Configuraciones*: organiza los hallazgos por área de configuración y muestra su estado y detalles.
+
+
+
+
+
+
+== Ver evaluaciones bien arquitectadas
+
+
+
+=== Gestión de nodos del clúster
+
+Esto evalúa si los nodos de tu clúster EVS tienen configurada la protección de detención y terminación de EC2 de forma adecuada.
+
+*Estado*:
+
+* *Optimizado*: Todos los nodos EVS tienen configurada tanto la protección de parada de EC2 como la protección de terminación.
+* *No optimizado*: al menos un nodo EVS no tiene configurada la protección de parada de EC2 o la protección de terminación.
+
+
+*Por qué esto importa*:
+
+Los nodos ESXi de EVS deben gestionarse exclusivamente usando vCenter u otras herramientas de gestión a nivel de VMware. Sin las protecciones adecuadas a nivel de EC2, los nodos podrían detenerse o eliminarse accidentalmente desde la consola de EC2, lo que puede causar la indisponibilidad de los datos de las máquinas virtuales o la pérdida de datos.
+
+*Para ver los resultados detallados*:
+
+. En la pestaña Well-architected status, localiza *Gestión de nodos del clúster*.
+. Selecciona *Ver* para abrir el diálogo de resultados.
+
+
+El cuadro de diálogo muestra:
+
+* *Resumen de los resultados*: Una explicación detallada del problema descubierto en tu entorno.
+* *Resource grid*: Una tabla que muestra todos los nodos EVS y su estado de protección, incluyendo:
++
+** Identificador de nodo
+** Estado de protección de detención de EC2
+** Estado de protección de terminación de EC2
+
+
+* *Acción requerida*: procedimientos de resolución de problemas paso a paso.
+* *Recomendación*: guía de buenas prácticas.
+
+
+*Remediación*:
+
+Para solucionar este problema, activa la protección de parada y terminación para tus nodos EVS:
+
+* Sigue el procedimiento especificado en https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-stop-protection.html["Documentación de AWS para habilitar la protección contra paradas"^].
+* Sigue el procedimiento especificado en https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ChangingDisableAPITermination.html["Documentación de AWS para habilitar la protección de terminación"^].
+
+
+
+
+=== Resiliencia del entorno EVS
+
+Esto evalúa si los nodos de tu clúster EVS están distribuidos correctamente en los grupos de colocación de particiones.
+
+*Estado*:
+
+* *Optimized*: Todos los nodos son miembros de un único grupo de colocación de particiones configurado con cuatro o más particiones.
+* *No optimizado* si alguna de las siguientes es verdadera:
++
+** Los nodos son miembros de más de un grupo de colocación.
+** Al menos un nodo es miembro de un grupo de colocación no particionado.
+** Todos los nodos son miembros de un grupo de colocación particionado con menos de cuatro particiones.
+
+
+
+
+*Por qué esto importa*:
+
+Una colocación adecuada de las particiones garantiza que los nodos del clúster EVS se distribuyan en varias particiones de hardware aisladas de fallos dentro de una zona de disponibilidad de AWS. La desalineación puede resultar en una pérdida significativa de capacidad de procesamiento o tiempo de inactividad si falla una partición.
+
+*Para ver los resultados detallados*:
+
+. En la pestaña Estado de la arquitectura adecuada, localiza *Resiliencia del entorno EVS*.
+. Selecciona *Ver* para abrir el diálogo de resultados.
+
+
+El cuadro de diálogo muestra:
+
+* *Resumen de conclusiones*: una explicación detallada del desajuste de las particiones.
+* *Resource grid*: Una tabla que muestra los nodos del entorno EVS con:
++
+** Identificador de nodo
+** Nombre del grupo de colocación
+** Tipo de grupo de colocación
+** Cantidad de particiones del grupo de colocación
+
+
+* *Acción requerida*: procedimientos de reparación paso a paso
+* *Recomendación*: guía de buenas prácticas
+
+
+*Remediación*:
+
+Para solucionar problemas de colocación de particiones:
+
+* Cuando añadas nuevos nodos al entorno EVS, aprovisiona los nuevos nodos usando un grupo de colocación particionado con al menos cuatro particiones.
+* Si se están sustituyendo nodos del clúster, asegúrate de que los nodos de reemplazo se aprovisionen usando un grupo de colocación particionado con al menos cuatro particiones.
+* Intenta consolidar todos los nodos EVS en un solo grupo de colocación alineado con las recomendaciones anteriores.
+
+
+*Recomendación de mejores prácticas*:
+
+Al crear o ampliar un entorno EVS, aprovisiona todos los nodos del clúster usando un único grupo de colocación particionado configurado con cuatro particiones o más.
+
+
+
+== Qué sigue
+
+Después de revisar tus ideas bien estructuradas y aplicar los cambios recomendados:
+
+* Supervisa diariamente la pestaña de estado bien diseñada para estar al tanto del estado de tu entorno.
+* Sigue los procedimientos de corrección para cualquier resultado "No optimizado".
+* Revisa la documentación de AWS y NetApp para ver prácticas recomendadas adicionales.
+* Considera implementar las recomendaciones antes de expandir tu entorno EVS.
+
+
+.Enlaces relacionados
+* https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["Cree un plan de implementación para Amazon EVS utilizando el asesor de migración"]
+* https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["Implementa el sistema de archivos FSx para ONTAP recomendado"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["Documentación de los grupos de colocación de AWS"^]
+

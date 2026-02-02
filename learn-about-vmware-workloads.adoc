@@ -78,7 +78,13 @@ Puede utilizar NetApp Workload Factory con las siguientes herramientas:
 
 
 
-== Coste
+== Análisis bien diseñados para entornos EVS
+
+La pestaña Well-architected proporciona un análisis diario automatizado de tus entornos de Amazon Elastic VMware Service (EVS) para asegurar la alineación con las prácticas recomendadas de AWS y NetApp. La pestaña identifica problemas de configuración y ofrece una guía detallada de corrección para ayudarte a mantener operaciones, seguridad y eficiencia de costes óptimas.
+
+Los análisis automáticos se realizan mediante las API de AWS—no se requieren credenciales de vSphere. Los hallazgos se organizan por área de configuración, y cada hallazgo incluye estado, niveles de gravedad, detalles de los recursos afectados y procedimientos de corrección paso a paso.
+
+link:view-evs-well-architected.html["Implementa configuraciones de EVS bien diseñadas en Workload Factory"]. == coste
 
 El uso de Workload Factory para VMware no tiene ningún costo.
 

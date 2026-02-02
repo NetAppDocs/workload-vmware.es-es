@@ -15,6 +15,26 @@ Conozca las novedades del componente Asesor de migración de VMware de Workload 
 
 
 
+== 01 de febrero de 2026
+
+
+
+=== Análisis bien arquitectado para Amazon Elastic VMware Service
+
+Workload Factory ahora proporciona análisis automatizados bien diseñados para tus entornos de Amazon Elastic VMware Service (EVS). Los análisis diarios identifican desajustes de configuración y ofrecen recomendaciones detalladas de corrección para ayudarte a mantener operaciones, seguridad y eficiencia de costos óptimas.
+
+Los análisis se realizan mediante las API de AWS—no se requieren credenciales de vSphere ni conectividad a vCenter. Los resultados están disponibles en la nueva pestaña *Well-architected status* dentro de los detalles de tu entorno EVS.
+
+Esta versión incluye información para:
+
+* *Estado de la protección de parada/terminación de la instancia*: identifica los nodos EVS sin protección de parada o terminación de EC2. Parar o terminar nodos EVS desde la consola EC2 puede provocar la indisponibilidad de datos de máquinas virtuales o la pérdida de datos.
+* *Alineación de la ubicación de la partición del nodo del clúster*: detecta desalineaciones de particiones que podrían provocar una pérdida significativa de potencia de procesamiento o tiempo de inactividad si falla una partición dentro de una AWS Availability Zone. Cada insight incluye niveles de gravedad, hallazgos detallados con información sobre los recursos afectados y procedimientos de remediación paso a paso basados en las mejores prácticas de AWS.
+
+
+link:view-evs-well-architected.html["Implementa configuraciones bien diseñadas"]
+
+
+
 == 04 de enero de 2026
 
 
