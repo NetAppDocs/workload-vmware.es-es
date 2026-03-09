@@ -28,6 +28,8 @@ sidebar:
       url: "/quick-start-native.html"
     - title: Inicio rápido para migrar a VMware Cloud en AWS
       url: "/quick-start.html"
+    - title: Inicio rápido para migrar a Google Cloud VMware Engine
+      url: "/quick-start-gcve.html"
     - title: Explorar el centro de planificación de VMware
       url: "/explore-planning-center.html"
   - title: Utilice el centro de planificación de VMware
@@ -44,6 +46,10 @@ sidebar:
         url: "/launch-migration-advisor-evs.html"
       - title: Implementa el sistema de archivos FSx para ONTAP recomendado
         url: "/deploy-fsx-file-system-evs.html"
+    - title: Migra a Google Cloud VMware Engine
+      entries:
+      - title: Cree un plan de despliegue con el asesor de migración
+        url: "/launch-migration-advisor-gcve.html"
     - title: Migrar a Amazon EC2
       entries:
       - title: Cree un plan de despliegue con el asesor de migración

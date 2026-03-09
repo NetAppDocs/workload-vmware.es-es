@@ -149,4 +149,5 @@ Administre los datos de inventario de máquinas virtuales cargados desde el cent
 * link:launch-onboarding-advisor.html["Crear un plan de implementación de Amazon VMware Cloud"]
 * link:launch-migration-advisor-evs.html["Crear un plan de implementación de Amazon Elastic VMware Service"]
 * link:launch-onboarding-advisor-native.html["Crear un plan de implementación de Amazon EC2"]
+* link:launch-migration-advisor-gcve.html["Crea un plan de implementación de Google Cloud VMware Engine"]
 

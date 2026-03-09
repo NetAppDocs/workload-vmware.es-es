@@ -15,6 +15,39 @@ Conozca las novedades del componente Asesor de migración de VMware de Workload 
 
 
 
+== 09 de marzo de 2026
+
+
+
+=== Presentamos la compatibilidad del asesor de migración para Google Cloud VMware Engine
+
+NetApp Workload Factory ahora es compatible con Google Cloud VMware Engine. Puedes migrar tus cargas de trabajo VMware locales a Google Cloud VMware Engine usando Google Cloud NetApp Volumes como datastores NFS externos, optimizando costos y dándote más control sobre tu entorno VMware sin tener que refactorizar ni cambiar de plataforma tus aplicaciones.
+
+El asesor de migración de Google Cloud VMware Engine proporciona:
+
+* Dimensionamiento y diseño automatizados de clústeres de Google Cloud VMware Engine con compatibilidad para los tipos de nodo VE1 y VE2
+* Optimización de la disposición de las máquinas virtuales entre los datastores internos de vSAN y los datastores NFS externos de Google Cloud NetApp Volumes.
+* Comparación detallada de costes y análisis del coste total de propiedad entre las configuraciones solo vSAN y Google Cloud NetApp Volumes-enhanced.
+* Soporte para los niveles de servicio Standard, Premium y Extreme de Google Cloud NetApp Volumes.
+* Despliegue de Infrastructure-as-Code con Terraform para el aprovisionamiento automatizado.
+
+
+
+
+== 01 de marzo de 2026
+
+
+
+=== Nuevo marcador Ask Me disponible en Workload Factory
+
+Hemos añadido un nuevo marcador Ask Me en todas las pantallas de la consola Workload Factory. Esta mejora hace que sea más fácil y rápido para ti acceder a Ask Me cuando necesites ayuda. Ask Me es nuestro asistente de IA, que te permite hacer preguntas sobre tus propios entornos de carga de trabajo, obtener información personalizada directamente de tu entorno y consultar conversaciones anteriores.
+
+Puedes abrir Ask Me desde cualquier página haciendo clic en el nuevo marcador. Lanza Ask Me en un panel lateral sin interrumpir tu trabajo actual y ofrece explicaciones y recomendaciones rápidas relacionadas con lo que estás haciendo en ese momento.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["Conoce más sobre Ask Me"^]
+
+
+
 == 01 de febrero de 2026
 
 

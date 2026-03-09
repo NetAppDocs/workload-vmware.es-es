@@ -1,0 +1,13 @@
+= Nuevo marcador Ask Me disponible en Workload Factory
+:allow-uri-read: 
+
+
+
+
+=== Nuevo marcador Ask Me disponible en Workload Factory
+
+Hemos añadido un nuevo marcador Ask Me en todas las pantallas de la consola Workload Factory. Esta mejora hace que sea más fácil y rápido para ti acceder a Ask Me cuando necesites ayuda. Ask Me es nuestro asistente de IA, que te permite hacer preguntas sobre tus propios entornos de carga de trabajo, obtener información personalizada directamente de tu entorno y consultar conversaciones anteriores.
+
+Puedes abrir Ask Me desde cualquier página haciendo clic en el nuevo marcador. Lanza Ask Me en un panel lateral sin interrumpir tu trabajo actual y ofrece explicaciones y recomendaciones rápidas relacionadas con lo que estás haciendo en ese momento.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["Conoce más sobre Ask Me"^]

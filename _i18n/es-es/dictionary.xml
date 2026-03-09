@@ -207,9 +207,7 @@
   <block id="a8e3f2e23f07d3e3b894748c162a207a" category="list-text">Seleccione *Exportar plan* para guardar el plan de migración como plantilla en formato .json. Puede importar el plan más adelante para utilizarlo como plantilla al desplegar sistemas con requisitos similares.</block>
   <block id="f16579e3ec27716e8cd4980fbae4d3e4" category="paragraph">Ten en cuenta que puedes conectar hasta cuatro (4) FSx para volúmenes de ONTAP a un único clúster de vSphere en VMware Cloud on AWS.</block>
   <block id="8cab295292831bfdeb59bccbb79bdd46" category="list-text">Analice las configuraciones actuales de máquinas virtuales en las instalaciones</block>
-  <block id="1a05637cb863ca10f5a7d788eab39615" category="list-text">Identifica el espacio necesario en FSx para volúmenes de ONTAP que se usará como almacenes de datos externos de VM</block>
   <block id="feb18d16cfa710c71684233bc628e803" category="list-text">Revise el informe resultante para comprender los pasos de despliegue</block>
-  <block id="ecd032206ca6be7b4497c7dadd4679ff" category="list-text">Realizar el despliegue real</block>
   <block id="633d759efd4c2199d984faea480082ad" category="list-text">Optimización de costes gracias a la desvinculación de hosts y almacenamiento y a la eficiencia de datos avanzada</block>
   <block id="52800f54ef93212b18b3653970aa2ed4" category="list-text">Capacidad para aumentar la capacidad de almacenamiento según sea necesario sin necesidad de adquirir instancias de host adicionales</block>
   <block id="17167f5b04002560e9e2c5818b543bfa" category="list-text">Capacidades de gestión de datos de NetApp ONTAP en el cloud, como copias Snapshot con gestión eficiente del espacio, clonado, compresión, deduplicación, compactación, y la replicación</block>
@@ -324,7 +322,6 @@
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">La parte superior de la página describe el coste mensual para todas las máquinas virtuales implementadas y los sistemas de archivos de FSx para ONTAP. Puedes ampliar cada sección para ver detalles sobre la «configuración recomendada del sistema de archivos de Amazon FSx para ONTAP», «desglose de costes estimado», «configuración de volúmenes», «suposiciones de dimensionamiento» y «renuncias de responsabilidad técnicas».</block>
   <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">*Relación media de reducción de datos*: Elija entre los tres valores comunes de selección de reducción de datos. Seleccione «1:1 - Sin reducción», «1:1,25 - 20% de reducción» o «1:1,5 - 33% de reducción».</block>
   <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">*Tolerancia a fallas de vSAN*: Seleccione el nivel de tolerancia a fallas que se requiere para las VM. Puede elegir “Auto”, que se recomienda, o entre una variedad de niveles de RAID.</block>
-  <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">Pasar partes de tu infraestructura actual a Amazon EC2 o VMware Cloud on AWS mediante Amazon FSx para ONTAP como almacenes de datos NFS externos ofrece las siguientes ventajas:</block>
   <block id="5cf77a6cd1a6546f96141615c376acb2" category="inline-link">Consulte la documentación de VMware HCX</block>
   <block id="1cdaa881e46a57173b4ffb5ec3faacc3" category="paragraph"><block ref="cef3bc29c9f27088570c1e3262538cf8" category="inline-link-rx"></block> para obtener más detalles.</block>
   <block id="e893ba46613a19a9294b7b151c4df83e" category="summary">Empieza con el asesor de migración de VMware para trasladar tu infraestructura actual a Amazon EC2 utilizando Amazon FSx para ONTAP como almacenes de datos NFS externos.</block>
@@ -601,20 +598,13 @@
   <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">Debe tener acceso al archivo de inventario desde el sistema en el que inicia sesión en Workload Factory.</block>
   <block id="472a898c43ee1ea13ac33b7eed565504" category="list-text">Seleccione *Planificar y crear VMC*.</block>
   <block id="4f85817ed18f4d26c6d18e7183794766" category="list-text">Seleccione el tipo de archivo de inventario que utilizará para completar Workload Factory con su configuración de VM actual y seleccione *Siguiente*.</block>
-  <block id="48037044ca3e2f933dc421a829d69076" category="summary">NetApp Workload Factory para VMware proporciona herramientas para trasladar sus datos desde sistemas locales a Amazon EVS, VMware Cloud on AWS (VMC) o Amazon EC2.</block>
   <block id="ce96debe53114e32c50b0d98712aa377" category="doc">Obtenga más información sobre NetApp Workload Factory para VMware</block>
-  <block id="f9e0f742f36854af5e8be72632368d6f" category="paragraph">NetApp Workload Factory para VMware proporciona herramientas para trasladar sus datos desde sistemas locales a Amazon Elastic VMware Service (EVS), VMware Cloud on AWS (VMC) o Amazon EC2.</block>
   <block id="53b7ad6af2aa1fdb5fb978cb41ca68cf" category="section-title">¿Qué es NetApp Workload Factory para VMware?</block>
-  <block id="bd5e98676a4adce7cc532d7cbc872a35" category="paragraph">NetApp Workload Factory para VMware ofrece un centro de planificación y asesores de migración que le permiten analizar las configuraciones actuales de sus máquinas virtuales en entornos vSphere locales.  Luego, los asesores de migración generan un plan para implementar diseños de VM recomendados en clústeres Amazon EVS, Amazon EC2 o VMware Cloud on AWS vSphere y utilizan sistemas de archivos Amazon FSx for NetApp ONTAP personalizados como almacenes de datos externos.  El centro de planificación, que actúa como el panel de Workload Factory para VMware, le permite administrar conjuntos de datos de inventario de VM guardados y planes de migración guardados, y aprovisionar cualquiera de los planes de migración que haya guardado.</block>
-  <block id="51c42327475a517ed8042ac208d5bc52" category="paragraph">Amazon FSx for NetApp ONTAP es un almacén de datos NFS externo creado en el sistema de archivos ONTAP de NetApp que se puede conectar a instancias de Amazon EVS o Amazon EC2 o a clústeres de VMware Cloud on AWS vSphere.  No es necesario agregar más hosts para aumentar el almacenamiento disponible; en su lugar, simplemente use FSx para volúmenes ONTAP como almacenes de datos externos para complementar los almacenes de datos de vSAN.  Esto le proporciona una infraestructura de almacenamiento virtualizada, flexible y de alto rendimiento que escala independientemente de los recursos informáticos.</block>
   <block id="6ae8e58cb52cd45b321927bcb2961f4e" category="inline-link">Descripción general de Workload Factory</block>
   <block id="b5b60d536e6e0460769e5ad0ac34a2d7" category="paragraph">Para obtener más información sobre Workload Factory, consulte<block ref="3b764dfed54c8d9154794adb30144dfb" category="inline-link-rx"></block> .</block>
   <block id="02550f8dfa494f45cbf71ecbab4158bc" category="section-title">Cómo funcionan los asesores de migración de VMware</block>
-  <block id="682906bdd5e082664c7d3f28fd071b49" category="paragraph">Los asesores de migración pueden ayudarlo a trasladar máquinas virtuales (VM) locales y sus datos, que se ejecutan en cualquier almacén de datos compatible con VMware, a almacenes de datos de Amazon EVS, Amazon EC2 o VMware Cloud, que incluyen almacenes de datos NFS complementarios en un sistema de archivos FSx para ONTAP .</block>
   <block id="2dcc23cafa7d96e8f966cdf717cc41a5" category="section-title">Qué puedes hacer con los asesores migratorios</block>
   <block id="5b5a947ec2b974eb0e23579b4db2a817" category="paragraph">Los asesores de migración proporcionan la siguiente funcionalidad:</block>
-  <block id="ff6f49d240259199aeaf90f6d4d03f81" category="list-text">Determinar qué máquinas virtuales migrar a Amazon EC2, Amazon EVS o VMware Cloud en AWS</block>
-  <block id="90bc9a2e58ddbf4a5adafdb3a190041f" category="paragraph">El asesor de migración admite la planificación de la configuración para una sola instancia de Amazon EVS o Amazon EC2 o un clúster de VMware Cloud on AWS conectado a un único sistema de archivos FSx para ONTAP .</block>
   <block id="67c1d6f7e45ca1a7c63174da6d5a6af9" category="section-title">Beneficios de utilizar los asesores de migración</block>
   <block id="4bbb8d481021011f9afb73ca196bfecd" category="section-title">Herramientas para utilizar NetApp Workload Factory</block>
   <block id="227f846d45d01d0f9fb62a784d506d51" category="paragraph">Puede utilizar NetApp Workload Factory con las siguientes herramientas:</block>
@@ -742,7 +732,6 @@
   <block id="d6add28cedc07b8a80ae0bda37f86523" category="list-text">Descargue e instale RVTools 4.4.2 o superior en el<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="33daaeb5c5025e30dc44f9f5bb7098a6" category="inline-link">Documentación de RVTools en la sección de Recursos</block>
   <block id="bc7e9c87828b6c8d46b8ee715cdad433" category="paragraph">Consulte el capítulo sobre "parámetros de línea de comandos" en el<block ref="cba36d23348879ff4ac7b19a18786876" category="inline-link-rx"></block> Para más detalles.</block>
-  <block id="c6e53b973f12d3e5f6edcac94bd4cafc" category="paragraph">Antes de comenzar, debe comprender los permisos para NetApp Workload Factory: https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html .</block>
   <block id="ed642dbc1cfaad7c138d0206f75e0100" category="paragraph">en el<block ref="bf6bdc955de5a25fe27ac07cc3dd7f22" category="inline-link-rx"></block></block>
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">Descarga e instala RVTools 4.4.2 o superior desde el<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">La documentación de RVTools se encuentra en la sección de Recursos.</block>
@@ -895,4 +884,171 @@
   <block id="5686150fea51f3258859e4fd15d8a797" category="list-text"><block ref="5686150fea51f3258859e4fd15d8a797" category="inline-link-rx"></block></block>
   <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">01 de febrero de 2026</block>
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">Administrar y monitorear</block>
+  <block id="129560e32411be4dc94c9cfeada8ea67" category="doc">Nuevo marcador Ask Me disponible en Workload Factory</block>
+  <block id="4ea89e975474ebd5bba8d32ced2e95cc" category="paragraph">Hemos añadido un nuevo marcador Ask Me en todas las pantallas de la consola Workload Factory. Esta mejora hace que sea más fácil y rápido para ti acceder a Ask Me cuando necesites ayuda. Ask Me es nuestro asistente de IA, que te permite hacer preguntas sobre tus propios entornos de carga de trabajo, obtener información personalizada directamente de tu entorno y consultar conversaciones anteriores.</block>
+  <block id="b365ed726bb3010ba5b4a6a1479128f9" category="paragraph">Puedes abrir Ask Me desde cualquier página haciendo clic en el nuevo marcador. Lanza Ask Me en un panel lateral sin interrumpir tu trabajo actual y ofrece explicaciones y recomendaciones rápidas relacionadas con lo que estás haciendo en ese momento.</block>
+  <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">Conoce más sobre Ask Me</block>
+  <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
+  <block id="d9a614ba22162f87467dc9820cb657d0" category="doc">Presentamos la compatibilidad del asesor de migración para Google Cloud VMware Engine</block>
+  <block id="9ed9d229ad690b47d132eb6206cba909" category="paragraph">NetApp Workload Factory ahora es compatible con Google Cloud VMware Engine. Puedes migrar tus cargas de trabajo VMware locales a Google Cloud VMware Engine usando Google Cloud NetApp Volumes como datastores NFS externos, optimizando costos y dándote más control sobre tu entorno VMware sin tener que refactorizar ni cambiar de plataforma tus aplicaciones.</block>
+  <block id="42fbc3a98a8196c1e84ea7586967c06f" category="paragraph">El asesor de migración de Google Cloud VMware Engine proporciona:</block>
+  <block id="6e784cfbe98c0f6a070e3304420a9971" category="list-text">Dimensionamiento y diseño automatizados de clústeres de Google Cloud VMware Engine con compatibilidad para los tipos de nodo VE1 y VE2</block>
+  <block id="f6879c882f4384c5ca30017d48dafe42" category="list-text">Optimización de la disposición de las máquinas virtuales entre los datastores internos de vSAN y los datastores NFS externos de Google Cloud NetApp Volumes.</block>
+  <block id="a29465f74d83dc4ead73643e19ed4387" category="list-text">Comparación detallada de costes y análisis del coste total de propiedad entre las configuraciones solo vSAN y Google Cloud NetApp Volumes-enhanced.</block>
+  <block id="1711c42c1c1d16547f3fc604cd9af939" category="list-text">Soporte para los niveles de servicio Standard, Premium y Extreme de Google Cloud NetApp Volumes.</block>
+  <block id="d5adbe8ffd84800d108bc7ddf1451b8a" category="list-text">Despliegue de Infrastructure-as-Code con Terraform para el aprovisionamiento automatizado.</block>
+  <block id="6edf666a8e66c338ed987a8170473fc1" category="inline-link-macro">Implementa almacenes de datos de Google Cloud NetApp Volumes para planes de Google Cloud VMware Engine</block>
+  <block id="c6fdbf6f595f7c0ad6e578b92f3bc742" category="list-text"><block ref="c6fdbf6f595f7c0ad6e578b92f3bc742" category="inline-link-macro-rx"></block></block>
+  <block id="7f23e40eb3340fde04d9926b7462c830" category="summary">Desde el centro de planificación de VMware, puedes iniciar el asesor de migración de Google Cloud VMware Engine para ayudarte a crear un plan de migración personalizado para tus necesidades.</block>
+  <block id="5e50f9be4f1e626bb755e71b6ef9feec" category="doc">Crea un plan de implementación para Google Cloud VMware Engine usando el asesor de migración</block>
+  <block id="bdef3354bb4b315740e7e8854254495b" category="paragraph">Puedes crear un plan de implementación para migrar máquinas virtuales a Google Cloud VMware Engine y usar Google Cloud NetApp Volumes personalizados como datastores NFS externos. Las opciones en el asesor de migración pueden diferir dependiendo de la herramienta usada para recopilar los datos del inventario de máquinas virtuales.</block>
+  <block id="68da13bad217e0063074ca65ab1746c6" category="list-text">Debes tener un nombre de usuario y una contraseña para acceder a Workload Factory. Si no tienes acceso, crea una cuenta ahora. Consulta las instrucciones<block ref="8199fecf84297ce97d3f6270595de419" category="inline-link-rx"></block>.</block>
+  <block id="5a4d83a02bb188eb7ca1f7e786e22e1d" category="list-text">Debes tener una suscripción a Google Cloud VMware Engine en una región donde estén disponibles tanto Google Cloud VMware Engine como los servicios de Google Cloud NetApp Volumes.</block>
+  <block id="dc45aa090e1645baa98c11a108029ce0" category="list-text">Selecciona *Google Cloud* del menú desplegable.</block>
+  <block id="73baed54ed8ca7d7f90fe730c7b59b88" category="list-text">En la tabla de inventario de máquinas virtuales, selecciona *Start planning* junto al inventario que quieres usar para hacer un plan de despliegue.</block>
+  <block id="db7c743cb66453373682261b413adad9" category="paragraph">Aparece el asistente *Prepare for Google Cloud onboarding*.</block>
+  <block id="e6f8994ed2b1b810094dfb26fa18e8e2" category="section-title">Configura las preferencias de migración</block>
+  <block id="318057dd05b246b46dcbf62fa92fe315" category="list-text">En la sección _Consideraciones sobre el inventario de máquinas virtuales_, selecciona las opciones para filtrar la lista de máquinas virtuales y configurar cómo se diseña el plan de migración:</block>
+  <block id="bc7c3c1171be78801f06d1a8be1b33da" category="list-text">*Consideraciones sobre el inventario de máquinas virtuales*: selecciona qué máquinas virtuales incluir según su estado de energía:</block>
+  <block id="418498649001645bfbeb014ffb28f3a5" category="list-text">*Encendido* (seleccionado por defecto)</block>
+  <block id="0fbcd3243d3f686c466384887bd6de4d" category="list-text">*Apagado*</block>
+  <block id="b127b7c444e5c26d1316aeff5d18b6c0" category="list-text">*Suspendido*</block>
+  <block id="8358d69538590d55579dfed09c42a3dc" category="list-text">*Almacenamiento de VM a tener en cuenta*: elige cómo dimensionar los datastores de Google Cloud NetApp Volumes:</block>
+  <block id="e0b155b26280cf35363da155123ba80b" category="list-text">*Utilizado*: dimensiona los almacenes de datos en función de la capacidad realmente utilizada por las VMs.</block>
+  <block id="ff354babfdeb77e7b4389011d1c1a96b" category="list-text">*Aprovisionado* (por defecto): dimensiona los almacenes de datos en función de la capacidad total aprovisionada de las VMs.</block>
+  <block id="9dcb56404cf9e3954f908118420777c5" category="list-text">*Memoria de VM a tener en cuenta*: Elige cómo calcular los recursos de computación necesarios del clúster Google Cloud VMware Engine:</block>
+  <block id="1a554f30ae6e06a3369acf61e5598b64" category="list-text">*Utilizada*: calcula según el uso real de memoria por las VMs.</block>
+  <block id="e8017897774b4bf2495c82f404444684" category="list-text">*Provisioned* (por defecto): calcula según la memoria total asignada a las VMs.</block>
+  <block id="6f3b7fbb308b5cd5ad0d69af3189d9a4" category="list-text">*Estimación del rendimiento de las máquinas virtuales*: esta opción solo aparece cuando usas RVTools como fuente de datos. Selecciona el nivel de rendimiento esperado:</block>
+  <block id="1525decaa8624824a33b6bc992f4d864" category="list-text">*Bajo*: 50 IOPS de media por VM.</block>
+  <block id="38270b49f9e67488cb71ff02a55f42ea" category="list-text">*Estándar*: 200 IOPS de media por VM (seleccionado por defecto).</block>
+  <block id="15ed638a0e72bf4a2607c046aeb81864" category="list-text">*Alta*: 800 IOPS de media por VM.</block>
+  <block id="b449916fc58f92ffcaa6f3ffb72ceeb6" category="list-text">En la sección _Google Cloud VMware Engine deployment region_:</block>
+  <block id="2942a3017cfae2123d920cc47cc8652d" category="list-text">*Región*: selecciona la región de Google Cloud donde se implementarán Google Cloud VMware Engine y Google Cloud NetApp Volumes. Solo aparecen en la lista las regiones donde ambos servicios están disponibles.</block>
+  <block id="2ec7c0d92d77fe03c018d7625788f776" category="list-text">En la sección _capacidad de almacenamiento de la VM y consideraciones de protección_:</block>
+  <block id="7ad31a1f794d93192d2fcf7fe57c3521" category="list-text">*Porcentaje de margen de capacidad*: ingresa el porcentaje de capacidad adicional que quieres añadir para el crecimiento. El valor por defecto es 20%, que también es el mínimo recomendado.</block>
+  <block id="d4f03c9c6377b773ec4201e2d11cefc4" category="admonition">Si seleccionas menos del 20% de espacio libre, la protección contra instantáneas se desactiva automáticamente.</block>
+  <block id="c154c1c66b585ace39c0fe25c1bc81ea" category="list-text">*Protección de instantáneas de VM*: activa esta opción (activada por defecto) para proteger las VMs con instantáneas usando la política de instantáneas predeterminada de ONTAP.</block>
+  <block id="1e078659568f45142ad6ff83c2958dd0" category="section-title">Selecciona una configuración de clúster</block>
+  <block id="d6d4f2913ba9aec17bc7133710233a62" category="list-text">En la página *Selecciona la configuración de clúster de Google Cloud VMware Engine preferida*, configura tus preferencias de clúster de Google Cloud VMware Engine y revisa las configuraciones recomendadas.</block>
+  <block id="d2cde9f9a429ad5350e8aa204fd2241d" category="list-text">En la sección _Preferencias de arquitectura_:</block>
+  <block id="2d58b16a43cdd4543d48af2a2a465cb8" category="list-text">*Permitir tipos de nodo VE2 de Google Cloud VMware Engine*: cuando está activada (por defecto), se tienen en cuenta tanto los tipos de nodo VE1 como VE2. Desactiva esta opción para limitar las configuraciones a solo nodos VE1.</block>
+  <block id="c99dbd22517a9e786f961b2df74010f9" category="list-text">*Permitir volúmenes estándar de Google Cloud NetApp Volumes*: cuando está desactivada (predeterminado), solo se usan los niveles de servicio Premium y Extreme en el diseño de la configuración, que es la mejor práctica recomendada. Los volúmenes Premium y Extreme ofrecen disponibilidad regional, lo que los hace resistentes a fallos de zona de disponibilidad. Los volúmenes estándar solo ofrecen disponibilidad zonal y no están protegidos contra fallos de AZ. Activa esta opción para incluir volúmenes de nivel de servicio estándar, lo que podría reducir los costos para cargas de trabajo de menor rendimiento donde no se requiere resiliencia a nivel de AZ.</block>
+  <block id="c24061201d4aac62423f361124cd2ea9" category="list-text">En la sección _Configuración de clúster_, revisa las configuraciones de clúster de Google Cloud VMware Engine disponibles:</block>
+  <block id="7e2f923c2ece67d7f03cea8cfc2cec3c" category="paragraph">Las configuraciones se ordenan por coste total estimado (de menor a mayor) y muestran diferentes combinaciones de:</block>
+  <block id="3eceea6468a6cb92c2559a2980f972be" category="list-text">Tipos de nodo Google Cloud VMware Engine (VE1 o VE2)</block>
+  <block id="b260e33619eeabc05fb9f549d49c1bb7" category="list-text">Coste total estimado</block>
+  <block id="41d35228c5dd44718af03e95a7a66c0b" category="list-text">Ahorro estimado</block>
+  <block id="f143d990b31f7ac5e79358104cb48aff" category="list-text">Recuento de nodos</block>
+  <block id="06963bdc1e939a83554fb2f6e1123a88" category="list-text">Configuración de la tolerancia a fallos de VSAN: FTT (Fault Tolerance Type) y FTM (Fault Tolerance Method)</block>
+  <block id="1586df1eb6fd24647c7b8eeea36a5684" category="list-text">Exceso de capacidad de almacenamiento en TiB</block>
+  <block id="eb90cdaabce0e303a4bf416b7b3623b3" category="list-text">Tipo de nodo solo almacenamiento</block>
+  <block id="649eaaada1930b6d058fcabd21cdda9f" category="list-text">Selecciona la configuración de clúster que prefieras haciendo clic en el botón de opción junto a ella.</block>
+  <block id="0437a536b5da65e60b818ed2bbc1a961" category="paragraph">La primera configuración (la de menor coste) se selecciona por defecto.</block>
+  <block id="ed83440f7fa681e523c2732d38a7b2e0" category="section-title">Selecciona un diseño de máquina virtual</block>
+  <block id="f75aafe44a7a24b5ed25b86c00e0392e" category="list-text">En la página *Selección automática de máquinas virtuales*, revisa la distribución óptima de máquinas virtuales seleccionada automáticamente según la capacidad de almacenamiento externo que necesites y tus preferencias.</block>
+  <block id="06c4948c691699c140b560bed36cf694" category="list-text">Revisa la sección _VM inventory_, que muestra:</block>
+  <block id="6fe50fe9d1984a8bbc393a22b0344b1b" category="list-text">Recuento total de máquinas virtuales</block>
+  <block id="ce1168c4a0150c3c5269489c6b1c044c" category="list-text">Capacidad total (aprovisionada o utilizada en función de tu selección anterior)</block>
+  <block id="a6610a39936d624143ac328a4c30cf93" category="paragraph">Puedes ampliar la sección para ver los siguientes detalles:</block>
+  <block id="9dbc75c2caf0bb17b2e5552da81dc213" category="list-text">IOPS promedio agregado</block>
+  <block id="287d022f0924b9434fe3c56becfa411c" category="list-text">Rendimiento agregado (MB/s)</block>
+  <block id="7e1e5cb9717e72ce67c3e7d3d42668e7" category="list-text">IOPS pico agregadas</block>
+  <block id="88dde71fa61fc2745375f962ee0309de" category="list-text">Rendimiento máximo agregado (MB/s)</block>
+  <block id="c1757aa1ab464c2683bc6df2d33797b3" category="list-text">En la sección _Preferencias de selección de VM_, elige el método de optimización:</block>
+  <block id="42d2c38fdce391bb82af93c49a349f05" category="list-text">*Coste* (por defecto): Asigna las máquinas virtuales con la mayor densidad de E/S al almacenamiento vSAN, lo que ayuda a minimizar los costos de Google Cloud NetApp Volumes mientras se cumplen los requisitos de rendimiento.</block>
+  <block id="44f37f35fadeb6bcf5373e762a8936f4" category="list-text">*Protección*: Asigna las máquinas virtuales con la mayor capacidad de almacenamiento a los almacenes de datos externos de Google Cloud NetApp Volumes, lo que proporciona mejor capacidad de recuperación gracias a las funciones de instantáneas y replicación de Google Cloud NetApp Volumes.</block>
+  <block id="e9297f98306d30068ec163f2bedd4dfb" category="list-text">Revisa la sección _Configuración del almacén de datos externo_, que muestra cómo se distribuyen las máquinas virtuales y la capacidad entre Google Cloud NetApp Volumes y el almacenamiento vSAN.</block>
+  <block id="18316d9ec941bf3b960518ec396bd83a" category="paragraph">Puedes expandir la sección para ver los siguientes detalles: * IOPS medias agregadas * rendimiento agregado (MB/s) * IOPS máximas agregadas * rendimiento máximo agregado (MB/s)</block>
+  <block id="79170f31bfd8aee21b7af21ea74b679c" category="list-text">En la tabla _VMs selected for Google Cloud NetApp Volumes NFS datastores_, puedes:</block>
+  <block id="24d081499889e03a6f862bf9b92e1d7b" category="list-text">Consulta las máquinas virtuales seleccionadas automáticamente según el método de optimización que elegiste.</block>
+  <block id="686d86bc6cf0f2dd81b047d6c6fb20ff" category="list-text">Selecciona o deselecciona manualmente máquinas virtuales individuales usando las casillas de verificación.</block>
+  <block id="8fd7c4bce16287bc0901d76e6df18369" category="list-text">Filtra las máquinas virtuales por clúster, sistema operativo o centro de datos.</block>
+  <block id="33a0f704fea457cd41d0c99aa0f2b24c" category="list-text">Ordena las máquinas virtuales por cualquier columna visible (como el nombre de la máquina virtual, la capacidad aprovisionada o el promedio de IOPS de lectura).</block>
+  <block id="724ff45242187140f5f0fa936e3f1883" category="inline-image-macro">el icono del selector de columnas</block>
+  <block id="d7c867e0983f09b2860e42622e3e18b3" category="list-text">Muestra u oculta columnas adicionales haciendo clic <block ref="e09a28752dc289a931b5bd80d410bab8" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="416c477b64c4b04c70f08817f2eec88e" category="admonition">Si modificas manualmente la selección de VM, puedes volver a la selección automática según tu preferencia de optimización seleccionando *Reset*.</block>
+  <block id="bcd1d263fedf745abaf10a8e39e3ce7a" category="section-title">Revisa las asignaciones de datastores NFS</block>
+  <block id="313c4da174190a57c47b141b4c2d7d53" category="list-text">En la página *Revisar la asignación del almacén de instancias*, revisa la disposición detallada del almacén de datos y las asignaciones de las máquinas virtuales.</block>
+  <block id="870e7ad52b7813eb4eef3d796cb12a23" category="list-text">Usa las pestañas *Total* y *Por almacén de datos* para cambiar entre una vista agregada y los detalles por almacén de datos.</block>
+  <block id="ce4cbe9effb933914d8f4f5d04d7487b" category="list-text">En la pestaña *Total*:</block>
+  <block id="90fa371363453317b8a8a48c353419b2" category="list-text">Revisa el gráfico _Análisis de capacidad de almacenamiento_ que muestra:</block>
+  <block id="8ec9cb96f2eafa3544c3c5840e600ea6" category="list-text">Capacidad lógica de Google Cloud NetApp Volumes</block>
+  <block id="d9ff59373383aa2a2345132052d2620a" category="list-text">Capacidad provisionada de VM</block>
+  <block id="3a20649c9c4bd5b363e2188e9da436f1" category="list-text">Espacio libre a nivel de VM (si se seleccionó la capacidad aprovisionada)</block>
+  <block id="26aea18cb1e707f31b308dd33a47f2c3" category="list-text">Capacidad total disponible</block>
+  <block id="efe33427acece88369716aee1cdb4638" category="list-text">Capacidad del búfer de instantáneas (si snapshot protection está activada)</block>
+  <block id="fae8e96eddae7d4c06ba9e0ad951691e" category="list-text">Revisa la sección _Información detallada_ que muestra:</block>
+  <block id="9a56ad3fb5b4c1c596bed3f9798d1942" category="list-text">Capacidad total de VMs provisionadas</block>
+  <block id="de7a1812653e49058c2b0fc45a470ac9" category="list-text">Espacio libre (si se seleccionó la capacidad aprovisionada)</block>
+  <block id="e0a1cac53f449fb872b32efaa226ad6d" category="list-text">Capacidad lógica global de todos los grupos de almacenamiento de Google Cloud NetApp Volumes storage pools</block>
+  <block id="942c9f9342b5559d33dba5f991c67499" category="list-text">Recuento y tipos de grupos de almacenamiento de Google Cloud NetApp Volumes</block>
+  <block id="3d7b1ea762753f455dec512bb7eb6366" category="list-text">Recuento total de máquinas virtuales y capacidad aprovisionada</block>
+  <block id="32989a1d33776ff1c54d7b4624ff9d47" category="list-text">IOPS promedio agregadas de máquinas virtuales (cuando estén disponibles)</block>
+  <block id="f2800421c18cc8ac7fdd5415519aa5a7" category="list-text">Densidad promedio de E/S (con tooltip explicando el cálculo)</block>
+  <block id="4acce2ca98b00d1ec62bc94ab747eb4a" category="list-text">Rendimiento medio agregado de las VM (cuando esté disponible)</block>
+  <block id="f3ebbd3bdb6c006819938d3e634c8265" category="list-text">En las pestañas *Por datastore*:</block>
+  <block id="46d30964efdee8f8361e173e01a56d75" category="list-text">Selecciona una pestaña de almacén de datos para ver sus detalles.</block>
+  <block id="78d449d4ccb94b661a89d8d9bfd71ccd" category="list-text">Revisa los detalles de ese almacén de datos, que incluye:</block>
+  <block id="39b09228143d70a200a3d1e6a4bc34cc" category="list-text">Gráfico de desglose de capacidad</block>
+  <block id="2b5101c3a07098cfb9da6938626ef0a3" category="list-text">Propiedades del datastore:</block>
+  <block id="dcd418b970d58623db7272b29c5c9ab8" category="list-text">Capacidad total utilizada de máquinas virtuales</block>
+  <block id="966f3447d134a9f961844546224609b8" category="list-text">Capacidad lógica del datastore</block>
+  <block id="3d482ed846681b98626621d5ee29828a" category="list-text">Nivel de servicio del datastore (Standard, Premium, Extreme)</block>
+  <block id="622cf890d2202b708da731d4396a5fa3" category="list-text">Densidad media de E/S del datastore (cuando esté disponible)</block>
+  <block id="b07508826fa15ee923db17879d587df2" category="list-text">Revisa la tabla _Virtual machines_ que muestra todas las VMs asignadas a este datastore con columnas para el nombre de la VM, capacidad, clúster, sistema operativo, IOPS, rendimiento y otras propiedades.</block>
+  <block id="3f7787c2c84b9f020c78dd2570dd1978" category="section-title">Revisa y guarda tu plan de despliegue</block>
+  <block id="c84ae240c20ff075273c44b014156638" category="list-text">En la página *Revisa tu plan de migración*, revisa y personaliza tu plan de despliegue antes de guardarlo.</block>
+  <block id="3f058a662c13b8d11a82eded614260de" category="list-text">En el menú desplegable, elige tu plan de precios:</block>
+  <block id="32d62a345830565c255a1d5c52d0df8d" category="list-text">*A la carta* (default): pago por uso</block>
+  <block id="e59a6c2b81411bb4102996997a1197ab" category="admonition">Los precios mostrados en la página de revisión se ajustan según el plan que elijas.</block>
+  <block id="932b3919e252fd94007b181facfea234" category="list-text">Revisa la sección _Ahorro estimado_:</block>
+  <block id="9a12131dfe25a5d82a0f8c96d1aced53" category="list-text">Los cuadros comparativos de alternativas de configuración de Google Cloud VMware Engine comparan:</block>
+  <block id="b27860d1731a66ef502cdae4b0a63ff9" category="list-text">Coste mensual estimado de la configuración vSAN-only de Google Cloud VMware Engine (nodos de cómputo + nodos solo de almacenamiento)</block>
+  <block id="496c4d4316776481a1482ddb965d07c2" category="list-text">Google Cloud VMware Engine vSAN + coste mensual estimado del almacén de datos externo (nodos de computación + almacenes de datos externos de Google Cloud NetApp Volumes)</block>
+  <block id="9af29b9aea6f20fe939f651c5fbff823" category="list-text">Porcentaje de ahorro y cantidad en dólares</block>
+  <block id="8ed6faf7202e1f068aca46df984e41aa" category="list-text">La tabla _Desglose del ahorro estimado_ compara las dos configuraciones con detalles sobre el recuento de nodos, la capacidad de almacenamiento, la información del pool de Google Cloud NetApp Volumes y el ahorro de costes mensual y anual.</block>
+  <block id="fd5e55f3dada0dfdea1e4a8db65d4f71" category="list-text">Revisa la sección _Google Cloud NetApp Volumes suggested configuration_. Destaca lo siguiente:</block>
+  <block id="412f1d25415ed6ae42d9f7093a892003" category="list-text">Recuento y tipos de storage pool</block>
+  <block id="bcefcdcb863748633ae2e2b4c03e8c5a" category="list-text">Capacidad total del pool de almacenamiento</block>
+  <block id="03c3d7a09db2ac4b65e1eb25d5757b94" category="list-text">Recuento de datastores (volúmenes)</block>
+  <block id="e02f0b9124dd4bd3f4df656a21f9f5dd" category="list-text">Rendimiento agregado de los datastores</block>
+  <block id="69aa4b2dbd288e22e885b5bc2f41dc11" category="list-text">Coste mensual estimado</block>
+  <block id="736d00d767eb2cc5061950d92fbae941" category="list-text">La sección _Suggested configuration details_ proporciona un desglose por nivel de servicio (Standard, Premium, Extreme) con recuentos de storage pool, capacidades, recuentos de datastore, detalles de throughput, capacity headroom, snapshot buffer y coste mensual total estimado.</block>
+  <block id="ed79bf3416559d9d123df42da2af219a" category="list-text">La sección _Análisis de costes estimados_ desglosa los costes por nivel de servicio (Standard, Premium, Extreme), incluidos los costes de capacidad, capacidad en frío, datos replicados, uso de backup y capacidad, con un coste mensual total estimado.</block>
+  <block id="9217f03104bb17cedac81e390d6976a4" category="list-text">La tabla _Configuración de volúmenes_ enumera cada volumen planificado de Google Cloud NetApp Volumes con detalles como nombre, tipo de pool, protocolo (NFSv3), capacidad, headroom, política de instantáneas y política de niveles.</block>
+  <block id="d45e3ff81cc5679c120fa221fff1d2f8" category="list-text">Revisa las secciones _Supuestos de diseño de la solución_ y _Aviso legal_.</block>
+  <block id="78b0d963852b83be5e0705a4eabde39b" category="list-text">Cuando estés satisfecho con el plan de migración, tienes varias opciones:</block>
+  <block id="62d3f6597ca7730e26b8478a9cffb46d" category="list-text">Selecciona *Gestionar plan* en la parte superior de la página.</block>
+  <block id="1c1d62c9225c5b62e271d7bdf78281fd" category="list-text">Elige descargar:</block>
+  <block id="dc2dce04f4cc304eb4072ad5c870dc1f" category="list-text">*Descargar un informe*: Un documento PDF completo con todos los detalles del plan</block>
+  <block id="252e7f3a52993e1074df197050c910ae" category="list-text">*Descarga del despliegue de almacenamiento de instancias*: un archivo CSV que asigna VMs a sus datastores asignados</block>
+  <block id="c0b5479b7a72a1c1a851285c1482619e" category="list-text">Selecciona *Provision* para aprovisionar los datastores NFS de Google Cloud NetApp Volumes usando Terraform Infrastructure-as-Code.</block>
+  <block id="4c9e1a6d5098db9ed0d8724f69b55509" category="paragraph">Un cuadro de código muestra el código Terraform generado. Puedes copiar el código en tu portapapeles o descargarlo como archivo para ejecutarlo en tu propio entorno de Terraform.</block>
+  <block id="98eb3550d72a811f20fc4046f149ca3c" category="list-text">Selecciona *Crear* para crear los almacenes de datos NFS de Google Cloud NetApp Volumes.</block>
+  <block id="e810691ddff205487cb9d1e71664def5" category="summary">NetApp Workload Factory para VMware te da herramientas para mover tus datos de sistemas locales a Amazon EVS, VMware Cloud on AWS (VMC), Amazon EC2 o Google Cloud VMware Engine.</block>
+  <block id="b700ea2542063dec898122cc29ac6652" category="paragraph">NetApp Workload Factory para VMware te da herramientas para mover tus datos de sistemas locales a Amazon Elastic VMware Service (EVS), VMware Cloud on AWS (VMC), Amazon EC2 o Google Cloud VMware Engine.</block>
+  <block id="a8fe35dc679e31e460ff5314e4814c4f" category="paragraph">NetApp Workload Factory para VMware te ofrece un centro de planificación y asesores de migración que te permiten analizar tus configuraciones actuales de máquinas virtuales en entornos locales vSphere. Luego, los asesores de migración generan un plan para implementar las distribuciones recomendadas de máquinas virtuales en Amazon EVS, Amazon EC2, VMware Cloud on AWS vSphere clusters o Google Cloud VMware Engine, usando almacenamiento nativo de la nube personalizado como almacenes de datos externos. Para entornos AWS, esto incluye Amazon FSx for NetApp ONTAP file systems. Para entornos Google Cloud, esto incluye Google Cloud NetApp Volumes. El centro de planificación, que actúa como el panel de Workload Factory para VMware, te permite gestionar conjuntos de datos de inventario de VM guardados, planes de migración guardados y aprovisionar cualquiera de los planes de migración que hayas guardado.</block>
+  <block id="3e86d077ced845a408bf957ded3dbae8" category="paragraph">Amazon FSx for NetApp ONTAP es un datastore NFS externo construido sobre el sistema de archivos ONTAP de NetApp que puedes conectar a instancias de Amazon EVS, Amazon EC2 o a clústeres de VMware Cloud en AWS vSphere. De manera similar, Google Cloud NetApp Volumes ofrece datastores NFS externos para entornos de Google Cloud VMware Engine. No necesitas agregar más hosts para aumentar la capacidad de almacenamiento; simplemente usa estos volúmenes de almacenamiento nativos de la nube como datastores externos para complementar los datastores de vSAN. Esto te da una infraestructura de almacenamiento flexible, de alto rendimiento y virtualizada que escala de forma independiente a los recursos de cómputo.</block>
+  <block id="2ccdcbb9ad87fe4eb4c7e0235ab222f3" category="paragraph">Los asesores de migración pueden ayudarte a mover máquinas virtuales (VM) locales y sus datos, que se ejecutan en cualquier datastore compatible con VMware, a datastores de Amazon EVS, Amazon EC2, VMware Cloud o Google Cloud VMware Engine, lo que incluye datastores NFS complementarios en un sistema de archivos FSx for ONTAP o Google Cloud NetApp Volumes.</block>
+  <block id="2afa9ed57e4ce623bbccfda41d5d59af" category="list-text">Determina qué máquinas virtuales migrar a Amazon EC2, Amazon EVS, VMware Cloud on AWS o Google Cloud VMware Engine</block>
+  <block id="0f4fbe30c2e887701c223f09e89387d8" category="list-text">Identifica el espacio necesario en los volúmenes de almacenamiento nativos de la nube que se usarán como almacenes de datos externos de máquinas virtuales</block>
+  <block id="ff62f1e53387635f4c94e523c95339f7" category="list-text">Realiza el despliegue real (para Amazon EC2, Amazon EVS y VMware Cloud on AWS)</block>
+  <block id="87439718ba32d403605af10fe103cda9" category="paragraph">El asesor de migración admite la planificación de la configuración para un único Amazon EVS, Amazon EC2 o un clúster de VMware Cloud on AWS conectado a sistemas de archivos Amazon FSx for NetApp ONTAP, o un clúster de Google Cloud VMware Engine conectado a Google Cloud NetApp Volumes.</block>
+  <block id="53ece88b5f79298f3e39b4b2e9a3365d" category="paragraph">La transición de partes de tu infraestructura actual a Amazon EC2, Amazon EVS, VMware Cloud on AWS o Google Cloud VMware Engine usando almacenamiento nativo en la nube como almacenes de datos NFS externos te da los siguientes beneficios:</block>
+  <block id="546393155194873f3731142e84a340fd" category="inline-link">permisos para NetApp Workload Factory</block>
+  <block id="6bc7794709563656174e241f32f0298a" category="paragraph">Antes de empezar, debes tener una idea de<block ref="aae0d4009285116ff23f9a7f74c1f54b" category="inline-link-rx"></block>.</block>
+  <block id="2556da08e11585b605626929beefd4ce" category="summary">Ponte en marcha con el asesor de migración de VMware para trasladar tu infraestructura actual a Google Cloud VMware Engine utilizando Google Cloud NetApp Volumes como almacenes de datos NFS externos.</block>
+  <block id="9e8284342c75f48a25dde90d2f2d0588" category="doc">Inicio rápido para migrar a Google Cloud VMware Engine usando el asesor de migración de cargas de trabajo de VMware</block>
+  <block id="b53d94934411cf1f04ae399b5c11817c" category="paragraph">Si decides no conceder permisos, puedes empezar a usar Workload Factory para VMware para copiar muestras de código parcialmente completadas.</block>
+  <block id="50e7018c936f9967bef9aaaca1d14b1d" category="paragraph">Si decides conceder permisos, tendrás que<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block> que incluye proporcionar una cuenta de servicio de GCP con los permisos necesarios para ver y administrar los recursos de Google Cloud NetApp Volumes, la configuración de VPC y la conectividad del datastore de Google Cloud VMware Engine.</block>
+  <block id="175be206f8668945b45511179609ebe3" category="paragraph">Inicia el VMware migration advisor y configura el entorno de VM que quieres crear en la infraestructura de Google Cloud VMware Engine usando Google Cloud NetApp Volumes como datastores NFS externos.</block>
+  <block id="020b682c9f65d6f17439d2cb0cf964bf" category="paragraph"><block ref="e3624573fd74cf60ac70575f2c86dc70" category="inline-link-macro-rx"></block>.</block>
+  <block id="955a2516353d537bc989165068e10d79" category="inline-link-macro">Crea un plan de implementación de Google Cloud VMware Engine</block>
+  <block id="fc32330336b033235d02cb9ee4ecb7f8" category="list-text"><block ref="fc32330336b033235d02cb9ee4ecb7f8" category="inline-link-macro-rx"></block></block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">09 de marzo de 2026</block>
+  <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">01 de marzo de 2026</block>
+  <block id="cd201b013ee4f8ae149bb4ba1d9c3ab3" category="sidebar">Inicio rápido: migra a Google Cloud VMware Engine</block>
+  <block id="26786f5592c89fd387f588f17079366d" category="sidebar">Migra a Google Cloud VMware Engine</block>
+  <block id="ef1fc06261bcd9214fd9546ba1a3d6f6" category="sidebar">Inicio rápido para migrar a Google Cloud VMware Engine</block>
 </blocks>
