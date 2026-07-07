@@ -623,7 +623,6 @@
   <block id="df3078cbf2344fdc96564c4276d42b3a" category="paragraph">Workload Factory es compatible con todas las regiones comerciales donde se admite FSx para ONTAP .<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">Las siguientes regiones de AWS no son compatibles:</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">regiones de China</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">Regiones de GovCloud (EE. UU.)</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">Nube secreta</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">Nube de alto secreto</block>
   <block id="262fa4a3da671ed4e99add58ab265149" category="doc">Avisos legales de NetApp Workload Factory para VMware</block>
@@ -778,7 +777,6 @@
   <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">La pestaña Well-architected proporciona un análisis diario automatizado de tus entornos de Amazon Elastic VMware Service (EVS) para asegurar la alineación con las prácticas recomendadas de AWS y NetApp. La pestaña identifica problemas de configuración y ofrece una guía detallada de corrección para ayudarte a mantener operaciones, seguridad y eficiencia de costes óptimas.</block>
   <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">Los análisis automáticos se realizan mediante las API de AWS—no se requieren credenciales de vSphere. Los hallazgos se organizan por área de configuración, y cada hallazgo incluye estado, niveles de gravedad, detalles de los recursos afectados y procedimientos de corrección paso a paso.</block>
   <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">Implementa configuraciones de EVS bien diseñadas en Workload Factory</block>
-  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>. == coste</block>
   <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> Revisa los insights bien arquitectados para tu entorno EVS</block>
   <block id="9af4d557947285cd35bace6367e46950" category="paragraph">Cuando se descubre tu entorno EVS, Workload Factory realiza automáticamente análisis diarios bien diseñados para identificar problemas de configuración y ofrecer recomendaciones para solucionarlos.</block>
   <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">Aprende a implementar configuraciones bien diseñadas</block>
@@ -1064,4 +1062,15 @@
   <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">La seguridad enfatiza la protección de datos, sistemas y activos mediante evaluaciones de riesgos y estrategias de mitigación.</block>
   <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">*Gestión de nodos del clúster*</block>
   <block id="240380a5970626d74754b96038898f5e" category="paragraph">Asegúrate de que los nodos de tu clúster EVS tengan configurada la protección adecuada contra detención y terminación en EC2. Los nodos ESXi de EVS deben gestionarse exclusivamente usando vCenter u otras herramientas de gestión a nivel de VMware. Sin las protecciones adecuadas a nivel de EC2, los nodos podrían detenerse o eliminarse accidentalmente desde la consola de EC2, lo que puede causar la indisponibilidad de los datos de las máquinas virtuales o la pérdida de datos.</block>
+  <block id="ed577820f4fec6bbade3e14c5eb7020d" category="doc">Soporte para AWS GovCloud (US) en NetApp Workload Factory</block>
+  <block id="8b15ccb7fd3de568f0d6670c4c2d0d62" category="paragraph">NetApp Workload Factory es compatible con las cuentas de AWS GovCloud (US). Con una cuenta de GovCloud, puedes implementar y administrar cargas de trabajo de almacenamiento en las regiones de AWS GovCloud (US).</block>
+  <block id="caa606c0b1085a846c384cef14c3a17f" category="doc">Compatibilidad con la instancia i7i.metal-24xl en la calculadora de TCO de EVS</block>
+  <block id="b055674b094a39e8822f5941fd1ddf8d" category="paragraph">La calculadora de TCO de EVS ahora admite instancias EC2 de AWS i7i.metal-24xl como hosts de clúster. En comparación con las configuraciones i4i.metal, estas instancias reducen el coste inicial de EVS en aproximadamente un 33% para compute y un 25% para el almacenamiento vSAN.</block>
+  <block id="bbc7cb1849fc26e314ad21ecd99ca5fe" category="paragraph">La calculadora compara automáticamente ambos tipos de instancias y selecciona la opción más rentable. Una nueva sección de comparación muestra las configuraciones de los hosts EVS una al lado de la otra, lo que facilita encontrar la configuración que mejor se adapte a tus necesidades.</block>
+  <block id="0665cdd8950328e06e0db9b1e16938d3" category="inline-link-macro">Calcula el ahorro estimado para EVS</block>
+  <block id="86271c8c1063215a7f1ff0f45240c576" category="paragraph"><block ref="86271c8c1063215a7f1ff0f45240c576" category="inline-link-macro-rx"></block></block>
+  <block id="1449013968addffe716f61980587a6e9" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>.</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Coste</block>
+  <block id="b2384f97ee5bce1c28f5573e6878c9c1" category="section-title">06 de julio de 2026</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">31 de mayo de 2026</block>
 </blocks>

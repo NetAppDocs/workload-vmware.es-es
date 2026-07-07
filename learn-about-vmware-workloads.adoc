@@ -84,7 +84,11 @@ La pestaña Well-architected proporciona un análisis diario automatizado de tus
 
 Los análisis automáticos se realizan mediante las API de AWS—no se requieren credenciales de vSphere. Los hallazgos se organizan por área de configuración, y cada hallazgo incluye estado, niveles de gravedad, detalles de los recursos afectados y procedimientos de corrección paso a paso.
 
-link:view-evs-well-architected.html["Implementa configuraciones de EVS bien diseñadas en Workload Factory"]. == coste
+link:view-evs-well-architected.html["Implementa configuraciones de EVS bien diseñadas en Workload Factory"].
+
+
+
+== Coste
 
 El uso de Workload Factory para VMware no tiene ningún costo.
 
@@ -105,7 +109,6 @@ Workload Factory es compatible con todas las regiones comerciales donde se admit
 Las siguientes regiones de AWS no son compatibles:
 
 * regiones de China
-* Regiones de GovCloud (EE. UU.)
 * Nube secreta
 * Nube de alto secreto
 

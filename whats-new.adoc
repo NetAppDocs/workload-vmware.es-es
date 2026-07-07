@@ -15,6 +15,30 @@ Conozca las novedades del componente Asesor de migración de VMware de Workload 
 
 
 
+== 06 de julio de 2026
+
+
+
+=== Compatibilidad con la instancia i7i.metal-24xl en la calculadora de TCO de EVS
+
+La calculadora de TCO de EVS ahora admite instancias EC2 de AWS i7i.metal-24xl como hosts de clúster. En comparación con las configuraciones i4i.metal, estas instancias reducen el coste inicial de EVS en aproximadamente un 33% para compute y un 25% para el almacenamiento vSAN.
+
+La calculadora compara automáticamente ambos tipos de instancias y selecciona la opción más rentable. Una nueva sección de comparación muestra las configuraciones de los hosts EVS una al lado de la otra, lo que facilita encontrar la configuración que mejor se adapte a tus necesidades.
+
+link:calculate-evs-savings.html["Calcula el ahorro estimado para EVS"]
+
+
+
+== 31 de mayo de 2026
+
+
+
+=== Soporte para AWS GovCloud (US) en NetApp Workload Factory
+
+NetApp Workload Factory es compatible con las cuentas de AWS GovCloud (US). Con una cuenta de GovCloud, puedes implementar y administrar cargas de trabajo de almacenamiento en las regiones de AWS GovCloud (US).
+
+
+
 == 09 de marzo de 2026
 
 
