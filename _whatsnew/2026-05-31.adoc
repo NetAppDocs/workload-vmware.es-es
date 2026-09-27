@@ -4,6 +4,7 @@
 
 
 
+[[support-for-aws-govcloud-us-in-netapp-workload-factory]]
 === Soporte para AWS GovCloud (US) en NetApp Workload Factory
 
 NetApp Workload Factory es compatible con las cuentas de AWS GovCloud (US). Con una cuenta de GovCloud, puedes implementar y administrar cargas de trabajo de almacenamiento en las regiones de AWS GovCloud (US).

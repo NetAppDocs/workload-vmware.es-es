@@ -4,6 +4,7 @@
 
 
 
+[[migrate-to-amazon-ec2]]
 === Migrar a Amazon EC2
 
 El centro de cargas de trabajo para VMware admite ahora la migración a Amazon EC2 mediante el asesor de migración de VMware.

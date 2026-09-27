@@ -15,12 +15,14 @@ Los avisos legales proporcionan acceso a las declaraciones de copyright, marcas 
 
 
 
+[[copyright]]
 == Copyright
 
 link:https://www.netapp.com/company/legal/copyright/["https://www.netapp.com/company/legal/copyright/"^]
 
 
 
+[[trademarks]]
 == Marcas comerciales
 
 NETAPP, el logotipo de NETAPP y las marcas enumeradas en la página de marcas comerciales de NetApp son marcas comerciales de NetApp, Inc. Los demás nombres de empresas y productos son marcas comerciales de sus respectivos propietarios.
@@ -29,6 +31,7 @@ link:https://www.netapp.com/company/legal/trademarks/["https://www.netapp.com/co
 
 
 
+[[patents]]
 == Estadounidenses
 
 Puede encontrar una lista actual de las patentes propiedad de NetApp en:
@@ -37,12 +40,14 @@ link:https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf["https://
 
 
 
+[[privacy-policy]]
 == Política de privacidad
 
 link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.com/company/legal/privacy-policy/"^]
 
 
 
+[[open-source]]
 == Código abierto
 
 Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.

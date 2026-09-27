@@ -17,6 +17,7 @@ Tenga en cuenta que debe tener un nombre de usuario y una contraseña para acced
 
 
 
+[[create-a-deployment-plan-based-on-an-on-premises-vsphere-environment]]
 == Cree un plan de puesta en marcha basado en un entorno vSphere local
 
 Puede migrar sus configuraciones actuales de máquinas virtuales en entornos de vSphere on-premises a máquinas virtuales en Amazon EC2 y utilizar sistemas de archivos personalizados de Amazon FSx para NetApp ONTAP como almacenes de datos externos.

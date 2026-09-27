@@ -17,6 +17,7 @@ Si la calculadora de ahorros determina que el almacenamiento más rentable es FS
 
 
 
+[[explore-savings-for-evs-environments]]
 == Explora los ahorros para entornos EVS
 
 Siga estos pasos para explorar posibles ahorros en una migración planificada a un entorno de Amazon EVS.

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: view-evs-well-architected.html 
-keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+keywords: evs, well-architected, best practices, recommendations, security, resiliency 
 summary: Revisa el estado bien arquitectado de las configuraciones de EVS en Workload Factory y sigue la guía de remediación basada en las mejores prácticas de AWS y NetApp. 
 ---
 = Implementa configuraciones de EVS bien diseñadas
@@ -15,6 +15,7 @@ Usa el análisis de configuración de Workload Factory para revisar el estado bi
 
 
 
+[[about-this-task]]
 == Acerca de esta tarea
 
 Los análisis diarios automáticos de todos los entornos de EVS descubiertos mediante las API de AWS analizan tu configuración de EVS e identifican posibles problemas que podrían afectar la disponibilidad, la resiliencia, la seguridad o la optimización de costos. Los hallazgos se organizan por área de configuración, y cada hallazgo incluye el estado, los niveles de gravedad, los detalles de los recursos afectados y los procedimientos de corrección paso a paso.
@@ -29,6 +30,7 @@ Las funciones clave incluyen:
 
 
 
+[[understanding-well-architected-insights]]
 === Entendiendo los insights bien arquitectados
 
 La pestaña Well-architected muestra lo siguiente:
@@ -43,6 +45,7 @@ La pestaña Well-architected muestra lo siguiente:
 
 
 
+[[scan-frequency]]
 === Frecuencia de escaneo
 
 Los escaneos bien diseñados se realizan automáticamente para todas las configuraciones EVS descubiertas. Detalles clave sobre la programación de escaneos:
@@ -58,6 +61,7 @@ NOTE: Actualmente no se admite la ejecución bajo demanda de análisis bien arqu
 
 
 
+[[before-you-begin]]
 == Antes de empezar
 
 * Debes tener https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["credenciales de AWS añadidas"^] con permisos de _Vista, planificación y análisis_ para cargas de trabajo VMware.
@@ -66,6 +70,7 @@ NOTE: Actualmente no se admite la ejecución bajo demanda de análisis bien arqu
 
 
 
+[[access-the-well-architected-status-tab]]
 == Accede a la pestaña de estado bien diseñado
 
 .Pasos
@@ -89,10 +94,12 @@ Se muestran los siguientes elementos:
 
 
 
+[[view-well-architected-assessments]]
 == Ver evaluaciones bien arquitectadas
 
 
 
+[[cluster-node-management]]
 === Gestión de nodos del clúster
 
 Esto evalúa si los nodos de tu clúster EVS tienen configurada la protección de detención y terminación de EC2 de forma adecuada.
@@ -137,6 +144,7 @@ Para solucionar este problema, activa la protección de parada y terminación pa
 
 
 
+[[evs-environment-resiliency]]
 === Resiliencia del entorno EVS
 
 Esto evalúa si los nodos de tu clúster EVS están distribuidos correctamente en los grupos de colocación de particiones.
@@ -193,6 +201,7 @@ Al crear o ampliar un entorno EVS, aprovisiona todos los nodos del clúster usan
 
 
 
+[[whats-next]]
 == Qué sigue
 
 Después de revisar tus ideas bien estructuradas y aplicar los cambios recomendados:

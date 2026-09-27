@@ -17,6 +17,7 @@ Puedes crear un plan de implementación para migrar máquinas virtuales a Google
 
 
 
+[[requirements]]
 == Requisitos
 
 * Debes tenerlink:upload-vm-inventory.html["cargó un inventario de VM"] .
@@ -26,6 +27,7 @@ Puedes crear un plan de implementación para migrar máquinas virtuales a Google
 
 
 
+[[steps]]
 == Pasos
 
 . Inicie sesión en Workload Factory utilizando uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^] .
@@ -43,6 +45,7 @@ Aparece el asistente *Prepare for Google Cloud onboarding*.
 
 
 
+[[configure-migration-preferences]]
 === Configura las preferencias de migración
 
 . En la sección _Carga de configuración de VM_, revise la información sobre el conjunto de datos que está utilizando para crear un plan de migración.  La sección *Resumen de inventario de VM* se completa a partir del archivo de inventario para reflejar la cantidad de VM y la capacidad total de almacenamiento.
@@ -96,6 +99,7 @@ NOTE: Si seleccionas menos del 20% de espacio libre, la protección contra insta
 
 
 
+[[select-a-cluster-configuration]]
 === Selecciona una configuración de clúster
 
 . En la página *Selecciona la configuración de clúster de Google Cloud VMware Engine preferida*, configura tus preferencias de clúster de Google Cloud VMware Engine y revisa las configuraciones recomendadas.
@@ -128,6 +132,7 @@ La primera configuración (la de menor coste) se selecciona por defecto.
 
 
 
+[[select-a-vm-layout]]
 === Selecciona un diseño de máquina virtual
 
 . En la página *Selección automática de máquinas virtuales*, revisa la distribución óptima de máquinas virtuales seleccionada automáticamente según la capacidad de almacenamiento externo que necesites y tus preferencias.
@@ -172,6 +177,7 @@ NOTE: Si modificas manualmente la selección de VM, puedes volver a la selecció
 
 
 
+[[review-nfs-datastore-assignments]]
 === Revisa las asignaciones de datastores NFS
 
 . En la página *Revisar la asignación del almacén de instancias*, revisa la disposición detallada del almacén de datos y las asignaciones de las máquinas virtuales.
@@ -231,6 +237,7 @@ NOTE: Si modificas manualmente la selección de VM, puedes volver a la selecció
 
 
 
+[[review-and-save-your-deployment-plan]]
 === Revisa y guarda tu plan de despliegue
 
 . En la página *Revisa tu plan de migración*, revisa y personaliza tu plan de despliegue antes de guardarlo.

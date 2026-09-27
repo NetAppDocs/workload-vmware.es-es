@@ -15,18 +15,21 @@ El centro de planificación de VMware le permite cargar nuevos datos de inventar
 
 
 
+[[manage-vm-inventory-data]]
 == Administrar datos de inventario de máquinas virtuales
 
 Utilice el centro de planificación para crear y administrar datos de inventario de máquinas virtuales.
 
 
 
+[[upload-vm-inventory-data]]
 === Cargar datos de inventario de VM
 
 Puede cargar datos de inventario de VM cuando esté listo para usar Workload Factory para explorar opciones de migración a entornos de Amazon AWS.  Referirse alink:upload-vm-inventory.html["Cargar datos de inventario de VM"] para obtener instrucciones.
 
 
 
+[[rename-a-dataset]]
 === Cambiar el nombre de un conjunto de datos
 
 Puede cambiar el nombre de un conjunto de datos guardado.
@@ -43,6 +46,7 @@ Se muestra el centro de planificación.
 
 
 
+[[delete-a-dataset]]
 === Eliminar un conjunto de datos
 
 Cuando un conjunto de datos ya no sea necesario, podrás eliminarlo en cualquier momento.
@@ -59,12 +63,14 @@ Se muestra el centro de planificación.
 
 
 
+[[manage-migration-plans]]
 == Gestionar planes de migración
 
 Utilice el centro de migración para crear y administrar planes de migración.
 
 
 
+[[provision-a-migration-plan]]
 === Elaborar un plan de migración
 
 Puede seleccionar un plan de migración y configurarlo para que las máquinas virtuales se migren al entorno de Amazon AWS de su elección.
@@ -88,6 +94,7 @@ Se muestra el centro de planificación.
 
 
 
+[[edit-the-comment-for-a-migration-plan]]
 === Editar el comentario de un plan de migración
 
 Si necesita cambiar los detalles de los comentarios de un plan de migración, edite el comentario desde el centro de planificación.
@@ -105,6 +112,7 @@ Se muestra el centro de planificación.
 
 
 
+[[create-a-pdf-or-csv-report-of-a-migration-plan]]
 === Crea un informe en PDF o CSV del plan de migración.
 
 Crea un informe en formato PDF o CSV con los detalles del plan de migración.
@@ -122,6 +130,7 @@ Se muestra el centro de planificación.
 
 
 
+[[delete-a-migration-plan]]
 === Eliminar un plan de migración
 
 Cuando un plan de migración ya no sea necesario, podrás eliminarlo en cualquier momento.

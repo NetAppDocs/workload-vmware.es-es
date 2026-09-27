@@ -17,6 +17,7 @@ Puede especificar manualmente sus requisitos para las máquinas virtuales en Ama
 
 
 
+[[requirements]]
 == Requisitos
 
 * Para acceder a Workload Factory, necesita un nombre de usuario y una contraseña.  Si no tienes acceso, crea una cuenta ahora.  Consulte las instrucciones https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["aquí"] .
@@ -25,6 +26,7 @@ Puede especificar manualmente sus requisitos para las máquinas virtuales en Ama
 
 
 
+[[steps]]
 == Pasos
 
 . Inicie sesión en Workload Factory utilizando uno de los https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiencias de consola"^] .
