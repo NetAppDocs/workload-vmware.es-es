@@ -12,65 +12,68 @@ settings:
   langs: es-es,us-en,de-de,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: Documentos para cargas de trabajo de VMware
+  - title: Documentación de NetApp Workload Factory para VMware
     url: "/index.html"
   - title: Notas de la versión
     entries:
-    - title: Novedades
+    - title: Novedades de NetApp Workload Factory para VMware
       url: "/whats-new.html"
   - title: Manos a la obra
     entries:
     - title: Obtenga más información sobre NetApp Workload Factory para VMware
       url: "/learn-about-vmware-workloads.html"
-    - title: Inicio rápido para migrar a Amazon EVS
+    - title: Guía de inicio rápido para la migración de Amazon EVS
       url: "/quick-start-evs.html"
-    - title: Inicio rápido para migrar a Amazon EC2
+    - title: Guía de inicio rápido para la migración a Amazon EC2
       url: "/quick-start-native.html"
-    - title: Inicio rápido para migrar a VMware Cloud en AWS
+    - title: Guía de inicio rápido para la migración a VMware Cloud on AWS
       url: "/quick-start.html"
-    - title: Inicio rápido para migrar a Google Cloud VMware Engine
+    - title: Guía de inicio rápido para la migración a Google Cloud VMware Engine
       url: "/quick-start-gcve.html"
     - title: Explorar el centro de planificación de VMware
       url: "/explore-planning-center.html"
   - title: Utilice el centro de planificación de VMware
     entries:
-    - title: Cargar datos de inventario de VM
+    - title: Subir datos de inventario de máquinas virtuales a Workload Factory para
+        VMware
       url: "/upload-vm-inventory.html"
     - title: Migrar a Amazon Elastic VMware Service
       entries:
-      - title: Explora los ahorros
+      - title: Explora los ahorros de Amazon EVS con Workload Factory para VMware
         url: "/calculate-evs-savings.html"
       - title: Crear manualmente un plan de implementación
         url: "/launch-migration-advisor-evs-manual.html"
-      - title: Cree un plan de despliegue con el asesor de migración
+      - title: Cree un plan de implementación para Amazon EVS utilizando el asesor
+          de migración
         url: "/launch-migration-advisor-evs.html"
-      - title: Implementa el sistema de archivos FSx para ONTAP recomendado
+      - title: Implementa FSx for ONTAP para Amazon EVS
         url: "/deploy-fsx-file-system-evs.html"
     - title: Migra a Google Cloud VMware Engine
       entries:
-      - title: Cree un plan de despliegue con el asesor de migración
+      - title: Crear un plan de implementación para Google Cloud VMware Engine
         url: "/launch-migration-advisor-gcve.html"
     - title: Migrar a Amazon EC2
       entries:
-      - title: Cree un plan de despliegue con el asesor de migración
+      - title: Crear un plan de implementación para Amazon EC2
         url: "/launch-onboarding-advisor-native.html"
-      - title: Implementa el sistema de archivos FSx para ONTAP recomendado
+      - title: Implementa FSx for ONTAP para Amazon EC2
         url: "/deploy-fsx-file-system-native.html"
     - title: Migrar a VMware Cloud en AWS
       entries:
-      - title: Cree un plan de despliegue con el asesor de migración
+      - title: Crear un plan de implementación para VMware Cloud on AWS
         url: "/launch-onboarding-advisor.html"
-      - title: Implementa el sistema de archivos FSx para ONTAP recomendado
+      - title: Implementar FSx for ONTAP para VMware Cloud en AWS
         url: "/deploy-fsx-file-system.html"
-      - title: Conecta FSx para ONTAP a VMware Cloud en AWS
+      - title: Conecta tus sistemas de archivos FSx para ONTAP a VMware Cloud en AWS
         url: "/connect-sddc-to-fsx.html"
-      - title: Migre sus datos a la nueva infraestructura
+      - title: Migrar los datos de las máquinas virtuales a VMware Cloud on AWS
         url: "/migrate-data.html"
   - title: Administrar y monitorear
     entries:
     - title: Análisis de configuración para las configuraciones de EVS
       url: "/configuration-analysis.html"
-    - title: Implementa configuraciones de EVS bien diseñadas
+    - title: Revisa los hallazgos de EVS sobre una arquitectura bien diseñada en Workload
+        Factory para VMware
       url: "/view-evs-well-architected.html"
   - title: Conocimiento y apoyo
     entries:

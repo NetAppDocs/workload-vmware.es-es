@@ -4,7 +4,7 @@ permalink: quick-start.html
 keywords: quick start 
 summary: Empieza con el asesor de migración de VMware para trasladar tu infraestructura actual a VMware Cloud on AWS usando Amazon FSx para ONTAP como almacenes de datos NFS externos. 
 ---
-= Inicio rápido para migrar a VMware Cloud on AWS mediante el asesor de migración de cargas de trabajo de VMware
+= Guía de inicio rápido para la migración a VMware Cloud on AWS
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

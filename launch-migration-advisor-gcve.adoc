@@ -4,7 +4,7 @@ permalink: launch-migration-advisor-gcve.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, gcve, google cloud vmware engine, gcnv, deployment, plan 
 summary: Desde el centro de planificación de VMware, puedes iniciar el asesor de migración de Google Cloud VMware Engine para ayudarte a crear un plan de migración personalizado para tus necesidades. 
 ---
-= Crea un plan de implementación para Google Cloud VMware Engine usando el asesor de migración
+= Crear un plan de implementación para Google Cloud VMware Engine
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
